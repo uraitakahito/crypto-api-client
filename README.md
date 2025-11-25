@@ -82,13 +82,13 @@ Sample debug configurations are defined in [launch.json.sample](.vscode/launch.j
 ## Installation
 
 ```bash
-pip install git+https://github.com/uraitakahito/crypto-api-client.git
+pip install crypto-api-client
 ```
 
 Or using uv:
 
 ```bash
-uv add git+https://github.com/uraitakahito/crypto-api-client.git
+uv add crypto-api-client
 ```
 
 ## Quick Start
