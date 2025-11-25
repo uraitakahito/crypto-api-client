@@ -1,0 +1,743 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.bitbank.rst:2
+msgid "crypto\\_api\\_client.bitbank package"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst:14
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst:17
+msgid "crypto\\_api\\_client.bitbank.bitbank\\_api\\_client\\_factory module"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.core.api_client_factory.ApiClientFactoryBase`\\"
+" "
+"[:py:class:`~crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient`]"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory:1
+#: of
+msgid ""
+"API client factory. Holds default configuration for bitbank exchange-"
+"specific :term:`API endpoint`."
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.create:1
+#: of
+msgid "Create API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.create:3
+#: of
+msgid "API key"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.create:5
+#: of
+msgid "API secret"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.create:7
+#: of
+msgid "HTTP client"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.create:9
+#: of
+msgid "Request callbacks"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.create:11
+#: of
+msgid "Request configuration (timeout, retry, etc.)"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.create:13
+#: of
+msgid "Created API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.get_default_config:1
+#: of
+msgid "Get default API configuration"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.get_default_config:3
+#: of
+msgid ""
+"Returns exchange-specific endpoint configuration. This configuration does"
+" not change unless the exchange modifies its API specifications."
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_api_client_factory.BitbankApiClientFactory.get_default_config:6
+#: of
+msgid "Dictionary of API configuration"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst:25
+msgid "crypto\\_api\\_client.bitbank.bitbank\\_response\\_validator module"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback`"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:1
+#: of
+msgid "bitbank error handler"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:3
+#: of
+msgid ""
+"This class inherits from "
+":class:`~crypto_api_client.callbacks.AbstractRequestCallback` and detects"
+" bitbank API errors and raises exceptions."
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:6
+#: of
+msgid "Response validation is executed in the :meth:`after_request` hook."
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:8
+#: of
+msgid ""
+"Normally, use "
+":func:`~crypto_api_client.factories.create_response_validator` to obtain "
+"an instance."
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:12
+#: of
+msgid ""
+"bitbank returns HTTP status code 200 even for authentication errors, so "
+"errors cannot be determined solely by HTTP response status code."
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:14
+#: of
+msgid ""
+"Example of HttpResponseData.text when :term:`API endpoint` judges an "
+"error:"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:26
+#: of
+msgid ""
+"`Error codes for Bitbank <https://github.com/bitbankinc/bitbank-api-"
+"docs/blob/master/errors.md>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:27
+#: of
+msgid ":class:`~crypto_api_client.callbacks.AbstractRequestCallback`"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator:28
+#: of
+msgid ":func:`~crypto_api_client.factories.create_response_validator`"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator.after_request:1
+#: of
+msgid "Post-response validation processing"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator.after_request:3
+#: of
+msgid "HTTP response data"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst
+msgid "Raises"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator.after_request:5
+#: of
+msgid "When API error occurs"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator.before_request:1
+#: of
+msgid "Pre-request processing (does nothing for response validation)"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator.before_request:3
+#: of
+msgid "Request URL"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator.before_request:5
+#: of
+msgid "Request headers"
+msgstr ""
+
+#: crypto_api_client.bitbank.bitbank_response_validator.BitbankResponseValidator.before_request:7
+#: of
+msgid "Request body"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst:33
+msgid "crypto\\_api\\_client.bitbank.exchange\\_api\\_client module"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient:1 of
+msgid "Bases: :py:class:`~crypto_api_client._base.api_client.ApiClient`"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient:1 of
+msgid "bitbank exchange API client"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.assets:1 of
+msgid "Get asset information"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.assets:3 of
+msgid "URL structure: https://api.bitbank.cc/v1/user/assets"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.assets:7 of
+msgid ""
+"`Assets <https://github.com/bitbankinc/bitbank-api-docs/blob/master/rest-"
+"api.md#return-users-asset-list>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.create_order:1
+#: of
+msgid "Submit new order"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.create_order:3
+#: of
+msgid "URL structure: https://api.bitbank.cc/v1/user/spot/order"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.create_order:7
+#: of
+msgid ""
+"`Create new order <https://github.com/bitbankinc/bitbank-api-"
+"docs/blob/master/rest-api.md#create-new-order>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.create_order:11
+#: of
+msgid "resource identifier path: ``user/spot``"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.create_order:12
+#: of
+msgid "action name: ``order``"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.depth:1 of
+msgid "Get order book (Depth)"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.depth:3 of
+msgid "URL structure: https://public.bitbank.cc/btc_jpy/depth"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.depth:7 of
+msgid ""
+"`Depth <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/public-api_JP.md#depth>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:1
+#: of
+msgid "Get exchange status"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:3
+#: of
+msgid "URL structure: https://api.bitbank.cc/v1/spot/status"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:7
+#: of
+msgid ""
+"`Get exchange status <https://github.com/bitbankinc/bitbank-api-"
+"docs/blob/master/rest-api.md#get-exchange-status>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:9
+#: of
+msgid "Status request"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:10
+#: of
+msgid "Exchange status information"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:14
+#: of
+msgid "resource identifier path: ``spot``"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:15
+#: of
+msgid "action name: ``status``"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.spot_status:16
+#: of
+msgid "spot/status uses private_base_url unlike normal Public API"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.ticker:1 of
+msgid "Get ticker information"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.ticker:3 of
+msgid "URL structure: https://public.bitbank.cc/btc_jpy/ticker"
+msgstr ""
+
+#: crypto_api_client.bitbank.exchange_api_client.ExchangeApiClient.ticker:7 of
+msgid ""
+"`Ticker <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/public-api.md#ticker>`__"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst:41
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.bitbank:1 of
+msgid "bitbank exchange API integration module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:1
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:1
+#: crypto_api_client.bitbank.native_domain_models.order.Order:1
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:1
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:1
+#: crypto_api_client.bitbank.native_requests.create_order_request.CreateOrderRequest:1
+#: crypto_api_client.bitbank.native_requests.depth_request.DepthRequest:1
+#: crypto_api_client.bitbank.native_requests.spot_status_request.SpotStatusRequest:1
+#: crypto_api_client.bitbank.native_requests.ticker_request.TickerRequest:1 of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.create_order_request.CreateOrderRequest:1
+#: of
+msgid ":term:`native request` implementation for new order"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.create_order_request.CreateOrderRequest:3
+#: of
+msgid "Defines parameters required for submitting new order to bitbank API."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.create_order_request.CreateOrderRequest.to_query_params:1
+#: of
+msgid "Convert to parameter dictionary for API request"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.create_order_request.CreateOrderRequest.to_query_params:3
+#: of
+msgid "Dictionary of API parameters"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:1 of
+msgid ":term:`native domain model` representing entire order book"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:3 of
+msgid ""
+"Represents the data structure returned by order book :term:`API "
+"endpoint`. Contains order lists for bids and asks, market order "
+"information, and out-of-range order information during circuit breaker "
+"mode."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:8
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:3 of
+msgid "Example JSON returned by :term:`API endpoint`:"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:33 of
+msgid ""
+"`Depth API <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/public-api.md#depth>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:35 of
+msgid "List of sell orders (sorted by ascending price)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:37 of
+msgid "List of buy orders (sorted by descending price)"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.asks_over:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:39 of
+msgid "Out-of-range sell order quantity (upper side)"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.bids_under:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:41 of
+msgid "Out-of-range buy order quantity (lower side)"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.asks_under:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:43 of
+msgid "Out-of-range sell order quantity (lower side)"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.bids_over:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:45 of
+msgid "Out-of-range buy order quantity (upper side)"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.ask_market:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:47 of
+msgid "Total quantity of market sell orders"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.bid_market:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:49 of
+msgid "Total quantity of market buy orders"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:51 of
+msgid "Timestamp (UTC)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:53 of
+msgid "Sequence identifier (for ordering in WebSocket connections)"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.asks
+#: crypto_api_client.bitbank.Depth.bids of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.asks:1
+#: crypto_api_client.bitbank.Depth.bids:1 of
+msgid ""
+":py:obj:`parse_order_entries "
+"<crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries>`"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitbank.Depth.sequenceId:1 of
+msgid "Sequence identifier"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries:1
+#: of
+msgid "Convert array-format order data to DepthEntry objects"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries:3
+#: of
+msgid ""
+"Converts [\"price\", \"quantity\"] format data returned from API to "
+"DepthEntry objects."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries:6
+#: of
+msgid "If v is not a list type"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.best_ask:1 of
+msgid "Best ask price (lowest sell order)"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.best_ask:3 of
+msgid "Best ask entry, None if ask side is empty"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.best_bid:1 of
+msgid "Best bid price (highest buy order)"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.best_bid:3 of
+msgid "Best bid entry, None if bid side is empty"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.has_circuit_breaker_data:1 of
+msgid "Check if circuit breaker mode data is included"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.has_circuit_breaker_data:3 of
+msgid "True if circuit breaker mode data exists"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.mid_price:1 of
+msgid "Calculate mid price (average of bid and ask prices)"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.mid_price:3 of
+msgid "Mid price, None if either best bid or best ask doesn't exist"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.spread:1 of
+msgid "Calculate spread between bid and ask prices"
+msgstr ""
+
+#: crypto_api_client.bitbank.Depth.spread:3 of
+msgid "Spread (ask price - bid price), None if order book is empty"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:1 of
+msgid "Individual entry in order book (buy order or sell order)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:3 of
+msgid "Order price"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:5 of
+msgid "Order quantity"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.depth_request.DepthRequest:1 of
+msgid ":term:`native request` implementation for fetching order book (Depth)."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.depth_request.DepthRequest:5 of
+msgid ""
+"`Depth <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/public-api.md#depth>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.depth_request.DepthRequest:7
+#: crypto_api_client.bitbank.native_requests.ticker_request.TickerRequest:3 of
+msgid "Currency pair (e.g. \"btc_jpy\")"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.depth_request.DepthRequest.get_pair_value:1
+#: of
+msgid "Return valid pair"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order.Order:1 of
+msgid ":term:`native domain model` representing bitbank order information."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_status.OrderStatus:1
+#: crypto_api_client.bitbank.native_domain_models.order_type.OrderType:1
+#: crypto_api_client.bitbank.native_domain_models.side.Side:1
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:1
+#: of
+msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_status.OrderStatus:1 of
+msgid "Order status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_status.OrderStatus:3 of
+msgid "Defines order statuses used by bitbank API."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_type.OrderType:1 of
+msgid "Order type"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_type.OrderType:3 of
+msgid "Defines order types used by bitbank API."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:1 of
+msgid ""
+":term:`native domain model` representing status information for each "
+"currency pair"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:3 of
+msgid ""
+"Models currency pair status information received from :term:`API "
+"endpoint`."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:13 of
+msgid "Currency pair (e.g. \"btc_jpy\", \"eth_jpy\")"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:15 of
+msgid "Exchange status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:17 of
+msgid "Minimum order quantity based on current status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.side.Side:1 of
+msgid "Buy/sell side"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.side.Side:3 of
+msgid "Defines buy/sell sides used by bitbank API."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:1 of
+msgid ":term:`native domain model` representing overall exchange status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:24 of
+msgid ""
+"`Official doc <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/rest-api.md#status>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:26 of
+msgid "List of status information for each currency pair"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.spot_status_request.SpotStatusRequest:1
+#: of
+msgid ":term:`native request` implementation for fetching exchange status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.spot_status_request.SpotStatusRequest:3
+#: of
+msgid ""
+"Represents a request to bitbank's `/v1/spot/status` endpoint. No "
+"parameters required as it fetches status information for all currency "
+"pairs."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.spot_status_request.SpotStatusRequest:8
+#: of
+msgid ""
+"`spot/status API <https://github.com/bitbankinc/bitbank-api-"
+"docs/blob/master/rest-api.md#status>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.spot_status_request.SpotStatusRequest.to_query_params:1
+#: crypto_api_client.bitbank.native_requests.ticker_request.TickerRequest.to_path_params:1
+#: of
+msgid "Return string for path parameters"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:1
+#: of
+msgid "bitbank exchange status type"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:3
+#: of
+msgid "Enum representing current operational status of the exchange."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.rst
+msgid "Variables"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:5
+#: of
+msgid "Normal operation"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:6
+#: of
+msgid "Increased system load"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:7
+#: of
+msgid "High system load"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:8
+#: of
+msgid "Trading temporarily suspended"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_requests.ticker_request.TickerRequest:1 of
+msgid ":term:`native request` implementation for fetching ticker."
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:1 of
+msgid "Build message for signature."
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:3 of
+msgid "HTTP method (HttpMethod.GET or HttpMethod.POST)"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:4 of
+msgid "Endpoint path. Must start with /. e.g. /v1/user/assets"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:5 of
+msgid "Query parameters (used for GET requests)"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:6 of
+msgid "Body for POST requests"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:7 of
+msgid "Request time (Unix timestamp string in milliseconds)"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:8 of
+msgid "Time window (milliseconds)"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:9 of
+msgid "Message string for signature"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:12 of
+msgid ""
+"`bitbank Private API <https://github.com/bitbankinc/bitbank-api-"
+"docs/blob/master/rest-api.md#authorization>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank._signature_builder.build_message:46 of
+msgid ""
+"While fewer parameters could be used, we maintain this signature for "
+"consistency with similar functions for other exchanges."
+msgstr ""
+

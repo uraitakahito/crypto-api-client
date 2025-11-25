@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.callbacks.rst:2
+msgid "crypto\\_api\\_client.callbacks package"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst:8
+msgid "crypto\\_api\\_client.callbacks.abstract\\_request\\_callback module"
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback:1
+#: of
+msgid "Bases: :py:class:`~abc.ABC`"
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback:1
+#: of
+msgid "Abstract base class for callbacks invoked before and after HTTP requests."
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback.after_request:1
+#: of
+msgid "Called asynchronously after receiving response"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.generate_label_from_patterns
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.parse_key
+#: of
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback.after_request:3
+#: of
+msgid "HTTP response data"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.generate_label_from_patterns
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.parse_key
+#: of
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback.before_request:1
+#: of
+msgid "Called asynchronously before sending request."
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback.before_request:3
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.before_request:3
+#: of
+msgid "Request URL"
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback.before_request:5
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.before_request:4
+#: of
+msgid "Request headers"
+msgstr ""
+
+#: crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback.before_request:7
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.before_request:5
+#: of
+msgid "Request body"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst:16
+msgid "crypto\\_api\\_client.callbacks.rate\\_limit\\_key\\_builder module"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder:1 of
+msgid "Redis key generation utility for rate limiters"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern:1
+#: of
+msgid "Generate pattern for Redis search"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern:3
+#: of
+msgid "Key prefix (e.g., \"RATE_LIMIT:URL_PATTERN\")"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern:4
+#: of
+msgid "Label (matches all labels if omitted)"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern:5
+#: of
+msgid "Window number (matches all windows if omitted)"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.generate_label_from_patterns
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.parse_key
+#: of
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern:6
+#: of
+msgid "Pattern for Redis KEYS/SCAN (uppercase)"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.build_search_pattern:9
+#: of
+msgid "Examples"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.generate_label_from_patterns:1
+#: of
+msgid "Generate label from list of URL patterns"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.generate_label_from_patterns:3
+#: of
+msgid "List of URL patterns (strings or regex patterns)"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.generate_label_from_patterns:4
+#: of
+msgid "Generated label (e.g., \"PATTERN_12345678\")"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.generate_label_from_patterns:6
+#: of
+msgid "The same pattern set always generates the same label."
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp:1
+#: of
+msgid "Calculate window number from timestamp"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp:3
+#: of
+msgid "UNIX timestamp"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp:4
+#: of
+msgid "Window duration in seconds"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp:5
+#: of
+msgid "Window number"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.get_window_for_timestamp:8
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.parse_key:7
+#: of
+msgid "Example"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.parse_key:1
+#: of
+msgid "Parse Redis key to get its components"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.parse_key:3
+#: of
+msgid "Redis key"
+msgstr ""
+
+#: crypto_api_client.callbacks.rate_limit_key_builder.RateLimitKeyBuilder.parse_key:4
+#: of
+msgid "Dictionary of parsed results, or None if cannot parse"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst:24
+msgid ""
+"crypto\\_api\\_client.callbacks.redis\\_shared\\_url\\_pattern\\_rate\\_limiter"
+" module"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback`"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:1
+#: of
+msgid "URL pattern-based rate limiter (fixed window method)"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:3
+#: of
+msgid ""
+"Shares API call counts for specified URL patterns across multiple clients"
+" via Redis. Raises RateLimitApproachingError exception when access count "
+"is about to exceed `max_safe_count` within `window_seconds`."
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:7
+#: of
+msgid "**Instantiation method**"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:9
+#: of
+msgid ""
+"Do not call ``__init__()`` directly. Always use the ``create()`` factory "
+"method::"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:17
+#: of
+msgid "**Design rationale: Why factory method?**"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:19
+#: of
+msgid ""
+"This class adopts a Fail-fast design. To detect Redis connection problems"
+" early, it always performs a connection check (``await redis.ping()``) "
+"during initialization."
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:22
+#: of
+msgid ""
+"However, Python's ``__init__()`` is a synchronous method and cannot "
+"directly execute async operations. Therefore, we provide ``create()`` as "
+"an ``async`` factory method that executes health checks and returns a "
+"fully initialized instance."
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:27
+#: of
+msgid "**Retry configuration recommendation**"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter:29
+#: of
+msgid ""
+"redis-py retries 3 times by default (4 total attempts). When creating "
+"multiple instances, disabling retries can shorten startup time when Redis"
+" connection fails::"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.after_request:1
+#: of
+msgid "Asynchronous processing after response"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.after_request:3
+#: of
+msgid "Response data"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.before_request:1
+#: of
+msgid "Asynchronous check before request"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst
+msgid "Raises"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.before_request:6
+#: of
+msgid "When rate limit exceeded"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:1
+#: of
+msgid "Create rate limiter"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:3
+#: of
+msgid ""
+"This method is the only official initialization method for "
+"``RedisSharedUrlPatternRateLimiter``."
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:5
+#: of
+msgid "Redis client"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:7
+#: of
+msgid "URL patterns to monitor (regex or string)"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:9
+#: of
+msgid "Rate limit window in seconds. Uses DEFAULT_WINDOW_SECONDS if not specified"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:11
+#: of
+msgid ""
+"Maximum call count allowed within window. Uses DEFAULT_MAX_SAFE_COUNT if "
+"not specified"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:13
+#: of
+msgid "Optional label. Auto-generated from patterns if not specified"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:15
+#: of
+msgid "Redis key prefix. Uses DEFAULT_KEY_PREFIX if not specified"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:17
+#: of
+msgid "Initialized rate limiter (Redis connection verified)"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:19
+#: of
+msgid "On Redis connection error"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:20
+#: of
+msgid "On Redis connection timeout"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:21
+#: of
+msgid "On other Redis errors"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.create:23
+#: of
+msgid "Basic usage"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.get_count_async:1
+#: of
+msgid "Get count asynchronously"
+msgstr ""
+
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.get_count_async:3
+#: of
+msgid "Call count in current window"
+msgstr ""
+
+#: crypto_api_client.callbacks.RedisSharedUrlPatternRateLimiter.is_limit_exceeded:1
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.is_limit_exceeded:1
+#: of
+msgid "Rate limit exceeded flag"
+msgstr ""
+
+#: crypto_api_client.callbacks.RedisSharedUrlPatternRateLimiter.period:1
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.period:1
+#: of
+msgid "Remaining seconds in window"
+msgstr ""
+
+#: crypto_api_client.callbacks.RedisSharedUrlPatternRateLimiter.remaining:1
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.remaining:1
+#: of
+msgid "Remaining callable count (estimated)"
+msgstr ""
+
+#: crypto_api_client.callbacks.RedisSharedUrlPatternRateLimiter.reset:1
+#: crypto_api_client.callbacks.redis_shared_url_pattern_rate_limiter.RedisSharedUrlPatternRateLimiter.reset:1
+#: of
+msgid "Next window end time (UTC)"
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst:32
+msgid "crypto\\_api\\_client.callbacks.utils module"
+msgstr ""
+
+#: crypto_api_client.callbacks.utils:1 of
+msgid "Callback-related utility functions"
+msgstr ""
+
+#: crypto_api_client.callbacks.utils:3 of
+msgid "Utility module for callbacks."
+msgstr ""
+
+#: ../../source/crypto_api_client.callbacks.rst:40
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.callbacks:1 of
+msgid "API request callback functionality"
+msgstr ""
+

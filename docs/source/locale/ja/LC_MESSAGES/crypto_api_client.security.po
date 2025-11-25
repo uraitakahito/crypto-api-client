@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.security.rst:2
+msgid "crypto\\_api\\_client.security package"
+msgstr ""
+
+#: ../../source/crypto_api_client.security.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.security.rst:8
+msgid "crypto\\_api\\_client.security.secret\\_headers module"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders:1 of
+msgid ""
+"Bases: :py:class:`~collections.abc.MutableMapping`\\ [:py:class:`str`, "
+":py:class:`str`]"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders:1 of
+msgid "Class to protect sensitive information in HTTP headers"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders:3 of
+msgid ""
+"Automatically masks specified headers while maintaining compatibility "
+"with httpx.Headers."
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders:6 of
+msgid ""
+"Features: - Automatic masking in logs and debug output - Mutual "
+"conversion support with httpx.Headers - Case-insensitive detection - "
+"Complete implementation of MutableMapping protocol"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.get_masked_dict:1 of
+msgid "Get masked dictionary format (for log output)"
+msgstr ""
+
+#: ../../source/crypto_api_client.security.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.get_masked_dict:3 of
+msgid "Masked dictionary"
+msgstr ""
+
+#: ../../source/crypto_api_client.security.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.to_httpx_headers:1
+#: of
+msgid "Convert to httpx.Headers (used when actually sending requests)"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.to_httpx_headers:3
+#: of
+msgid "httpx.Headers with actual values"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update:1 of
+msgid "Update headers (MutableMapping compliant)"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update:3 of
+msgid ""
+"Update headers from a dictionary, Mapping, or iterable of (key, value) "
+"pairs. For httpx.Headers, use update_from_httpx() or convert with dict()."
+msgstr ""
+
+#: ../../source/crypto_api_client.security.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update:6 of
+msgid "Dictionary, Mapping, or iterable of (key, value) pairs"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update:8 of
+msgid "Headers specified as keyword arguments"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update:11
+#: crypto_api_client.security.secret_headers.SecretHeaders.update_from_httpx:11
+#: of
+msgid "Usage examples:"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update:17 of
+#, python-brace-format
+msgid ""
+"# When using httpx.Headers >>> httpx_headers = "
+"httpx.Headers({\"X-Custom\": \"value\"}) >>> "
+"headers.update(dict(httpx_headers)) >>> # or >>> "
+"headers.update_from_httpx(httpx_headers)"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update_from_httpx:1
+#: of
+msgid "Dedicated method to update from httpx.Headers"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update_from_httpx:3
+#: of
+msgid ""
+"Updates headers directly from an httpx.Headers object. More explicit "
+"intent and type-safe than update() method."
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update_from_httpx:6
+#: of
+msgid "httpx.Headers object"
+msgstr ""
+
+#: crypto_api_client.security.secret_headers.SecretHeaders.update_from_httpx:8
+#: of
+msgid "Additional keyword arguments"
+msgstr ""
+
+#: ../../source/crypto_api_client.security.rst:16
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.security:1 of
+msgid "Security and authentication related modules"
+msgstr ""
+
+#: of pydantic.types.SecretStr:1
+msgid "Bases: :py:class:`~pydantic.types._SecretField`\\ [:py:class:`str`]"
+msgstr ""
+
+#: of pydantic.types.SecretStr:1
+msgid ""
+"A string used for storing sensitive information that you do not want to "
+"be visible in logging or tracebacks."
+msgstr ""
+
+#: of pydantic.types.SecretStr:3
+msgid ""
+"When the secret value is nonempty, it is displayed as `'**********'` "
+"instead of the underlying value in calls to `repr()` and `str()`. If the "
+"value _is_ empty, it is displayed as `''`."
+msgstr ""
+
+#: of pydantic.types.SecretStr:6
+msgid "```python from pydantic import BaseModel, SecretStr"
+msgstr ""
+
+#: of pydantic.types.SecretStr:9
+msgid "class User(BaseModel):"
+msgstr ""
+
+#: of pydantic.types.SecretStr:10
+msgid "username: str password: SecretStr"
+msgstr ""
+
+#: of pydantic.types.SecretStr:13
+msgid "user = User(username='scolvin', password='password1')"
+msgstr ""
+
+#: of pydantic.types.SecretStr:15
+msgid ""
+"print(user) #> username='scolvin' password=SecretStr('**********') "
+"print(user.password.get_secret_value()) #> password1 "
+"print((SecretStr('password'), SecretStr(''))) #> "
+"(SecretStr('**********'), SecretStr('')) ```"
+msgstr ""
+
+#: of pydantic.types.SecretStr:23
+msgid ""
+"As seen above, by default, [`SecretStr`][pydantic.types.SecretStr] (and "
+"[`SecretBytes`][pydantic.types.SecretBytes]) will be serialized as "
+"`**********` when serializing to json."
+msgstr ""
+
+#: of pydantic.types.SecretStr:26
+msgid ""
+"You can use the "
+"[`field_serializer`][pydantic.functional_serializers.field_serializer] to"
+" dump the secret as plain-text when serializing to json."
+msgstr ""
+
+#: of pydantic.types.SecretStr:29
+msgid ""
+"```python from pydantic import BaseModel, SecretBytes, SecretStr, "
+"field_serializer"
+msgstr ""
+
+#: of pydantic.types.SecretStr:32
+msgid "class Model(BaseModel):"
+msgstr ""
+
+#: of pydantic.types.SecretStr:33
+msgid "password: SecretStr password_bytes: SecretBytes"
+msgstr ""
+
+#: of pydantic.types.SecretStr:36
+msgid ""
+"@field_serializer('password', 'password_bytes', when_used='json') def "
+"dump_secret(self, v):"
+msgstr ""
+
+#: of pydantic.types.SecretStr:38
+msgid "return v.get_secret_value()"
+msgstr ""
+
+#: of pydantic.types.SecretStr:40
+msgid ""
+"model = Model(password='IAmSensitive', "
+"password_bytes=b'IAmSensitiveBytes') print(model) #> "
+"password=SecretStr('**********') "
+"password_bytes=SecretBytes(b'**********') print(model.password) #> "
+"********** print(model.model_dump()) ''' {"
+msgstr ""
+
+#: of pydantic.types.SecretStr:48
+msgid ""
+"'password': SecretStr('**********'), 'password_bytes': "
+"SecretBytes(b'**********'),"
+msgstr ""
+
+#: of pydantic.types.SecretStr:51
+msgid "}"
+msgstr ""
+
+#: of pydantic.types.SecretStr:52
+#, python-brace-format
+msgid ""
+"print(model.model_dump_json()) #> "
+"{\"password\":\"IAmSensitive\",\"password_bytes\":\"IAmSensitiveBytes\"} "
+"```"
+msgstr ""
+
+#: crypto_api_client.security._hmac_signer.sign_message:1 of
+msgid "Generate HMAC-SHA256 signature."
+msgstr ""
+
+#: crypto_api_client.security._hmac_signer.sign_message:3 of
+msgid "To verify the signature, you can do the following:"
+msgstr ""
+
+#: crypto_api_client.security._hmac_signer.sign_message:11 of
+msgid ""
+"Or you can also verify with `HMAC-SHA256 Hash Generator "
+"<https://www.devglan.com/online-tools/hmac-sha256-online>`_."
+msgstr ""
+
+#: crypto_api_client.security._hmac_signer.sign_message:13 of
+msgid "Secret key (str or SecretStr)"
+msgstr ""
+
+#: crypto_api_client.security._hmac_signer.sign_message:15 of
+msgid "Message to generate signature for"
+msgstr ""
+
+#: crypto_api_client.security._hmac_signer.sign_message:17 of
+msgid "Hexadecimal representation of signature"
+msgstr ""
+

@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:2
+msgid "crypto\\_api\\_client.bitflyer.requests package"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:8
+msgid ""
+"crypto\\_api\\_client.bitflyer.requests.cancel\\_child\\_order\\_request "
+"module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:16
+msgid "crypto\\_api\\_client.bitflyer.requests.child\\_orders\\_request module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:24
+msgid "crypto\\_api\\_client.bitflyer.requests.executions\\_request module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:32
+msgid "crypto\\_api\\_client.bitflyer.requests.health\\_request module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:40
+msgid ""
+"crypto\\_api\\_client.bitflyer.requests.send\\_child\\_order\\_request "
+"module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:48
+msgid "crypto\\_api\\_client.bitflyer.requests.ticker\\_request module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.requests.rst:56
+msgid "Module contents"
+msgstr ""
+

@@ -1,0 +1,389 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.http.rst:2
+msgid "crypto\\_api\\_client.http package"
+msgstr ""
+
+#: ../../source/crypto_api_client.http.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.http.rst:8
+msgid "crypto\\_api\\_client.http.http\\_response\\_data module"
+msgstr ""
+
+#: crypto_api_client.http._endpoint_request.EndpointRequest:1
+#: crypto_api_client.http.http_response_data.HttpResponseData:1 of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.http.http_response_data.HttpResponseData:1 of
+msgid "Pydantic model for :term:`http response data`"
+msgstr ""
+
+#: crypto_api_client.http.http_response_data.HttpResponseData:3 of
+msgid ""
+"Represents HTTP response data converted from httpx.Response. Provides "
+"runtime type checking and validation."
+msgstr ""
+
+#: crypto_api_client.http.http_response_data.HttpResponseData:7 of
+msgid ":class:`~crypto_api_client.http_status_code.HttpStatusCode`"
+msgstr ""
+
+#: crypto_api_client.http.http_response_data.HttpResponseData:8 of
+msgid "Constants and helper methods for standard/non-standard HTTP status codes"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.http.HttpResponseData.elapsed:1
+#: crypto_api_client.http.http_response_data.HttpResponseData.elapsed:1 of
+msgid "Request processing time"
+msgstr ""
+
+#: ../../source/crypto_api_client.http.rst:16
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.http:1 of
+msgid "HTTP communication related modules"
+msgstr ""
+
+#: crypto_api_client.http._endpoint_request.EndpointRequest:1 of
+msgid "Generic model representing an HTTP request to an :term:`API endpoint`"
+msgstr ""
+
+#: crypto_api_client.http._endpoint_request.EndpointRequest:3 of
+msgid ""
+"The HTTP client receives this model and executes the request. Contains "
+"all information necessary to send to the :term:`API endpoint`."
+msgstr ""
+
+#: ../../../docstring crypto_api_client.http.EndpointRequest.base_url:1 of
+msgid ":term:`base URL` (e.g., URL('https://api.bitflyer.jp'))"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.http.EndpointRequest.body:1 of
+msgid "Request body (sent as JSON)"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.http.EndpointRequest.headers:1 of
+msgid "HTTP headers"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.http.EndpointRequest.params:1 of
+msgid "URL parameters"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.http.EndpointRequest.relative_resource_path:1 of
+msgid ""
+":term:`relative resource path` (e.g., URL('ticker') or "
+"URL('me/sendchildorder'))"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.http.EndpointRequest.stub_path:1 of
+msgid ""
+":term:`stub path` (e.g., URL('/v1')). Includes leading slash. Usually "
+"represents version number. None if not present"
+msgstr ""
+
+#: crypto_api_client.http.EndpointRequest.api_endpoint:1 of
+msgid "Return the complete :term:`API endpoint` URL (including parameters)"
+msgstr ""
+
+#: ../../source/crypto_api_client.http.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.http.EndpointRequest.api_endpoint:3 of
+msgid ""
+"Complete :term:`API endpoint` URL (e.g., "
+"URL('https://api.bitflyer.jp/v1/ticker?product_code=BTC_JPY'))"
+msgstr ""
+
+#: ../../source/crypto_api_client.http.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.http.EndpointRequest.body_json:1 of
+msgid "Body converted to JSON string"
+msgstr ""
+
+#: crypto_api_client.http.EndpointRequest.endpoint_path:1 of
+msgid "Return :term:`endpoint path`"
+msgstr ""
+
+#: crypto_api_client.http._endpoint_request_builder.EndpointRequestBuilder:1
+#: crypto_api_client.http._http_status_code.HttpStatusCode:1
+#: crypto_api_client.http._request_mixin.RequestMixin:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: crypto_api_client.http._endpoint_request_builder.EndpointRequestBuilder.get:1
+#: of
+msgid "Build GET request"
+msgstr ""
+
+#: crypto_api_client.http._endpoint_request_builder.EndpointRequestBuilder.post:1
+#: of
+msgid "Build POST request"
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy:1 of
+msgid "Bases: :py:class:`~typing.Generic`"
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy:1 of
+msgid "Class implementing asynchronous exponential backoff retry strategy."
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy.execute:1
+#: of
+msgid "Execute specified asynchronous function with exponential backoff."
+msgstr ""
+
+#: ../../source/crypto_api_client.http.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy.execute:3
+#: of
+msgid "Asynchronous function to execute"
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy.execute:5
+#: of
+msgid "Positional arguments for the function"
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy.execute:7
+#: of
+msgid "Keyword arguments for the function"
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy.execute:9
+#: of
+msgid "Return value of the function"
+msgstr ""
+
+#: ../../source/crypto_api_client.http.rst
+msgid "Raises"
+msgstr ""
+
+#: crypto_api_client.http._retry_strategy.ExponentialBackoffRetryStrategy.execute:11
+#: of
+msgid "When maximum retries exceeded"
+msgstr ""
+
+#: crypto_api_client.http._http_method.HttpMethod:1 of
+msgid "Bases: :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.http._http_method.HttpMethod:1 of
+msgid "Enum representing HTTP methods"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:1 of
+msgid "HTTP status code constants class"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:3 of
+msgid ""
+"Defines standard and non-standard HTTP status codes, and provides helper "
+"methods for classifying and validating status codes."
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:7 of
+msgid "Why define a custom class:"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:8 of
+msgid ""
+"Python's standard library `http.HTTPStatus` only supports standard HTTP "
+"status codes and does not handle non-standard codes encountered in actual"
+" web services."
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:11 of
+msgid ""
+"Cryptocurrency exchange APIs pass through various infrastructures "
+"(CloudFlare, nginx, AWS ELB, etc.) and may return non-standard status "
+"codes such as:"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:14 of
+msgid "CloudFlare 520-527: Origin server errors, SSL certificate errors, etc."
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:15 of
+msgid "nginx 499: Client closed connection"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:16 of
+msgid "AWS ELB 460, 463: Timeout, rate limiting"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:17 of
+msgid "Custom status codes: Exchange-specific implementations"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:18 of
+msgid "New HTTP status codes added in the future"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:20 of
+msgid ""
+"To properly handle these non-standard codes, we define a custom class "
+"with the following features:"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:22 of
+msgid "Define both standard and non-standard status codes as constants"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:23 of
+msgid "Classification methods for status codes (is_success, is_error, etc.)"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:24 of
+msgid ""
+"Judgment methods dedicated to non-standard codes (is_cloudflare_error, "
+"etc.)"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:25 of
+msgid "Provide reason phrases for all codes"
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode:27 of
+msgid "This improves error handling precision and debugging efficiency."
+msgstr ""
+
+#: crypto_api_client.http._http_status_code.HttpStatusCode.is_success:1 of
+msgid "Check if status is 2xx Success response"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin:1 of
+msgid "Mixin class providing asynchronous HTTP request functionality."
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.close:1 of
+msgid "Close HTTP client"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.close:3 of
+msgid "If custom HTTP client is provided: Do nothing (managed externally)"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.close:4 of
+msgid "If using default client: Close it"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.close:8 of
+msgid "When using default client, user must explicitly call close() method"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.run_callbacks:1 of
+msgid "Execute asynchronous callbacks at specified timing."
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.run_callbacks:3 of
+msgid "Callback timing ('before_request' or 'after_request')"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.run_callbacks:5 of
+msgid "Positional arguments to pass to callbacks"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.run_callbacks:7 of
+msgid "Keyword arguments to pass to callbacks"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_endpoint_request:1
+#: of
+msgid "Send EndpointRequest asynchronously"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_endpoint_request:3
+#: of
+msgid "EndpointRequest (including base_url)"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_endpoint_request:5
+#: of
+msgid "HttpResponseData"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_request:1 of
+msgid "Send asynchronous HTTP request and return response"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_request:3 of
+msgid "HTTP method"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_request:5 of
+msgid "Request URL"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_request:7 of
+msgid "Request headers"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_request:9 of
+msgid "Request body"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.send_request:11 of
+msgid "HttpResponseData model (TypedDict or Pydantic)"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.to_http_response_data:1
+#: of
+msgid "Convert httpx.Response to HttpResponseData"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.to_http_response_data:3
+#: of
+msgid "httpx response object"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.to_http_response_data:5
+#: of
+msgid "HttpResponseData Pydantic model (type validated)"
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.to_http_response_data:9
+#: of
+msgid ""
+"Status codes are stored as int type and support both standard HTTP status"
+" codes (200, 404, etc.) and non-standard codes (CloudFlare 520-527, nginx"
+" 499, etc.)."
+msgstr ""
+
+#: crypto_api_client.http._request_mixin.RequestMixin.to_http_response_data:12
+#: of
+msgid ""
+"Removed conversion to HTTPStatus enum and changed to use int type "
+"directly."
+msgstr ""
+

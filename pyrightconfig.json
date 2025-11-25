@@ -1,0 +1,38 @@
+{
+  // Pyright config: strict mode for src/ and examples/, relaxed mode for tests/
+  // Run: uv run pyright src/ examples/ tests/
+
+  "pythonVersion": "3.13",
+  "include": ["examples", "src", "tests"],
+  "exclude": ["**/__pycache__", ".Trash-*", "**/.Trash-*"],
+  "extraPaths": ["scripts"],
+  "strict": ["examples", "src"],
+
+  "executionEnvironments": [
+    // src/: use strict mode defaults
+    {
+      "root": "src"
+    },
+
+    // examples/: strict mode with optional dependency handling
+    {
+      "root": "examples",
+      "reportMissingModuleSource": "warning"  // Relax to warning for optional deps like psutil
+    },
+
+    // tests/: disable strict mode (for mocks and fixtures)
+    {
+      "root": "tests",
+      "reportPrivateUsage": false,              // Allow private member access
+      "reportUnknownMemberType": false,         // Allow unknown member types (e.g., Mock)
+      "reportUnknownVariableType": false,       // Allow unknown variable types (e.g., fixtures)
+      "reportUnknownArgumentType": false,       // Allow unknown argument types
+      "reportUnknownParameterType": false,      // Allow unknown parameter types
+      "reportMissingParameterType": false,      // Allow missing parameter type annotations
+      "reportMissingTypeArgument": false,       // Allow missing generic type arguments
+      "reportMissingModuleSource": false,       // Allow missing module sources
+      "reportMissingImports": false,            // Allow import resolution failures
+      "reportGeneralTypeIssues": false          // Allow general type issues
+    }
+  ]
+}

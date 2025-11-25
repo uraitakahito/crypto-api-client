@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/api_references_ja.rst:2
+msgid "外部APIリファレンス"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:4
+msgid "このページでは、crypto-api-clientが対応している各取引所の公式APIドキュメントへのリンクをまとめています。"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:8
+msgid "目次"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:11 ../../source/api_references_ja.rst:102
+msgid "BINANCE"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:14 ../../source/api_references_ja.rst:44
+msgid "REST API"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:16
+msgid ""
+"`Exchange information <https://github.com/binance/binance-spot-api-"
+"docs/blob/master/rest-api.md#exchange-information>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:18
+msgid ""
+"`Market Data endpoints <https://developers.binance.com/docs/binance-spot-"
+"api-docs/testnet/rest-api/market-data-endpoints>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:20
+msgid "order book (depth)"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:22
+msgid ""
+"`Get Account Asset Balance <https://lightning.bitflyer.com/docs?lang=en"
+"#get-account-asset-balance>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:24
+msgid ""
+"`自身の約定履歴 <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/rest-api.md#trade>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:27 ../../source/api_references_ja.rst:108
+msgid "bitbank"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:29
+msgid ""
+"`pairs <https://raw.githubusercontent.com/bitbankinc/bitbank-api-"
+"docs/refs/heads/master/pairs.md>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:31
+msgid ""
+"`Details on the Private REST API. "
+"<https://raw.githubusercontent.com/bitbankinc/bitbank-api-"
+"docs/refs/heads/master/rest-api.md>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:33
+msgid "Status"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:35
+msgid ""
+"`Assets <https://github.com/bitbankinc/bitbank-api-docs/blob/master/rest-"
+"api.md#assets>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:37
+msgid ""
+"`Get all pairs info <https://github.com/bitbankinc/bitbank-api-"
+"docs/blob/master/rest-api.md#get-all-pairs-info>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:41 ../../source/api_references_ja.rst:105
+msgid "bitFlyer"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:46
+msgid "`板の状態 <https://lightning.bitflyer.com/docs?lang=en#orderbook-status>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:48
+msgid "`取引所の状態 <https://lightning.bitflyer.com/docs?lang=en#exchange-status>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:50
+msgid "`エラーコード一覧（非公式） <https://note.com/17num/n/n6955c3a711a8>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:53
+msgid "Coincheck"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:55
+msgid "`ティッカー <https://coincheck.com/documents/exchange/api#ticker>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:57
+msgid "`Order Book <https://coincheck.com/documents/exchange/api#order-book>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:59
+msgid ""
+"`Unsettled order list <https://coincheck.com/documents/exchange/api"
+"#order-opens>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:61
+msgid "`Balance <https://coincheck.com/documents/exchange/api#account-balance>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:65 ../../source/api_references_ja.rst:111
+msgid "GMO Coin"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:67
+msgid "`板情報 <https://api.coin.z.com/docs/#orderbooks>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:70
+msgid "Upbit"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:72
+msgid ""
+"`List Tickers by Pairs <https://global-docs.upbit.com/reference/list-"
+"tickers>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:74
+msgid ""
+"`List Tickers by Market <https://global-docs.upbit.com/reference/list-"
+"quote-tickers>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:76
+msgid ""
+"`Get Orderbook <https://global-docs.upbit.com/reference/list-"
+"orderbooks>`__"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:80
+msgid "レート制限について"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:82
+msgid "各取引所には独自のレート制限があります："
+msgstr ""
+
+#: ../../source/api_references_ja.rst:84
+msgid "**BINANCE**: ウェイトベースの制限（エンドポイントごとに異なる）"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:85
+msgid "**bitFlyer**: 300回/分（Private API）、500回/分（Public API）"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:86
+msgid "**bitbank**: 詳細は公式ドキュメント参照"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:87
+msgid "**GMO Coin**: 1秒間に10回まで"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:90
+msgid "開発時の参考情報"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:93
+msgid "認証方式の比較"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:95
+msgid "各取引所の認証方式"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:99
+msgid "取引所"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:100
+msgid "認証方式"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:101
+msgid "特記事項"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:103
+#: ../../source/api_references_ja.rst:106
+#: ../../source/api_references_ja.rst:109
+#: ../../source/api_references_ja.rst:112
+msgid "HMAC-SHA256"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:104
+msgid "タイムスタンプとrecvWindowパラメータ必須"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:107
+msgid "ACCESS-TIMESTAMP、ACCESS-SIGN、ACCESS-KEYヘッダー"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:110
+msgid "nonceパラメータ必須"
+msgstr ""
+
+#: ../../source/api_references_ja.rst:113
+msgid "タイムスタンプとパスを含めた署名"
+msgstr ""
+

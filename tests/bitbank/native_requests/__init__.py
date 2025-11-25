@@ -1,0 +1,1 @@
+"""bitbank request test module"""

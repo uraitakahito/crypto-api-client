@@ -1,0 +1,618 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:2
+msgid "crypto\\_api\\_client.bitflyer.native\\_domain\\_models package"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:8
+msgid "crypto\\_api\\_client.bitflyer.native\\_domain\\_models.balance module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.balance.Balance:1
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:1
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:1
+#: crypto_api_client.bitflyer.native_domain_models.board_state.BoardState:1
+#: crypto_api_client.bitflyer.native_domain_models.child_order.ChildOrder:1
+#: crypto_api_client.bitflyer.native_domain_models.health_status.HealthStatus:1
+#: crypto_api_client.bitflyer.native_domain_models.market.Market:1
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:1
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:1
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker:1
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission.TradingCommission:1
+#: of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.balance.Balance:1 of
+msgid ":term:`native domain model` representing balance information."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.balance.Balance:3
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:7
+#: crypto_api_client.bitflyer.native_domain_models.board_state.BoardState:3
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker:3 of
+msgid "Models JSON received from :term:`API endpoint` like the following:"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.balance.Balance:15 of
+msgid ""
+"`Get Account Asset Balance <https://lightning.bitflyer.com/docs?lang=en"
+"#get-account-asset-balance>`__"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:16
+msgid "crypto\\_api\\_client.bitflyer.native\\_domain\\_models.board module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board:1 of
+msgid "Domain model for order book (Board)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:1 of
+msgid ":term:`native domain model` representing the entire order book"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:3 of
+msgid ""
+"Represents the data structure returned by bitFlyer's order book API. "
+"Includes order lists for buy side (bids) and sell side (asks), as well as"
+" mid price (mid_price)."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:37 of
+msgid ""
+"During maintenance, best bid and best ask return the last values before "
+"maintenance, and consequently mid_price also returns the last value "
+"before maintenance."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:40 of
+msgid "Mid price (between bid and ask)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:42 of
+msgid "List of buy orders (sorted by price descending)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:44 of
+msgid "List of sell orders (sorted by price ascending)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:48 of
+msgid ""
+"`Order Book API <https://lightning.bitflyer.com/docs?lang=en#order-"
+"book>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.Board.best_ask:1
+#: crypto_api_client.bitflyer.native_domain_models.board.Board.best_ask:1 of
+msgid "Best ask price (lowest sell order)"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.Board.best_ask:3
+#: crypto_api_client.bitflyer.native_domain_models.board.Board.best_ask:3 of
+msgid "Best ask entry, None if sell side is empty"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.Board.best_bid:1
+#: crypto_api_client.bitflyer.native_domain_models.board.Board.best_bid:1 of
+msgid "Best bid price (highest buy order)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.Board.best_bid:3
+#: crypto_api_client.bitflyer.native_domain_models.board.Board.best_bid:3 of
+msgid "Best bid entry, None if buy side is empty"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.Board.spread:1
+#: crypto_api_client.bitflyer.native_domain_models.board.Board.spread:1 of
+msgid "Calculate spread between bid and ask"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.Board.spread:3
+#: crypto_api_client.bitflyer.native_domain_models.board.Board.spread:3 of
+msgid "Spread (ask price - bid price), None if board is empty"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:1 of
+msgid "Individual entry in order book (buy order or sell order)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:3 of
+msgid "Order price"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:5 of
+msgid "Order quantity"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:24
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.board\\_state "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board_state.BoardState:1 of
+msgid ":term:`native domain model` representing board state"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board_state.BoardState:14 of
+msgid ""
+"Orderbook Status: https://lightning.bitflyer.com/docs?lang=en#orderbook-"
+"status"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:32
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.board\\_state\\_type"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board_state_type.BoardStateType:1
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:1
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:1
+#: crypto_api_client.bitflyer.native_domain_models.health_status_type.HealthStatusType:1
+#: crypto_api_client.bitflyer.native_domain_models.market_type.MarketType:1
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:1
+#: crypto_api_client.bitflyer.native_domain_models.time_in_force.TimeInForce:1
+#: of
+msgid "Bases: :py:class:`~enum.Enum`"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:40
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.child\\_order "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order.ChildOrder:1 of
+msgid ":term:`native domain model` representing bitFlyer order information."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order.ChildOrder:3
+#: crypto_api_client.bitflyer.native_domain_models.health_status.HealthStatus:3
+#: crypto_api_client.bitflyer.native_domain_models.market.Market:3
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:3
+#: of
+msgid "Receives JSON from API in the following format:"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order.ChildOrder.with_timezone:1
+#: of
+msgid "Return ChildOrder instance converted to specified timezone"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:48
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.child\\_order\\_state"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:1
+#: of
+msgid "Enum representing order state."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:3
+#: of
+msgid "Order is active."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:5
+#: of
+msgid "Order is completed."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:7
+#: of
+msgid "Order is canceled."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:9
+#: of
+msgid "Order has expired."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:11
+#: of
+msgid "Order is rejected."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:56
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.child\\_order\\_type"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:1
+#: of
+msgid "Enum representing order type."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:3
+#: of
+msgid "Limit order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:5
+#: of
+msgid "Market order."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:64
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.health\\_status "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.health_status.HealthStatus:1
+#: of
+msgid ""
+":term:`native domain model` representing bitFlyer exchange operational "
+"status."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.health_status.HealthStatus:13
+#: of
+msgid ""
+"During scheduled maintenance at 4 AM JST, the status remains NORMAL. If "
+"you want to detect scheduled maintenance, use BoardState instead."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:72
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.health\\_status\\_type"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.health_status_type.HealthStatusType:1
+#: of
+msgid "Enum representing exchange operational status"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:80
+msgid "crypto\\_api\\_client.bitflyer.native\\_domain\\_models.market module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.market.Market:1 of
+msgid ":term:`native domain model` representing bitFlyer market information."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:88
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.market\\_type "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.market_type.MarketType:1 of
+msgid "Enum for market types."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:96
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.private\\_execution"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution:1 of
+msgid "Private execution history model retrieved via Private API"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:1
+#: of
+msgid ""
+":term:`native domain model` representing private execution history "
+"retrieved via Private API."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:3
+#: of
+msgid "Execution ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:4
+#: of
+msgid "Buy/Sell side (BUY/SELL). None for itayose executions"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:5
+#: of
+msgid "Execution price"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:6
+#: of
+msgid "Execution quantity"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:7
+#: of
+msgid "Execution date/time (UTC)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:8
+#: of
+msgid "Trading commission"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:9
+#: of
+msgid "Order ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:10
+#: of
+msgid "Order acceptance ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:13
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:18
+#: of
+msgid ""
+"For itayose executions, the ``side`` field is not included in the API "
+"response. Itayose is a special execution method performed at market "
+"opening or trading resumption, where sell orders and buy orders are "
+"matched together at a single price, so there is no individual buy/sell "
+"direction. In this case, ``side`` is ``None``."
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_domain_models.PrivateExecution.exec_date
+#: crypto_api_client.bitflyer.native_domain_models.PrivateExecution.side
+#: crypto_api_client.bitflyer.native_domain_models.PublicExecution.id
+#: crypto_api_client.bitflyer.native_domain_models.PublicExecution.side
+#: crypto_api_client.bitflyer.native_domain_models.Ticker.timestamp
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.exec_date
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.side
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.id
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.side
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker.timestamp of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_domain_models.PrivateExecution.exec_date:1
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.exec_date:1
+#: of
+msgid ""
+":py:obj:`parse_exec_date "
+"<crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.parse_exec_date>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_domain_models.PrivateExecution.side:1
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.side:1
+#: of
+msgid ""
+":py:obj:`validate_side "
+"<crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side>`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.parse_exec_date:1
+#: of
+msgid "Convert ISO 8601 format string to datetime (treated as UTC)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:1
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:1
+#: of
+msgid "Validate side field - convert empty string to None"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:3
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:3
+#: of
+msgid ""
+"bitFlyer API returns an empty string for the side field in itayose "
+"executions. Since sell and buy orders are matched together at a single "
+"price, no individual buy/sell direction exists."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:6
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:6
+#: of
+msgid "Value of side field received from API"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:7
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:7
+#: of
+msgid "\"BUY\", \"SELL\", or None (for itayose executions)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.with_timezone:1
+#: of
+msgid "Create a new instance with specified timezone"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:104
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.public\\_execution"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:1
+#: of
+msgid ""
+":term:`native domain model` representing execution information retrieved "
+"via bitFlyer's Public API."
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_domain_models.PublicExecution.id:1
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.id:1
+#: of
+msgid ""
+":py:obj:`validate_id "
+"<crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_id>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_domain_models.PublicExecution.side:1
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.side:1
+#: of
+msgid ""
+":py:obj:`validate_side "
+"<crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side>`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_id:1
+#: of
+msgid "Convert id to integer"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.with_timezone:1
+#: of
+msgid "Return PublicExecution instance converted to specified timezone"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.with_timezone:3
+#: of
+msgid "Timezone information"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:112
+msgid "crypto\\_api\\_client.bitflyer.native\\_domain\\_models.side module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:1 of
+msgid "Enum representing buy/sell side"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst
+msgid "Variables"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:3 of
+msgid "Buy order"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:4 of
+msgid "Sell order"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:120
+msgid "crypto\\_api\\_client.bitflyer.native\\_domain\\_models.ticker module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker:1 of
+msgid ":term:`native domain model` representing bitFlyer ticker."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker:27 of
+msgid "`Ticker <https://lightning.bitflyer.com/docs#ticker>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_domain_models.Ticker.timestamp:1
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker.timestamp:1 of
+msgid ""
+":py:obj:`convert_timestamp_to_utc_aware "
+"<crypto_api_client.bitflyer.native_domain_models.ticker.Ticker.convert_timestamp_to_utc_aware>`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker.convert_timestamp_to_utc_aware:1
+#: of
+msgid "Convert naive datetime to UTC aware datetime"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker.convert_timestamp_to_utc_aware:3
+#: of
+msgid ""
+"bitFlyer's API returns timestamps in ISO format without timezone "
+"information, so we interpret them as UTC and add timezone information."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker.convert_timestamp_to_utc_aware:6
+#: of
+msgid "datetime object"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.ticker.Ticker.convert_timestamp_to_utc_aware:7
+#: of
+msgid "UTC aware datetime"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:128
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.time\\_in\\_force"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.time_in_force.TimeInForce:1
+#: of
+msgid "Time in force for orders."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:136
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_domain\\_models.trading\\_commission"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission:1 of
+msgid "Trading commission model."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission.TradingCommission:1
+#: of
+msgid ""
+":term:`native domain model` representing bitFlyer trading commission "
+"information."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission.TradingCommission:3
+#: of
+msgid "Trading commission rate (e.g., 0.001 = 0.1%)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_domain_models.TradingCommission.commission_rate:1
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission.TradingCommission.commission_rate:1
+#: of
+msgid "Trading commission rate"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_domain_models.rst:144
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models:1 of
+msgid "bitFlyer API data models"
+msgstr ""
+

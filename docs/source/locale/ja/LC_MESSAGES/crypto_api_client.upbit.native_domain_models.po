@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.upbit.native_domain_models.rst:2
+msgid "crypto\\_api\\_client.upbit.native\\_domain\\_models package"
+msgstr ""
+
+#: ../../source/crypto_api_client.upbit.native_domain_models.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.upbit.native_domain_models.rst:8
+msgid "crypto\\_api\\_client.upbit.native\\_domain\\_models.change\\_type module"
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models.change_type.ChangeType:1 of
+msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models.change_type.ChangeType:1 of
+msgid "Price change type."
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models.change_type.ChangeType:3 of
+msgid "Represents the direction of price movement returned by Upbit API."
+msgstr ""
+
+#: ../../source/crypto_api_client.upbit.native_domain_models.rst:16
+msgid "crypto\\_api\\_client.upbit.native\\_domain\\_models.ticker module"
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker:1 of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker:1 of
+msgid "Upbit ticker represented as :term:`native domain model`."
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker:3 of
+msgid "Models JSON received from :term:`API endpoint`."
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.upbit.native_domain_models.Ticker.timestamp
+#: crypto_api_client.upbit.native_domain_models.Ticker.trade_timestamp
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker.timestamp
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker.trade_timestamp
+#: of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.upbit.native_domain_models.Ticker.timestamp:1
+#: crypto_api_client.upbit.native_domain_models.Ticker.trade_timestamp:1
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker.timestamp:1
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker.trade_timestamp:1
+#: of
+msgid ""
+":py:obj:`convert_timestamp_to_utc_aware "
+"<crypto_api_client.upbit.native_domain_models.ticker.Ticker.convert_timestamp_to_utc_aware>`"
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models.ticker.Ticker.convert_timestamp_to_utc_aware:1
+#: of
+msgid "Convert millisecond-precision timestamp to UTC-aware datetime."
+msgstr ""
+
+#: ../../source/crypto_api_client.upbit.native_domain_models.rst:24
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.upbit.native_domain_models:1 of
+msgid "Upbit native domain models"
+msgstr ""
+

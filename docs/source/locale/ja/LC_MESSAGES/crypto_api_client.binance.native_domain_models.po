@@ -1,0 +1,637 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:2
+msgid "crypto\\_api\\_client.binance.native\\_domain\\_models package"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:8
+msgid "crypto\\_api\\_client.binance.native\\_domain\\_models.depth module"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.Depth:1
+#: crypto_api_client.binance.native_domain_models.depth.DepthEntry:1
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo:1
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:1
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:1
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker:1 of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.Depth:1 of
+msgid "BINANCE order book (depth) :term:`native domain model`."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.Depth:3
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker:3 of
+msgid "Models JSON received from :term:`API endpoint` in the following format:"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.binance.native_domain_models.Depth.asks
+#: crypto_api_client.binance.native_domain_models.Depth.bids
+#: crypto_api_client.binance.native_domain_models.ExchangeInfo.serverTime
+#: crypto_api_client.binance.native_domain_models.Ticker.closeTime
+#: crypto_api_client.binance.native_domain_models.Ticker.openTime
+#: crypto_api_client.binance.native_domain_models.depth.Depth.asks
+#: crypto_api_client.binance.native_domain_models.depth.Depth.bids
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo.serverTime
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker.closeTime
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker.openTime of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.Depth.asks:1
+#: crypto_api_client.binance.native_domain_models.Depth.bids:1
+#: crypto_api_client.binance.native_domain_models.depth.Depth.asks:1
+#: crypto_api_client.binance.native_domain_models.depth.Depth.bids:1 of
+msgid ""
+":py:obj:`validate_entries "
+"<crypto_api_client.binance.native_domain_models.depth.Depth.validate_entries>`"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.Depth.validate_entries:1
+#: of
+msgid "Convert array format data to list of DepthEntry"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.Depth.validate_entries:3
+#: of
+msgid "Array in [[\"price\", \"quantity\"], ...] format"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.Depth.validate_entries:5
+#: of
+msgid "List of DepthEntry"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.best_ask:1
+#: crypto_api_client.binance.native_domain_models.depth.Depth.best_ask:1 of
+msgid "Get best ask"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.best_ask:3
+#: crypto_api_client.binance.native_domain_models.depth.Depth.best_ask:3 of
+msgid "Best ask (None if no asks)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.best_bid:1
+#: crypto_api_client.binance.native_domain_models.depth.Depth.best_bid:1 of
+msgid "Get best bid"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.best_bid:3
+#: crypto_api_client.binance.native_domain_models.depth.Depth.best_bid:3 of
+msgid "Best bid (None if no bids)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.mid_price:1
+#: crypto_api_client.binance.native_domain_models.depth.Depth.mid_price:1 of
+msgid "Get mid price ((best bid + best ask) / 2)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.mid_price:3
+#: crypto_api_client.binance.native_domain_models.depth.Depth.mid_price:3 of
+msgid "Mid price (None if bid/ask does not exist)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.spread:1
+#: crypto_api_client.binance.native_domain_models.depth.Depth.spread:1 of
+msgid "Get spread (best ask - best bid)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.Depth.spread:3
+#: crypto_api_client.binance.native_domain_models.depth.Depth.spread:3 of
+msgid "Spread (None if bid/ask does not exist)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.DepthEntry:1 of
+msgid ""
+"Individual entry (price and quantity) of Depth :term:`native domain "
+"model`."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.DepthEntry:3 of
+msgid "BINANCE depth data is returned in array format: [\"price\", \"quantity\"]"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.DepthEntry.from_array:1
+#: of
+msgid "Generate DepthEntry from array format data"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.DepthEntry.from_array:3
+#: of
+msgid "Array in [\"price\", \"quantity\"] format"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.depth.DepthEntry.from_array:5
+#: of
+msgid "DepthEntry instance"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:16
+msgid ""
+"crypto\\_api\\_client.binance.native\\_domain\\_models.exchange\\_info "
+"module"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo:1
+#: of
+msgid "Exchange information"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo:3
+#: of
+msgid ""
+":term:`native domain model` representing the entire response of BINANCE "
+"`/api/v3/exchangeInfo` endpoint."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo:6
+#: of
+msgid ""
+"exchangeFilters is often returned as an empty array currently, so it is "
+"defined as a list of dict type for flexibility."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo:10
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:57
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus:6
+#: of
+msgid ""
+"`Exchange Information <https://github.com/binance/binance-spot-api-"
+"docs/blob/master/rest-api.md#exchange-information>`_"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.ExchangeInfo.serverTime:1
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo.serverTime:1
+#: of
+msgid ""
+":py:obj:`validate_server_time "
+"<crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo.validate_server_time>`"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_info.ExchangeInfo.validate_server_time:1
+#: of
+msgid "Convert server timestamp (milliseconds) to datetime"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:24
+msgid ""
+"crypto\\_api\\_client.binance.native\\_domain\\_models.exchange\\_symbol "
+"module"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:1
+#: of
+msgid "Trading pair detailed information"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:3
+#: of
+msgid ""
+":term:`native domain model` holding comprehensive information about "
+"BINANCE trading pairs."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:5
+#: of
+msgid "Symbol name (e.g., \"BTCUSDT\")"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:7
+#: of
+msgid "Trading status"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:9
+#: of
+msgid "Base currency (e.g., \"BTC\")"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:11
+#: of
+msgid "Base currency precision"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:13
+#: of
+msgid "Quote currency (e.g., \"USDT\")"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:15
+#: of
+msgid "Quote currency precision"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:17
+#: of
+msgid "Quote asset precision"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:19
+#: of
+msgid "List of supported order types"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:21
+#: of
+msgid "Whether iceberg orders are allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:23
+#: of
+msgid "Whether OCO orders are allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:25
+#: of
+msgid "Whether OTO orders are allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:27
+#: of
+msgid "Whether market orders by quote quantity are allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:29
+#: of
+msgid "Whether trailing stops are allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:31
+#: of
+msgid "Whether order cancel-replace is allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:33
+#: of
+msgid "Whether spot trading is allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:35
+#: of
+msgid "Whether margin trading is allowed"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:37
+#: of
+msgid "List of filters applied to this symbol"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:39
+#: of
+msgid "List of required permissions"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:41
+#: of
+msgid "Permission sets (expressing OR/AND logic)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:43
+#: of
+msgid "Default self-trade prevention mode"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:45
+#: of
+msgid "List of allowed self-trade prevention modes"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:49
+#: of
+msgid "**permissionSets logical structure**"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:51
+#: of
+msgid "In actual API responses, returned in `list[list[str]]` format:"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:53
+#: of
+msgid "`[[\"SPOT\"]]` → SPOT permission required"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.exchange_symbol.ExchangeSymbol:54
+#: of
+msgid "`[[\"SPOT\", \"MARGIN\"]]` → SPOT OR MARGIN permission required"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:32
+msgid "crypto\\_api\\_client.binance.native\\_domain\\_models.rate\\_limit module"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:1 of
+msgid "Rate limit information"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:3 of
+msgid ":term:`native domain model` representing BINANCE rate limit settings."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:5
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitType:1 of
+msgid "Rate limit type"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:7 of
+msgid "Time interval unit"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:9 of
+msgid "Interval number (e.g., 1 minute, 10 seconds)"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:11 of
+msgid "Limit value"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimit:15 of
+msgid ""
+"For example, intervalNum=1, interval=MINUTE, limit=1200 means \"up to "
+"1200 times per minute\"."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitInterval:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitType:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus:1
+#: of
+msgid "Bases: :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitInterval:1
+#: of
+msgid "Rate limit time interval"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.RateLimitInterval.DAY:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitInterval.DAY:1
+#: of
+msgid "Per day"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.RateLimitInterval.MINUTE:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitInterval.MINUTE:1
+#: of
+msgid "Per minute"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.RateLimitInterval.SECOND:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitInterval.SECOND:1
+#: of
+msgid "Per second"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitType:3 of
+msgid "Defines the three types of rate limits provided by BINANCE."
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.RateLimitType.ORDERS:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitType.ORDERS:1
+#: of
+msgid "Limit based on number of orders"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.RateLimitType.RAW_REQUESTS:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitType.RAW_REQUESTS:1
+#: of
+msgid "Limit based on raw number of requests"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.RateLimitType.REQUEST_WEIGHT:1
+#: crypto_api_client.binance.native_domain_models.rate_limit.RateLimitType.REQUEST_WEIGHT:1
+#: of
+msgid "Limit based on request weight"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:40
+msgid ""
+"crypto\\_api\\_client.binance.native\\_domain\\_models.symbol\\_filter "
+"module"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:1
+#: of
+msgid "Filter applied to symbol"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:3
+#: of
+msgid ""
+":term:`native domain model` representing various restriction filters "
+"applied to BINANCE trading pairs."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:5
+#: of
+msgid ""
+"Since there are more than 10 filter types, each with different fields, no"
+" strict type definition is provided; `extra=\"allow\"` handles this "
+"flexibly."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:8
+#: of
+msgid "Main filter types:"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:9
+#: of
+msgid "PRICE_FILTER: Price range restriction"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:10
+#: of
+msgid "LOT_SIZE: Order quantity restriction"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:11
+#: of
+msgid "MIN_NOTIONAL: Minimum order amount"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:12
+#: of
+msgid "ICEBERG_PARTS: Number of iceberg order splits"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:13
+#: of
+msgid "MARKET_LOT_SIZE: Market order quantity restriction"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:14
+#: of
+msgid "MAX_NUM_ORDERS: Maximum number of orders"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:15
+#: of
+msgid "MAX_NUM_ALGO_ORDERS: Maximum number of algo orders"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:16
+#: of
+msgid "And many more..."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:18
+#: of
+msgid "String indicating filter type"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:22
+#: of
+msgid ""
+"This model has `extra=\"allow\"` configured, dynamically accepting "
+"filterType-specific fields (minPrice, maxPrice, tickSize, etc.)."
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_filter.SymbolFilter:26
+#: of
+msgid ""
+"`Filters <https://github.com/binance/binance-spot-api-docs/blob/master"
+"/rest-api.md#filters>`_"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:48
+msgid ""
+"crypto\\_api\\_client.binance.native\\_domain\\_models.symbol\\_status "
+"module"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus:1
+#: of
+msgid "Trading pair status"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus:3
+#: of
+msgid "Defines various statuses that BINANCE trading pairs can have."
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.SymbolStatus.AUCTION_MATCH:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus.AUCTION_MATCH:1
+#: of
+msgid "Auction matching in progress"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.SymbolStatus.BREAK:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus.BREAK:1
+#: of
+msgid "Trading is temporarily suspended"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.SymbolStatus.END_OF_DAY:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus.END_OF_DAY:1
+#: of
+msgid "Trading day ended"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.SymbolStatus.HALT:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus.HALT:1
+#: of
+msgid "Trading is halted"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.SymbolStatus.POST_TRADING:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus.POST_TRADING:1
+#: of
+msgid "After trading ends"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.SymbolStatus.PRE_TRADING:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus.PRE_TRADING:1
+#: of
+msgid "Before trading starts"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.SymbolStatus.TRADING:1
+#: crypto_api_client.binance.native_domain_models.symbol_status.SymbolStatus.TRADING:1
+#: of
+msgid "Normal trading is available"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:56
+msgid "crypto\\_api\\_client.binance.native\\_domain\\_models.ticker module"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker:1 of
+msgid "BINANCE 24-hour ticker :term:`native domain model`."
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_domain_models.Ticker.closeTime:1
+#: crypto_api_client.binance.native_domain_models.Ticker.openTime:1
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker.closeTime:1
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker.openTime:1 of
+msgid ""
+":py:obj:`validate_timestamp "
+"<crypto_api_client.binance.native_domain_models.ticker.Ticker.validate_timestamp>`"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models.ticker.Ticker.validate_timestamp:1
+#: of
+msgid "Convert timestamp (milliseconds) to datetime"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_domain_models.rst:64
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.binance.native_domain_models:1 of
+msgid "BINANCE domain models."
+msgstr ""
+

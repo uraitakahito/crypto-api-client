@@ -1,0 +1,671 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:2
+msgid "crypto\\_api\\_client.bitbank.native\\_domain\\_models package"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:8
+msgid "crypto\\_api\\_client.bitbank.native\\_domain\\_models.asset module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:1
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:1
+#: crypto_api_client.bitbank.native_domain_models.order.Order:1
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:1
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee:1
+#: of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset:1 of
+msgid ":term:`native domain model` representing asset information."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset:3
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker:3 of
+msgid "Models JSON received from :term:`API endpoint` in the following format:"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset:24 of
+msgid ""
+"`Assets <https://github.com/bitbankinc/bitbank-api-docs/blob/master/rest-"
+"api.md#assets>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.amount_precision:1
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.amount_precision:1
+#: of
+msgid "Number of decimal places for quantity"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.collateral_ratio:1
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.collateral_ratio:1
+#: of
+msgid "Collateral ratio"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.collateral_ratio
+#: crypto_api_client.bitbank.native_domain_models.Depth.asks
+#: crypto_api_client.bitbank.native_domain_models.Depth.bids
+#: crypto_api_client.bitbank.native_domain_models.Ticker.buy
+#: crypto_api_client.bitbank.native_domain_models.Ticker.high
+#: crypto_api_client.bitbank.native_domain_models.Ticker.last
+#: crypto_api_client.bitbank.native_domain_models.Ticker.low
+#: crypto_api_client.bitbank.native_domain_models.Ticker.open
+#: crypto_api_client.bitbank.native_domain_models.Ticker.sell
+#: crypto_api_client.bitbank.native_domain_models.Ticker.timestamp
+#: crypto_api_client.bitbank.native_domain_models.Ticker.vol
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.max
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.min
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.over
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.threshold
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.under
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.collateral_ratio
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.asks
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.bids
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.buy
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.high
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.last
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.low
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.open
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.sell
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.timestamp
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.vol
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.max
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.min
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.over
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.threshold
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.under
+#: of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.collateral_ratio:1
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.collateral_ratio:1
+#: of
+msgid ""
+":py:obj:`validate_collateral_ratio "
+"<crypto_api_client.bitbank.native_domain_models.asset.Asset.validate_collateral_ratio>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.locked_amount:1
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.locked_amount:1
+#: of
+msgid "Locked quantity (in orders, etc.)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.network_list:1
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.network_list:1 of
+msgid "Network-specific details (cryptocurrency only)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.withdrawal_fee:1
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.withdrawal_fee:1
+#: of
+msgid "Withdrawal fee information"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Asset.withdrawing_amount:1
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.withdrawing_amount:1
+#: of
+msgid "Quantity being withdrawn"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.asset.Asset.validate_collateral_ratio:1
+#: of
+msgid "Validator to convert string to Decimal type"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:16
+msgid "crypto\\_api\\_client.bitbank.native\\_domain\\_models.depth module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth:1 of
+msgid "Domain model for order book (Depth)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:1 of
+msgid ":term:`native domain model` representing entire order book"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:3 of
+msgid ""
+"Represents the data structure returned by order book :term:`API "
+"endpoint`. Contains order lists for bids and asks, market order "
+"information, and out-of-range order information during circuit breaker "
+"mode."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:8
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:3 of
+msgid "Example JSON returned by :term:`API endpoint`:"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:33 of
+msgid ""
+"`Depth API <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/public-api.md#depth>`__"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:35 of
+msgid "List of sell orders (sorted by ascending price)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:37 of
+msgid "List of buy orders (sorted by descending price)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.asks_over:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:39
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.asks_over:1 of
+msgid "Out-of-range sell order quantity (upper side)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.bids_under:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:41
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.bids_under:1 of
+msgid "Out-of-range buy order quantity (lower side)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.asks_under:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:43
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.asks_under:1 of
+msgid "Out-of-range sell order quantity (lower side)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.bids_over:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:45
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.bids_over:1 of
+msgid "Out-of-range buy order quantity (upper side)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.ask_market:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:47
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.ask_market:1 of
+msgid "Total quantity of market sell orders"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.bid_market:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:49
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.bid_market:1 of
+msgid "Total quantity of market buy orders"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:51 of
+msgid "Timestamp (UTC)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth:53 of
+msgid "Sequence identifier (for ordering in WebSocket connections)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.asks:1
+#: crypto_api_client.bitbank.native_domain_models.Depth.bids:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.asks:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.bids:1 of
+msgid ""
+":py:obj:`parse_order_entries "
+"<crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Depth.sequenceId:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.sequenceId:1 of
+msgid "Sequence identifier"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries:1
+#: of
+msgid "Convert array-format order data to DepthEntry objects"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries:3
+#: of
+msgid ""
+"Converts [\"price\", \"quantity\"] format data returned from API to "
+"DepthEntry objects."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst
+msgid "Raises"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.parse_order_entries:6
+#: of
+msgid "If v is not a list type"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.best_ask:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.best_ask:1 of
+msgid "Best ask price (lowest sell order)"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.best_ask:3
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.best_ask:3 of
+msgid "Best ask entry, None if ask side is empty"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.best_bid:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.best_bid:1 of
+msgid "Best bid price (highest buy order)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.best_bid:3
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.best_bid:3 of
+msgid "Best bid entry, None if bid side is empty"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.has_circuit_breaker_data:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.has_circuit_breaker_data:1
+#: of
+msgid "Check if circuit breaker mode data is included"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.has_circuit_breaker_data:3
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.has_circuit_breaker_data:3
+#: of
+msgid "True if circuit breaker mode data exists"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.mid_price:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.mid_price:1 of
+msgid "Calculate mid price (average of bid and ask prices)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.mid_price:3
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.mid_price:3 of
+msgid "Mid price, None if either best bid or best ask doesn't exist"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.spread:1
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.spread:1 of
+msgid "Calculate spread between bid and ask prices"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.Depth.spread:3
+#: crypto_api_client.bitbank.native_domain_models.depth.Depth.spread:3 of
+msgid "Spread (ask price - bid price), None if order book is empty"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:1 of
+msgid "Individual entry in order book (buy order or sell order)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:3 of
+msgid "Order price"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.depth.DepthEntry:5 of
+msgid "Order quantity"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:24
+msgid "crypto\\_api\\_client.bitbank.native\\_domain\\_models.order module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order.Order:1 of
+msgid ":term:`native domain model` representing bitbank order information."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:32
+msgid ""
+"crypto\\_api\\_client.bitbank.native\\_domain\\_models.order\\_status "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_status:1 of
+msgid "Enum representing order status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_status.OrderStatus:1
+#: crypto_api_client.bitbank.native_domain_models.order_type.OrderType:1
+#: crypto_api_client.bitbank.native_domain_models.side.Side:1
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:1
+#: of
+msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_status.OrderStatus:1 of
+msgid "Order status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_status.OrderStatus:3 of
+msgid "Defines order statuses used by bitbank API."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:40
+msgid "crypto\\_api\\_client.bitbank.native\\_domain\\_models.order\\_type module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_type:1 of
+msgid "Enum representing order type"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_type.OrderType:1 of
+msgid "Order type"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.order_type.OrderType:3 of
+msgid "Defines order types used by bitbank API."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:48
+msgid ""
+"crypto\\_api\\_client.bitbank.native\\_domain\\_models.pair\\_status "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:1 of
+msgid ""
+":term:`native domain model` representing status information for each "
+"currency pair"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:3 of
+msgid ""
+"Models currency pair status information received from :term:`API "
+"endpoint`."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:13 of
+msgid "Currency pair (e.g. \"btc_jpy\", \"eth_jpy\")"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:15 of
+msgid "Exchange status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.pair_status.PairStatus:17 of
+msgid "Minimum order quantity based on current status"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:56
+msgid "crypto\\_api\\_client.bitbank.native\\_domain\\_models.side module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.side:1 of
+msgid "Enum representing buy/sell side"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.side.Side:1 of
+msgid "Buy/sell side"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.side.Side:3 of
+msgid "Defines buy/sell sides used by bitbank API."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:64
+msgid ""
+"crypto\\_api\\_client.bitbank.native\\_domain\\_models.spot\\_status "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:1 of
+msgid ":term:`native domain model` representing overall exchange status"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:24 of
+msgid ""
+"`Official doc <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/rest-api.md#status>`__"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status.SpotStatus:26 of
+msgid "List of status information for each currency pair"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:72
+msgid ""
+"crypto\\_api\\_client.bitbank.native\\_domain\\_models.spot\\_status\\_type"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:1
+#: of
+msgid "bitbank exchange status type"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:3
+#: of
+msgid "Enum representing current operational status of the exchange."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst
+msgid "Variables"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:5
+#: of
+msgid "Normal operation"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:6
+#: of
+msgid "Increased system load"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:7
+#: of
+msgid "High system load"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.spot_status_type.SpotStatusType:8
+#: of
+msgid "Trading temporarily suspended"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:80
+msgid "crypto\\_api\\_client.bitbank.native\\_domain\\_models.ticker module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker:1 of
+msgid ":term:`native domain model` representing ticker"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker:23 of
+msgid ""
+"`Official doc <https://github.com/bitbankinc/bitbank-api-docs/blob/master"
+"/public-api.md#ticker>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Ticker.buy:1
+#: crypto_api_client.bitbank.native_domain_models.Ticker.high:1
+#: crypto_api_client.bitbank.native_domain_models.Ticker.last:1
+#: crypto_api_client.bitbank.native_domain_models.Ticker.low:1
+#: crypto_api_client.bitbank.native_domain_models.Ticker.open:1
+#: crypto_api_client.bitbank.native_domain_models.Ticker.sell:1
+#: crypto_api_client.bitbank.native_domain_models.Ticker.vol:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.buy:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.high:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.last:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.low:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.open:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.sell:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.vol:1 of
+msgid ""
+":py:obj:`convert_str_to_decimal "
+"<crypto_api_client.bitbank.native_domain_models.ticker.Ticker.convert_str_to_decimal>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.Ticker.timestamp:1
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.timestamp:1 of
+msgid ""
+":py:obj:`convert_timestamp_to_datetime "
+"<crypto_api_client.bitbank.native_domain_models.ticker.Ticker.convert_timestamp_to_datetime>`"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.convert_str_to_decimal:1
+#: of
+msgid "Convert string to Decimal"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.convert_timestamp_to_datetime:1
+#: of
+msgid "Convert millisecond timestamp to datetime"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.ticker.Ticker.with_timezone:1
+#: of
+msgid "Return Ticker with timestamp converted to specified timezone."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:88
+msgid ""
+"crypto\\_api\\_client.bitbank.native\\_domain\\_models.withdrawal\\_fee "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee:1 of
+msgid "Model representing bitbank withdrawal fee information"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee:1
+#: of
+msgid ""
+":term:`native domain model` representing bitbank withdrawal fee "
+"information."
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee:3
+#: of
+msgid "bitbank withdrawal fees have two formats depending on currency type:"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee:5
+#: of
+msgid ""
+"Fiat currency (JPY): threshold/under/over format - Fee varies based on "
+"withdrawal amount threshold"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee:8
+#: of
+msgid ""
+"Cryptocurrency: min/max format - Fixed fee (usually min and max are the "
+"same value)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.max:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.max:1
+#: of
+msgid "Maximum fee (for cryptocurrency)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.max:1
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.min:1
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.over:1
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.threshold:1
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.under:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.max:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.min:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.over:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.threshold:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.under:1
+#: of
+msgid ""
+":py:obj:`validate_fee_structure "
+"<crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.validate_fee_structure>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.min:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.min:1
+#: of
+msgid "Minimum fee (for cryptocurrency)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.over:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.over:1
+#: of
+msgid "Fee for amounts at or above threshold (for fiat currency)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.threshold:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.threshold:1
+#: of
+msgid "Threshold where fee changes (for fiat currency)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitbank.native_domain_models.WithdrawalFee.under:1
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.under:1
+#: of
+msgid "Fee for amounts below threshold (for fiat currency)"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.validate_fee_structure:1
+#: of
+msgid "Validate validity of fee structure"
+msgstr ""
+
+#: crypto_api_client.bitbank.native_domain_models.withdrawal_fee.WithdrawalFee.validate_fee_structure:3
+#: of
+msgid ""
+"Confirms that only one of fiat currency format (threshold/under/over) or "
+"cryptocurrency format (min/max) is set."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitbank.native_domain_models.rst:96
+msgid "Module contents"
+msgstr ""
+

@@ -1,0 +1,483 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:2
+msgid "crypto\\_api\\_client.bitflyer.native\\_requests package"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:8
+msgid "crypto\\_api\\_client.bitflyer.native\\_requests.board\\_request module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request:1 of
+msgid "Request model for retrieving order book"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:1
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:1
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:1
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:1
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:1
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:1
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:1
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest:1
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest:1
+#: of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:1 of
+msgid ":term:`native request` implementation for retrieving order book"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:3
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest:3 of
+msgid "Target product code (e.g. \"BTC_JPY\"). Defaults to BTC_JPY if omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:7 of
+msgid ""
+"`Order Book API <https://lightning.bitflyer.com/docs?lang=en#order-"
+"book>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest.to_query_params:1
+#: of
+msgid "Return string dictionary for :term:`endpoint request`."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest.to_query_params:3
+#: of
+msgid "Dictionary of query parameters"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:16
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_requests.board\\_state\\_request "
+"module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_state_request:1 of
+msgid "Request for retrieving board state"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:1
+#: of
+msgid ":term:`native request` implementation for retrieving board state."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:3
+#: of
+msgid ":term:`product code` for the trading pair (e.g. \"BTC_JPY\"). Required."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:8
+#: of
+msgid ""
+"Orderbook Status: https://lightning.bitflyer.com/docs?lang=en#orderbook-"
+"status"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:24
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_requests.cancel\\_child\\_order\\_request"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:1
+#: of
+msgid ":term:`native request` implementation for canceling an order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:3
+#: of
+msgid "Either child_order_id or child_order_acceptance_id is required."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:5
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:3
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:7
+#: of
+msgid "Product code for the trading pair (e.g. \"BTC_JPY\")"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:7
+#: of
+msgid "ID of the order to cancel. e.g. \"JOR20250228-192028-832244\""
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:9
+#: of
+msgid "Acceptance ID of the order to cancel. e.g. \"JRF20250228-192028-006028\""
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_requests.CancelChildOrderRequest.child_order_acceptance_id
+#: crypto_api_client.bitflyer.native_requests.CancelChildOrderRequest.child_order_id
+#: crypto_api_client.bitflyer.native_requests.CancelChildOrderRequest.product_code
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.child_order_type
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.minute_to_expire
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.price
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.product_code
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.side
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.size
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.time_in_force
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.child_order_acceptance_id
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.child_order_id
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.product_code
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.child_order_type
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.minute_to_expire
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.price
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.product_code
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.side
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.size
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.time_in_force
+#: of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_requests.CancelChildOrderRequest.child_order_acceptance_id:1
+#: crypto_api_client.bitflyer.native_requests.CancelChildOrderRequest.child_order_id:1
+#: crypto_api_client.bitflyer.native_requests.CancelChildOrderRequest.product_code:1
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.child_order_acceptance_id:1
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.child_order_id:1
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.product_code:1
+#: of
+msgid ""
+":py:obj:`validate_order_identifiers "
+"<crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.validate_order_identifiers>`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.to_query_params:1
+#: of
+msgid "Return all-string dictionary for API request."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.validate_order_identifiers:1
+#: of
+msgid "Validate order identifiers"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.validate_order_identifiers:3
+#: of
+msgid "Either child_order_id or child_order_acceptance_id is required"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:32
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_requests.child\\_orders\\_request"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:1
+#: of
+msgid ":term:`native request` implementation for retrieving order list."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:3
+#: of
+msgid ""
+"When either before or after is specified, ACTIVE orders will not be "
+"included in the results."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:5
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:3
+#: of
+msgid ""
+"Product code for the trading pair (e.g. \"BTC_JPY\"). Defaults to BTC_JPY"
+" if omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:7
+#: of
+msgid "Number of records to retrieve. Defaults to 100 if omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:9
+#: of
+msgid ""
+"Specify to get orders before this ID. If omitted, retrieves from the "
+"latest order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:11
+#: of
+msgid ""
+"Specify to get orders after this ID. If omitted, retrieves from the "
+"oldest order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:13
+#: of
+msgid "Order state. If omitted, concatenation of ACTIVE and non-ACTIVE orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:15
+#: of
+msgid "Specify to get a specific order ID. If omitted, retrieves all orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:17
+#: of
+msgid "Specify to get a specific acceptance ID. If omitted, retrieves all orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:19
+#: of
+msgid "Specify to get by parent order ID. If omitted, retrieves all orders."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:40
+msgid "crypto\\_api\\_client.bitflyer.native\\_requests.health\\_request module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:1 of
+msgid ":term:`native request` implementation for retrieving exchange status"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:5 of
+msgid "product_code is optional and defaults to BTC_JPY when omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:7 of
+msgid ""
+"Product code for the trading pair (e.g. \"BTC_JPY\"). Optional with "
+"default None."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest.to_query_params:1
+#: of
+msgid "Generate dictionary of query parameters"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:48
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_requests.private\\_executions\\_request"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:1
+#: of
+msgid ""
+":term:`native request` implementation for retrieving own execution "
+"history via Private API."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:5
+#: of
+msgid "Number of records to retrieve (max 500)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:7
+#: of
+msgid "Specify to get executions before this ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:9
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:9
+#: of
+msgid "Specify to get executions after this ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:11
+#: of
+msgid "Filter by order ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:13
+#: of
+msgid "Filter by order acceptance ID"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:56
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_requests.public\\_executions\\_request"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:1
+#: of
+msgid ""
+":term:`native request` implementation for retrieving execution history "
+"via Public API."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:5
+#: of
+msgid "Number of records to retrieve"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:7
+#: of
+msgid ""
+"Specify to get executions before this ID. Execution history retrievable "
+"via before parameter is limited to the past 31 days"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:64
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_requests.send\\_child\\_order\\_request"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:1
+#: of
+msgid ""
+"bitFlyer-specific :term:`native request` implementation for submitting "
+"orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:3
+#: of
+msgid ""
+"Price requirement/prohibition rules based on order type: - LIMIT order: "
+"price required - MARKET order: price prohibited"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:9
+#: of
+msgid "Order type"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:11
+#: of
+msgid "Buy/Sell direction"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:13
+#: of
+msgid "Order size (e.g. BTC quantity)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:15
+#: of
+msgid "Limit order price. None for MARKET orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:17
+#: of
+msgid "Order expiration time (in minutes, 1-43200 minutes)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:19
+#: of
+msgid "Order execution condition"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.child_order_type:1
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.minute_to_expire:1
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.price:1
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.product_code:1
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.side:1
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.size:1
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.time_in_force:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.child_order_type:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.minute_to_expire:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.price:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.product_code:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.side:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.size:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.time_in_force:1
+#: of
+msgid ""
+":py:obj:`validate_order_consistency "
+"<crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.validate_order_consistency>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.native_requests.SendChildOrderRequest.minute_to_expire:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.minute_to_expire:1
+#: of
+msgid "Order expiration (in minutes, 1 minute - 43200 minutes = 30 days)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.validate_order_consistency:1
+#: of
+msgid "Validate consistency between order type and price"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:72
+msgid "crypto\\_api\\_client.bitflyer.native\\_requests.ticker\\_request module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest:1 of
+msgid ":term:`native request` implementation for retrieving ticker."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:80
+msgid ""
+"crypto\\_api\\_client.bitflyer.native\\_requests.trading\\_commission\\_request"
+" module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request:1 of
+msgid "Trading commission retrieval request."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest:1
+#: of
+msgid ":term:`native request` implementation for retrieving trading commission."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest:3
+#: of
+msgid "Product code for the trading pair (e.g. \"BTC_JPY\")."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest.to_query_params:1
+#: of
+msgid "Return query parameters for API request."
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.native_requests.rst:88
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests:1 of
+msgid "bitFlyer API request types."
+msgstr ""
+

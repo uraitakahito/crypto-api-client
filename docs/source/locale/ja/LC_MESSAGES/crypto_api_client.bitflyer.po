@@ -1,0 +1,1152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.bitflyer.rst:2
+msgid "crypto\\_api\\_client.bitflyer package"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst:14
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst:17
+msgid "crypto\\_api\\_client.bitflyer.bitflyer\\_api\\_client\\_factory module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.core.api_client_factory.ApiClientFactoryBase`\\"
+" "
+"[:py:class:`~crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient`]"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory:1
+#: of
+msgid ""
+"API client factory. Holds default configuration for bitFlyer exchange-"
+"specific :term:`API endpoint`."
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.create:1
+#: of
+msgid "Create API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.create:3
+#: of
+msgid "API key"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.create:5
+#: of
+msgid "API secret"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.create:7
+#: of
+msgid "HTTP client"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.create:9
+#: of
+msgid "Request callbacks"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.create:11
+#: of
+msgid "Request configuration (timeout, retry, etc.)"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.create:13
+#: of
+msgid "Created API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.get_default_config:1
+#: of
+msgid "Get default API configuration"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.get_default_config:3
+#: of
+msgid ""
+"Returns exchange-specific endpoint configuration. This configuration does"
+" not change unless the exchange modifies its API specifications."
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_api_client_factory.BitFlyerApiClientFactory.get_default_config:6
+#: of
+msgid "Dictionary of API configuration"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst:25
+msgid "crypto\\_api\\_client.bitflyer.bitflyer\\_response\\_validator module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:1
+#: of
+msgid "bitFlyer response validation handler"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:3
+#: of
+msgid ""
+"This class inherits from "
+":class:`~crypto_api_client.callbacks.AbstractRequestCallback` and detects"
+" bitFlyer API errors, raising exceptions when errors occur."
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:6
+#: of
+msgid "Response validation is executed in the :meth:`after_request` hook."
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:8
+#: of
+msgid ""
+"Typically, use "
+":func:`~crypto_api_client.factories.create_response_validator` to obtain "
+"an instance."
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:10
+#: of
+msgid "Example text when :term:`API endpoint` returns an error:"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:21
+#: of
+msgid "`bitFlyer(bF) Error Code List <https://note.com/17num/n/n6955c3a711a8>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:22
+#: of
+msgid ":class:`~crypto_api_client.callbacks.AbstractRequestCallback`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator:23
+#: of
+msgid ":func:`~crypto_api_client.factories.create_response_validator`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator.after_request:1
+#: of
+msgid "Post-response validation processing"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator.after_request:3
+#: of
+msgid "HTTP response data"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst
+msgid "Raises"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator.after_request:5
+#: of
+msgid "When an API error occurs"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator.before_request:1
+#: of
+msgid "Pre-request processing (does nothing for response validation)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator.before_request:3
+#: of
+msgid "Request URL"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator.before_request:5
+#: of
+msgid "Request headers"
+msgstr ""
+
+#: crypto_api_client.bitflyer.bitflyer_response_validator.BitFlyerResponseValidator.before_request:7
+#: of
+msgid "Request body"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst:33
+msgid "crypto\\_api\\_client.bitflyer.exchange\\_api\\_client module"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient:1 of
+msgid "Bases: :py:class:`~crypto_api_client._base.api_client.ApiClient`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient:1 of
+msgid "bitFlyer exchange API client"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.board:1 of
+msgid "Get order book (Board)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.board:3 of
+msgid "URL structure: https://api.bitflyer.jp/v1/getboard?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.board:7 of
+msgid "`Order Book <https://lightning.bitflyer.com/docs?lang=en#order-book>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.cancelchildorder:1
+#: of
+msgid "Cancel an order"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.cancelchildorder:3
+#: of
+msgid "URL structure: https://api.bitflyer.jp/v1/me/cancelchildorder"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.cancelchildorder:7
+#: of
+msgid ""
+"`Cancel Order <https://lightning.bitflyer.com/docs?lang=en#cancel-"
+"order>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.cancelchildorder:11
+#: of
+msgid "This API requires authentication"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.cancelchildorder:12
+#: of
+msgid "On success, bitFlyer API returns an empty response body"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getbalance:1
+#: of
+msgid "URL structure: https://api.bitflyer.jp/v1/me/getbalance"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getbalance:5
+#: of
+msgid ""
+"`Get Account Asset Balance <https://lightning.bitflyer.com/docs?lang=en"
+"#get-account-asset-balance>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getboardstate:1
+#: of
+msgid "Get board state"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getboardstate:3
+#: of
+msgid ""
+"URL structure: "
+"https://api.bitflyer.jp/v1/getboardstate?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getboardstate:7
+#: of
+msgid ""
+"`Orderbook status <https://lightning.bitflyer.com/docs?lang=en#orderbook-"
+"status>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getchildorders:1
+#: of
+msgid "Get list of own orders"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getchildorders:3
+#: of
+msgid ""
+"URL structure: "
+"https://api.bitflyer.jp/v1/me/getchildorders?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getchildorders:7
+#: of
+msgid "`List Orders <https://lightning.bitflyer.com/docs?lang=en#list-orders>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.getchildorders:11
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gettradingcommission:11
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.private_executions:11
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.sendchildorder:11
+#: of
+msgid "This API requires authentication."
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gethealth:1
+#: of
+msgid "Get exchange operational status"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gethealth:3
+#: of
+msgid "URL structure: https://api.bitflyer.jp/v1/gethealth?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gethealth:7
+#: of
+msgid ""
+"`Exchange status <https://lightning.bitflyer.com/docs?lang=en#exchange-"
+"status>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gethealth:11
+#: of
+msgid ""
+"While you can specify a currency pair as an argument, note that the "
+"return value is the exchange's operational status, not the board state."
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gethealth:14
+#: of
+msgid "Health check request"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gethealth:15
+#: of
+msgid "Exchange operational status"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gettradingcommission:1
+#: of
+msgid "Get trading commission rate"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gettradingcommission:3
+#: of
+msgid ""
+"URL structure: "
+"https://api.bitflyer.jp/v1/me/gettradingcommission?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.gettradingcommission:7
+#: of
+msgid ""
+"`Get Trading Commission <https://lightning.bitflyer.com/docs?lang=en#get-"
+"trading-commission>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.markets:1
+#: of
+msgid "Get list of available markets"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.markets:3
+#: of
+msgid "URL structure: https://api.bitflyer.jp/v1/markets"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.markets:7
+#: of
+msgid "`Market List <https://lightning.bitflyer.com/docs?lang=en#market-list>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.private_executions:1
+#: of
+msgid "Get own execution history via Private API"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.private_executions:3
+#: of
+msgid ""
+"URL structure: "
+"https://api.bitflyer.jp/v1/me/getexecutions?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.private_executions:7
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.public_executions:7
+#: of
+msgid ""
+"`List Executions <https://lightning.bitflyer.com/docs?lang=en#list-"
+"executions>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.public_executions:1
+#: of
+msgid "Get execution history via Public API"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.public_executions:3
+#: of
+msgid "URL structure: https://api.bitflyer.jp/v1/executions?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.sendchildorder:1
+#: of
+msgid "Send a new order"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.sendchildorder:3
+#: of
+msgid "URL structure: https://api.bitflyer.jp/v1/me/sendchildorder"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.sendchildorder:7
+#: of
+msgid ""
+"`Send a New Order <https://lightning.bitflyer.com/docs?lang=en#send-a"
+"-new-order>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.ticker:1 of
+msgid "Get ticker information"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.ticker:3 of
+msgid "URL structure: https://api.bitflyer.jp/v1/ticker?product_code=BTC_JPY"
+msgstr ""
+
+#: crypto_api_client.bitflyer.exchange_api_client.ExchangeApiClient.ticker:7 of
+msgid "`Ticker <https://lightning.bitflyer.com/docs?lang=en#ticker>`__"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst:41
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:1
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:1
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:1
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:1
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission.TradingCommission:1
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:1
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:1
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:1
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:1
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:1
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:1
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:1
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest:1
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest:1
+#: of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:1 of
+msgid ":term:`native domain model` representing the entire order book"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:3 of
+msgid ""
+"Represents the data structure returned by bitFlyer's order book API. "
+"Includes order lists for buy side (bids) and sell side (asks), as well as"
+" mid price (mid_price)."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:7 of
+msgid "Models JSON received from :term:`API endpoint` like the following:"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:37 of
+msgid ""
+"During maintenance, best bid and best ask return the last values before "
+"maintenance, and consequently mid_price also returns the last value "
+"before maintenance."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:40 of
+msgid "Mid price (between bid and ask)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:42 of
+msgid "List of buy orders (sorted by price descending)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:44 of
+msgid "List of sell orders (sorted by price ascending)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.Board:48
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:7 of
+msgid ""
+"`Order Book API <https://lightning.bitflyer.com/docs?lang=en#order-"
+"book>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer.Board.best_ask:1 of
+msgid "Best ask price (lowest sell order)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.Board.best_ask:3 of
+msgid "Best ask entry, None if sell side is empty"
+msgstr ""
+
+#: crypto_api_client.bitflyer.Board.best_bid:1 of
+msgid "Best bid price (highest buy order)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.Board.best_bid:3 of
+msgid "Best bid entry, None if buy side is empty"
+msgstr ""
+
+#: crypto_api_client.bitflyer.Board.spread:1 of
+msgid "Calculate spread between bid and ask"
+msgstr ""
+
+#: crypto_api_client.bitflyer.Board.spread:3 of
+msgid "Spread (ask price - bid price), None if board is empty"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:1 of
+msgid "Individual entry in order book (buy order or sell order)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:3 of
+msgid "Order price"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.board.BoardEntry:5 of
+msgid "Order quantity"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:1 of
+msgid ":term:`native request` implementation for retrieving order book"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest:3
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest:3 of
+msgid "Target product code (e.g. \"BTC_JPY\"). Defaults to BTC_JPY if omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest.to_query_params:1
+#: of
+msgid "Return string dictionary for :term:`endpoint request`."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_request.BoardRequest.to_query_params:3
+#: of
+msgid "Dictionary of query parameters"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:1
+#: of
+msgid ":term:`native request` implementation for retrieving board state."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:3
+#: of
+msgid ":term:`product code` for the trading pair (e.g. \"BTC_JPY\"). Required."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.board_state_request.BoardStateRequest:8
+#: of
+msgid ""
+"Orderbook Status: https://lightning.bitflyer.com/docs?lang=en#orderbook-"
+"status"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:1
+#: of
+msgid ":term:`native request` implementation for canceling an order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:3
+#: of
+msgid "Either child_order_id or child_order_acceptance_id is required."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:5
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:3
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:7
+#: of
+msgid "Product code for the trading pair (e.g. \"BTC_JPY\")"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:7
+#: of
+msgid "ID of the order to cancel. e.g. \"JOR20250228-192028-832244\""
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest:9
+#: of
+msgid "Acceptance ID of the order to cancel. e.g. \"JRF20250228-192028-006028\""
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.CancelChildOrderRequest.child_order_acceptance_id
+#: crypto_api_client.bitflyer.CancelChildOrderRequest.child_order_id
+#: crypto_api_client.bitflyer.CancelChildOrderRequest.product_code
+#: crypto_api_client.bitflyer.PrivateExecution.exec_date
+#: crypto_api_client.bitflyer.PrivateExecution.side
+#: crypto_api_client.bitflyer.PublicExecution.id
+#: crypto_api_client.bitflyer.PublicExecution.side
+#: crypto_api_client.bitflyer.SendChildOrderRequest.child_order_type
+#: crypto_api_client.bitflyer.SendChildOrderRequest.minute_to_expire
+#: crypto_api_client.bitflyer.SendChildOrderRequest.price
+#: crypto_api_client.bitflyer.SendChildOrderRequest.product_code
+#: crypto_api_client.bitflyer.SendChildOrderRequest.side
+#: crypto_api_client.bitflyer.SendChildOrderRequest.size
+#: crypto_api_client.bitflyer.SendChildOrderRequest.time_in_force of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.CancelChildOrderRequest.child_order_acceptance_id:1
+#: crypto_api_client.bitflyer.CancelChildOrderRequest.child_order_id:1
+#: crypto_api_client.bitflyer.CancelChildOrderRequest.product_code:1 of
+msgid ""
+":py:obj:`validate_order_identifiers "
+"<crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.validate_order_identifiers>`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest.to_query_params:1
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.to_query_params:1
+#: of
+msgid "Return all-string dictionary for API request."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.validate_order_identifiers:1
+#: of
+msgid "Validate order identifiers"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.cancel_child_order_request.CancelChildOrderRequest.validate_order_identifiers:3
+#: of
+msgid "Either child_order_id or child_order_acceptance_id is required"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:1
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:1
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:1
+#: crypto_api_client.bitflyer.native_domain_models.time_in_force.TimeInForce:1
+#: of
+msgid "Bases: :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:1
+#: of
+msgid "Enum representing order state."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:3
+#: of
+msgid "Order is active."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:5
+#: of
+msgid "Order is completed."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:7
+#: of
+msgid "Order is canceled."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:9
+#: of
+msgid "Order has expired."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_state.ChildOrderState:11
+#: of
+msgid "Order is rejected."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:1
+#: of
+msgid "Enum representing order type."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:3
+#: of
+msgid "Limit order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.child_order_type.ChildOrderType:5
+#: of
+msgid "Market order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:1
+#: of
+msgid ":term:`native request` implementation for retrieving order list."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:3
+#: of
+msgid ""
+"When either before or after is specified, ACTIVE orders will not be "
+"included in the results."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:5
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:3
+#: of
+msgid ""
+"Product code for the trading pair (e.g. \"BTC_JPY\"). Defaults to BTC_JPY"
+" if omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:7
+#: of
+msgid "Number of records to retrieve. Defaults to 100 if omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:9
+#: of
+msgid ""
+"Specify to get orders before this ID. If omitted, retrieves from the "
+"latest order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:11
+#: of
+msgid ""
+"Specify to get orders after this ID. If omitted, retrieves from the "
+"oldest order."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:13
+#: of
+msgid "Order state. If omitted, concatenation of ACTIVE and non-ACTIVE orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:15
+#: of
+msgid "Specify to get a specific order ID. If omitted, retrieves all orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:17
+#: of
+msgid "Specify to get a specific acceptance ID. If omitted, retrieves all orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.child_orders_request.ChildOrdersRequest:19
+#: of
+msgid "Specify to get by parent order ID. If omitted, retrieves all orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:1 of
+msgid ":term:`native request` implementation for retrieving exchange status"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:5 of
+msgid "product_code is optional and defaults to BTC_JPY when omitted."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest:7 of
+msgid ""
+"Product code for the trading pair (e.g. \"BTC_JPY\"). Optional with "
+"default None."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.health_request.HealthRequest.to_query_params:1
+#: of
+msgid "Generate dictionary of query parameters"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:1
+#: of
+msgid ""
+":term:`native domain model` representing private execution history "
+"retrieved via Private API."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:3
+#: of
+msgid "Execution ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:4
+#: of
+msgid "Buy/Sell side (BUY/SELL). None for itayose executions"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:5
+#: of
+msgid "Execution price"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:6
+#: of
+msgid "Execution quantity"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:7
+#: of
+msgid "Execution date/time (UTC)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:8
+#: of
+msgid "Trading commission"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:9
+#: of
+msgid "Order ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:10
+#: of
+msgid "Order acceptance ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution:13
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:18
+#: of
+msgid ""
+"For itayose executions, the ``side`` field is not included in the API "
+"response. Itayose is a special execution method performed at market "
+"opening or trading resumption, where sell orders and buy orders are "
+"matched together at a single price, so there is no individual buy/sell "
+"direction. In this case, ``side`` is ``None``."
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitflyer.PrivateExecution.exec_date:1
+#: of
+msgid ""
+":py:obj:`parse_exec_date "
+"<crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.parse_exec_date>`"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitflyer.PrivateExecution.side:1 of
+msgid ""
+":py:obj:`validate_side "
+"<crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side>`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.parse_exec_date:1
+#: of
+msgid "Convert ISO 8601 format string to datetime (treated as UTC)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:1
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:1
+#: of
+msgid "Validate side field - convert empty string to None"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:3
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:3
+#: of
+msgid ""
+"bitFlyer API returns an empty string for the side field in itayose "
+"executions. Since sell and buy orders are matched together at a single "
+"price, no individual buy/sell direction exists."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:6
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:6
+#: of
+msgid "Value of side field received from API"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.validate_side:7
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side:7
+#: of
+msgid "\"BUY\", \"SELL\", or None (for itayose executions)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.private_execution.PrivateExecution.with_timezone:1
+#: of
+msgid "Create a new instance with specified timezone"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:1
+#: of
+msgid ""
+":term:`native request` implementation for retrieving own execution "
+"history via Private API."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:5
+#: of
+msgid "Number of records to retrieve (max 500)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:7
+#: of
+msgid "Specify to get executions before this ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:9
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:9
+#: of
+msgid "Specify to get executions after this ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:11
+#: of
+msgid "Filter by order ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.private_executions_request.PrivateExecutionsRequest:13
+#: of
+msgid "Filter by order acceptance ID"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:1
+#: of
+msgid ""
+":term:`native domain model` representing execution information retrieved "
+"via bitFlyer's Public API."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution:3
+#: of
+msgid "Receives JSON from API in the following format:"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitflyer.PublicExecution.id:1 of
+msgid ""
+":py:obj:`validate_id "
+"<crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_id>`"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.bitflyer.PublicExecution.side:1 of
+msgid ""
+":py:obj:`validate_side "
+"<crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_side>`"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.validate_id:1
+#: of
+msgid "Convert id to integer"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.with_timezone:1
+#: of
+msgid "Return PublicExecution instance converted to specified timezone"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.public_execution.PublicExecution.with_timezone:3
+#: of
+msgid "Timezone information"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:1
+#: of
+msgid ""
+":term:`native request` implementation for retrieving execution history "
+"via Public API."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:5
+#: of
+msgid "Number of records to retrieve"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.public_executions_request.PublicExecutionsRequest:7
+#: of
+msgid ""
+"Specify to get executions before this ID. Execution history retrievable "
+"via before parameter is limited to the past 31 days"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:1
+#: of
+msgid ""
+"bitFlyer-specific :term:`native request` implementation for submitting "
+"orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:3
+#: of
+msgid ""
+"Price requirement/prohibition rules based on order type: - LIMIT order: "
+"price required - MARKET order: price prohibited"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:9
+#: of
+msgid "Order type"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:11
+#: of
+msgid "Buy/Sell direction"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:13
+#: of
+msgid "Order size (e.g. BTC quantity)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:15
+#: of
+msgid "Limit order price. None for MARKET orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:17
+#: of
+msgid "Order expiration time (in minutes, 1-43200 minutes)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest:19
+#: of
+msgid "Order execution condition"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.SendChildOrderRequest.child_order_type:1
+#: crypto_api_client.bitflyer.SendChildOrderRequest.minute_to_expire:1
+#: crypto_api_client.bitflyer.SendChildOrderRequest.price:1
+#: crypto_api_client.bitflyer.SendChildOrderRequest.product_code:1
+#: crypto_api_client.bitflyer.SendChildOrderRequest.side:1
+#: crypto_api_client.bitflyer.SendChildOrderRequest.size:1
+#: crypto_api_client.bitflyer.SendChildOrderRequest.time_in_force:1 of
+msgid ""
+":py:obj:`validate_order_consistency "
+"<crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.validate_order_consistency>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.SendChildOrderRequest.minute_to_expire:1 of
+msgid "Order expiration (in minutes, 1 minute - 43200 minutes = 30 days)"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.send_child_order_request.SendChildOrderRequest.validate_order_consistency:1
+#: of
+msgid "Validate consistency between order type and price"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:1 of
+msgid "Enum representing buy/sell side"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.rst
+msgid "Variables"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:3 of
+msgid "Buy order"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.side.Side:4 of
+msgid "Sell order"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.ticker_request.TickerRequest:1 of
+msgid ":term:`native request` implementation for retrieving ticker."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.time_in_force.TimeInForce:1
+#: of
+msgid "Time in force for orders."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission.TradingCommission:1
+#: of
+msgid ""
+":term:`native domain model` representing bitFlyer trading commission "
+"information."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_domain_models.trading_commission.TradingCommission:3
+#: of
+msgid "Trading commission rate (e.g., 0.001 = 0.1%)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.bitflyer.TradingCommission.commission_rate:1 of
+msgid "Trading commission rate"
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest:1
+#: of
+msgid ":term:`native request` implementation for retrieving trading commission."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest:3
+#: of
+msgid "Product code for the trading pair (e.g. \"BTC_JPY\")."
+msgstr ""
+
+#: crypto_api_client.bitflyer.native_requests.trading_commission_request.TradingCommissionRequest.to_query_params:1
+#: of
+msgid "Return query parameters for API request."
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:1 of
+msgid "Build the message for signature."
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:3 of
+msgid "HTTP method (HttpMethod.GET or HttpMethod.POST)"
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:4 of
+msgid ":term:`endpoint path`. Must start with /. e.g. /v1/me/getchildorders"
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:5 of
+msgid "Query parameters (used in GET requests)"
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:6 of
+msgid "Request body (used in POST requests)"
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:7 of
+msgid "Timestamp (Unix timestamp string in milliseconds)"
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:8 of
+msgid "Message string to be signed"
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:11 of
+msgid ""
+"`bitFlyer Authentication "
+"<https://lightning.bitflyer.com/docs?lang=en#authentication>`__"
+msgstr ""
+
+#: crypto_api_client.bitflyer._signature_builder.build_message:46 of
+msgid ""
+"Although we could reduce the number of parameters, we keep this format to"
+" maintain consistency with similar functions for other exchanges."
+msgstr ""
+

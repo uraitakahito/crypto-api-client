@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst:2
+msgid "crypto\\_api\\_client.coincheck.native\\_requests package"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst:8
+msgid ""
+"crypto\\_api\\_client.coincheck.native\\_requests.order\\_book\\_request "
+"module"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request:1 of
+msgid "Order book request"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest:1
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest:1
+#: of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest:1
+#: of
+msgid "Coincheck order book retrieval request"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest:3
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest:8
+#: of
+msgid "Currency pair (e.g., btc_jpy, eth_jpy, etc_jpy)"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest.to_query_params:1
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest.to_query_params:1
+#: of
+msgid "Convert to query parameters"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest.to_query_params:3
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest.to_query_params:3
+#: of
+msgid "Dictionary of query parameters"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst:16
+msgid "crypto\\_api\\_client.coincheck.native\\_requests.ticker\\_request module"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest:1
+#: of
+msgid "Ticker retrieval request"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_requests.rst:24
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests:1 of
+msgid "Coincheck native requests"
+msgstr ""
+

@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.coincheck.rst:2
+msgid "crypto\\_api\\_client.coincheck package"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst:5
+msgid "Subpackages"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst:14
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst:17
+msgid "crypto\\_api\\_client.coincheck.coincheck\\_api\\_client\\_factory module"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.core.api_client_factory.ApiClientFactoryBase`\\"
+" "
+"[:py:class:`~crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient`]"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory:1
+#: of
+msgid ""
+"API client factory. Holds default configuration for Coincheck exchange-"
+"specific :term:`API endpoint`."
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.create:1
+#: of
+msgid "Create API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.create:3
+#: of
+msgid "API key"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.create:5
+#: of
+msgid "API secret"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.create:7
+#: of
+msgid "HTTP client"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.create:9
+#: of
+msgid "Request callbacks"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.create:11
+#: of
+msgid "Request configuration (timeout, retry, etc.)"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.create:13
+#: of
+msgid "Created API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.get_default_config:1
+#: of
+msgid "Get default API configuration"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.get_default_config:3
+#: of
+msgid ""
+"Returns exchange-specific endpoint configuration. This configuration does"
+" not change unless the exchange modifies its API specifications."
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_api_client_factory.CoincheckApiClientFactory.get_default_config:6
+#: of
+msgid "Dictionary of API configuration"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst:25
+msgid "crypto\\_api\\_client.coincheck.coincheck\\_response\\_validator module"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.callbacks.abstract_request_callback.AbstractRequestCallback`"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:1
+#: of
+msgid "Coincheck error handler"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:3
+#: of
+msgid ""
+"This class inherits from "
+":class:`~crypto_api_client.callbacks.AbstractRequestCallback` and detects"
+" Coincheck API errors and raises exceptions."
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:6
+#: of
+msgid "Response validation is executed in the :meth:`after_request` hook."
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:8
+#: of
+msgid ""
+"Normally, use "
+":func:`~crypto_api_client.factories.create_response_validator` to obtain "
+"an instance."
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:10
+#: of
+msgid "Example of text when :term:`API endpoint` judges an error:"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:20
+#: of
+msgid ""
+"`Coincheck API Documentation "
+"<https://coincheck.com/ja/documents/exchange/api>`__"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:21
+#: of
+msgid ":class:`~crypto_api_client.callbacks.AbstractRequestCallback`"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator:22
+#: of
+msgid ":func:`~crypto_api_client.factories.create_response_validator`"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator.after_request:1
+#: of
+msgid "Post-response validation processing"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst
+msgid "Raises"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator.after_request:3
+#: of
+msgid "When API error occurs"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator.before_request:1
+#: of
+msgid "Pre-request processing (does nothing for response validation)"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator.before_request:3
+#: of
+msgid "Request URL"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator.before_request:5
+#: of
+msgid "Request headers"
+msgstr ""
+
+#: crypto_api_client.coincheck.coincheck_response_validator.CoincheckResponseValidator.before_request:7
+#: of
+msgid "Request body"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst:33
+msgid "crypto\\_api\\_client.coincheck.exchange\\_api\\_client module"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient:1 of
+msgid "Bases: :py:class:`~crypto_api_client._base.api_client.ApiClient`"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient:1 of
+msgid "Coincheck exchange API client"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.balance:1
+#: of
+msgid "URL structure: https://coincheck.com/api/accounts/balance"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.balance:5
+#: of
+msgid "`Balance <https://coincheck.com/documents/exchange/api#account-balance>`__"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.order_book:1
+#: of
+msgid "URL structure: https://coincheck.com/api/order_books"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.order_book:5
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:20 of
+msgid "`Order Book <https://coincheck.com/documents/exchange/api#order-book>`__"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.ticker:1
+#: of
+msgid "URL structure: https://coincheck.com/api/ticker"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.ticker:5
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:19 of
+msgid "`Ticker <https://coincheck.com/documents/exchange/api#ticker>`__"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.unsettled_orders:1
+#: of
+msgid "Get own unsettled order list"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.unsettled_orders:3
+#: of
+msgid "URL structure: https://coincheck.com/api/exchange/orders/opens"
+msgstr ""
+
+#: crypto_api_client.coincheck.exchange_api_client.ExchangeApiClient.unsettled_orders:6
+#: crypto_api_client.coincheck.native_domain_models.order.Order:4 of
+msgid ""
+"`Coincheck Unsettled order list "
+"<https://coincheck.com/ja/documents/exchange/api#order-opens>`__"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.rst:41
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order.Order:1
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:1
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBookEntry:1
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:1
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest:1
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest:1
+#: of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order.Order:1 of
+msgid ""
+":term:`native domain model` representing Coincheck own unsettled order "
+"information"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:1 of
+msgid ":term:`native domain model` representing entire order book"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:3
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:3 of
+msgid "Models JSON received from :term:`API endpoint` in the following format:"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.coincheck.OrderBook.asks
+#: crypto_api_client.coincheck.OrderBook.bids
+#: crypto_api_client.coincheck.Ticker.timestamp of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring crypto_api_client.coincheck.OrderBook.asks:1
+#: crypto_api_client.coincheck.OrderBook.bids:1 of
+msgid ""
+":py:obj:`parse_order_entries "
+"<crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.parse_order_entries>`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.parse_order_entries:1
+#: of
+msgid "Convert array-format order data to OrderBookEntry objects"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest:1
+#: of
+msgid "Coincheck order book retrieval request"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest:3
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest:8
+#: of
+msgid "Currency pair (e.g., btc_jpy, eth_jpy, etc_jpy)"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest.to_query_params:1
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest.to_query_params:1
+#: of
+msgid "Convert to query parameters"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.order_book_request.OrderBookRequest.to_query_params:3
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest.to_query_params:3
+#: of
+msgid "Dictionary of query parameters"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_type.OrderType:1 of
+msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:1 of
+msgid ":term:`native domain model` representing Coincheck ticker."
+msgstr ""
+
+#: ../../../docstring crypto_api_client.coincheck.Ticker.timestamp:1 of
+msgid ""
+":py:obj:`convert_unix_seconds_to_datetime "
+"<crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime>`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:1
+#: of
+msgid "Convert Unix seconds to UTC aware datetime"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:3
+#: of
+msgid ""
+"Coincheck API returns Unix timestamp in seconds, so convert it to UTC "
+"aware datetime."
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:8
+#: of
+msgid ""
+"Coincheck returns Unix timestamp in **seconds**. Note that other "
+"exchanges (bitbank, BINANCE, etc.) use milliseconds."
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:11
+#: of
+msgid "Unix timestamp (seconds), Decimal, or datetime object"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:12
+#: of
+msgid "UTC aware datetime"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_requests.ticker_request.TickerRequest:1
+#: of
+msgid "Ticker retrieval request"
+msgstr ""
+

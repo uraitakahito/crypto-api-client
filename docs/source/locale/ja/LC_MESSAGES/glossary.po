@@ -1,0 +1,609 @@
+# Japanese translations for crypto-api-client.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: 2025-11-25 19:34+0900\n"
+"Last-Translator: \n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/glossary.rst:2
+msgid "Glossary"
+msgstr "用語集"
+
+#: ../../source/glossary.rst:4
+msgid "[日本語版 (Japanese)](glossary_ja.rst)"
+msgstr ""
+
+#: ../../source/glossary.rst:6
+msgid "This glossary defines terminology used within the context of this library."
+msgstr "このライブラリのコンテキスト内においての用語の定義になります。"
+
+#: ../../source/glossary.rst:10
+msgid "action name"
+msgstr "action name"
+
+#: ../../source/glossary.rst:12
+msgid ""
+"A part of the :term:`resource path` that represents a specific operation "
+"or action. Typically follows the :term:`resource identifier path`."
+msgstr ""
+":term:`resource path` の一部で、特定の操作やアクションを表す部分。多くは、 "
+":term:`resource identifier path` の後に続く。"
+
+#: ../../source/glossary.rst:13
+msgid "API endpoint"
+msgstr "API endpoint"
+
+#: ../../source/glossary.rst:15
+msgid ""
+"The complete URL of an API. Composed of :term:`base URL` + "
+":term:`endpoint path`."
+msgstr ""
+"APIの完全なURLのこと。 :term:`base URL` + :term:`endpoint path` で構成されます。"
+
+#: ../../source/glossary.rst:18
+msgid "Example: `https://api.bitbank.cc/v1/user/assets`"
+msgstr "例: `https://api.bitbank.cc/v1/user/assets`"
+
+#: ../../source/glossary.rst:20
+msgid "**Hierarchical structure**::"
+msgstr "**階層構造**::"
+
+#: ../../source/glossary.rst:29
+msgid "api status code"
+msgstr "api status code"
+
+#: ../../source/glossary.rst:31
+msgid "A status code uniquely defined by each exchange."
+msgstr "取引所独自に定義しているステータスコード。"
+
+#: ../../source/glossary.rst:32
+msgid "base currency"
+msgstr "base currency"
+
+#: ../../source/glossary.rst:34
+msgid "The base currency in a trading pair. The currency being bought or sold."
+msgstr "基軸通貨。売買対象となる通貨。"
+
+#: ../../source/glossary.rst:35
+msgid "base endpoint"
+msgstr "base endpoint"
+
+#: ../../source/glossary.rst:37
+msgid ""
+"The base URL for API access. Composed of :term:`base URL` + :term:`stub "
+"path`."
+msgstr ""
+"APIのベースとなるURL。:term:`base URL` + :term:`stub path` で構成されます。"
+
+#: ../../source/glossary.rst:39
+msgid "Example: `https://api.bitbank.cc/v1`"
+msgstr "例: `https://api.bitbank.cc/v1`"
+
+#: ../../source/glossary.rst:40
+msgid "base URL"
+msgstr "base URL"
+
+#: ../../source/glossary.rst:42
+msgid "The combination of scheme `https://` and hostname."
+msgstr "スキーム `https://` とホスト名の組み合わせ。"
+
+#: ../../source/glossary.rst:44
+msgid "Example: `https://api.bitbank.cc`"
+msgstr "例: `https://api.bitbank.cc`"
+
+#: ../../source/glossary.rst:45
+msgid "currency pair"
+msgstr "currency pair"
+
+#: ../../source/glossary.rst:47
+msgid ""
+"A tradable currency combination on an exchange. Typically, the part "
+"before \"_\" is the :term:`base currency`, and the part after is the "
+":term:`quote currency`."
+msgstr ""
+"取引所で取引可能な通貨の組み合わせ。一般的に「_」の前が :term:`base currency` 、"
+"後が :term:`quote currency` にあたります。"
+
+#: ../../source/glossary.rst:50 ../../source/glossary.rst:253
+msgid "Example: `BTC_JPY`, `ETH_JPY`"
+msgstr "例: `BTC_JPY`, `ETH_JPY`"
+
+#: ../../source/glossary.rst:51
+msgid "endpoint path"
+msgstr "endpoint path"
+
+#: ../../source/glossary.rst:53
+msgid "A :term:`relative endpoint path` prefixed with a forward slash."
+msgstr ":term:`relative endpoint path` の先頭にスラッシュを付けたもの。"
+
+#: ../../source/glossary.rst:54
+msgid "endpoint request"
+msgstr "endpoint request"
+
+#: ../../source/glossary.rst:56
+msgid ""
+"A generic model representing an HTTP request to an :term:`API endpoint`. "
+"Contains all necessary information to send to the :term:`API endpoint`. "
+"Adds authentication info, :term:`base endpoint`, and `Content-Type` "
+"information to a :term:`native request`."
+msgstr ""
+":term:`API endpoint` へのHTTPリクエストを表現する汎用モデル。 :term:`API endpoint` "
+"に送信する必要な全ての情報を含む。 :term:`native request` に認証情報や "
+":term:`base endpoint` や `Content-Type` の情報を追加したもの。"
+
+#: ../../source/glossary.rst:58
+msgid "http response data"
+msgstr "http response data"
+
+#: ../../source/glossary.rst:60
+msgid ""
+"A model representing HTTP response data. Includes HTTP status code, "
+"headers, body, etc."
+msgstr ""
+"HTTPレスポンスのデータを表すモデル。HTTPステータスコード、ヘッダー、ボディなどを含む。"
+
+#: ../../source/glossary.rst:61
+msgid "native domain model"
+msgstr "native domain model"
+
+#: ../../source/glossary.rst:63
+msgid ""
+"Represents the entity returned by an :term:`API endpoint`. Defined in "
+"`src/crypto_api_client/<exchange_name>/native_domain_models/*.py`. When "
+":term:`native message metadata` does not exist, it matches the "
+":term:`native message payload`. For multiple items, a list of "
+":term:`native domain model` matches the :term:`native message payload`."
+msgstr ""
+":term:`API endpoint` が返す実体を表す。 "
+"`src/crypto_api_client/取引所名/native_domain_models/*.py` に定義されている。 "
+":term:`native message metadata` が存在しない場合、 :term:`native message payload` "
+"と一致し、複数の場合は :term:`native domain model` のリストが "
+":term:`native message payload` と一致します。"
+
+#: ../../source/glossary.rst:66
+msgid "native message"
+msgstr "native message"
+
+#: ../../source/glossary.rst:68
+msgid ""
+"Represents the result of a :term:`native request` to an individual "
+"exchange. Implemented in `src/crypto-api-"
+"client/<exchange_name>/_native_messages/*.py`."
+msgstr ""
+"個別の取引所の :term:`native request` に対する結果を表します。 "
+"実装は `src/crypto-api-client/取引所名/_native_messages/*.py` に定義されます。"
+
+#: ../../source/glossary.rst:71
+msgid ""
+"Native messages may be divided into :term:`native message metadata` and "
+":term:`native message payload`. Examples: bitbank / GMO Coin"
+msgstr ""
+"native messageは :term:`native message metadata` と :term:`native message payload` "
+"に分割できる場合があります。例 bitbank / GMO Coin"
+
+#: ../../source/glossary.rst:73
+msgid ""
+"Native messages only hold the JSON text before parsing metadata and "
+"payload, and do not concern themselves with JSON structure."
+msgstr ""
+"native messageは、metadataとpayloadのパース前のJSONテキストとして保持するのみであり、"
+"JSONの構造については関与しません。"
+
+#: ../../source/glossary.rst:75
+msgid "**metadata and payload implementation:**"
+msgstr "**metadataとpayloadの実装:**"
+
+#: ../../source/glossary.rst:77
+msgid ""
+"``metadata`` and ``payload`` are implemented with ``@cached_property`` "
+"and are generated on first access. Subsequent accesses return the same "
+"cached object."
+msgstr ""
+"``metadata`` と ``payload`` は ``@cached_property`` で実装されており、"
+"初回アクセス時に生成されます。以降は同じオブジェクトが返されます（キャッシュ）。"
+
+#: ../../source/glossary.rst:82
+msgid ":class:`~crypto_api_client._base.Message` - Base class implementation"
+msgstr ":class:`~crypto_api_client._base.Message` - 基底クラス実装"
+
+#: ../../source/glossary.rst:83
+msgid "native message metadata"
+msgstr "native message metadata"
+
+#: ../../source/glossary.rst:85
+msgid ""
+"The metadata portion of a :term:`native message`. May not exist depending"
+" on the :term:`API endpoint`."
+msgstr ""
+":term:`native message` のmetadata部分。 :term:`API endpoint` "
+"によっては存在しない場合もあります。"
+
+#: ../../source/glossary.rst:87
+msgid "**bitFlyer Ticker example** (no metadata, returns data directly):"
+msgstr "**bitFlyer Tickerの例** (メタデータなし、直接データを返す):"
+
+#: ../../source/glossary.rst:109
+msgid "**bitbank Ticker example** (with metadata):"
+msgstr "**bitbank Tickerの例** (メタデータあり):"
+
+#: ../../source/glossary.rst:127
+msgid ""
+"In this example, bitbank's ``success`` field corresponds to :term:`native"
+" message metadata`. The metadata format varies by exchange."
+msgstr ""
+"この例では、bitbankの ``success`` フィールドが :term:`native message metadata` "
+"に相当します。取引所によってmetadataの形式は異なります。"
+
+#: ../../source/glossary.rst:128
+msgid "native message payload"
+msgstr "native message payload"
+
+#: ../../source/glossary.rst:130
+msgid ""
+"The payload portion of a :term:`native message`. May not exist depending "
+"on the :term:`API endpoint`."
+msgstr ""
+":term:`native message` のpayload部分。 :term:`API endpoint` "
+"によっては存在しない場合もあります。"
+
+#: ../../source/glossary.rst:132
+msgid "**bitbank Ticker example**:"
+msgstr "**bitbank Tickerの例** :"
+
+#: ../../source/glossary.rst:150
+msgid ""
+"In this example, the following string corresponds to :term:`native "
+"message payload`:"
+msgstr "この例では、次の文字列が :term:`native message payload` に相当します。"
+
+#: ../../source/glossary.rst:165
+msgid ""
+"The responsibility of passing the string corresponding to the native "
+"message payload to the payload model lies with the native message model. "
+"Additionally, the following part is called :term:`payload content`:"
+msgstr ""
+"native message payloadのモデルにnative message payloadに該当する文字列を渡す責務は "
+"native messageのモデルにあります。さらに、次の部分を :term:`payload content` と呼びます。"
+
+#: ../../source/glossary.rst:181
+msgid ""
+"Because the structure of payload content varies even within the same "
+"exchange, the :term:`native message payload` model is responsible for "
+"determining what constitutes content."
+msgstr ""
+"payload content の構造は同じ取引所内でもバラツキがあるため、どこをcontentと見なすかは "
+":term:`native message payload` のモデルが責務を持ちます。"
+
+#: ../../source/glossary.rst:182
+msgid "native request"
+msgstr "native request"
+
+#: ../../source/glossary.rst:184
+msgid ""
+"A model representing a request to an individual exchange's :term:`API "
+"endpoint`. Represents events such as orders and cancellations. "
+"Implemented in `src/crypto-api-"
+"client/<exchange_name>/native_requests/*.py`."
+msgstr ""
+"個別の取引所の :term:`API endpoint` へのリクエストを表すモデル。"
+"注文やキャンセルなどのイベントを表現する。 "
+"`src/crypto-api-client/取引所名/native_requests/*.py` に実装されています。"
+
+#: ../../source/glossary.rst:186
+msgid "payload content"
+msgstr "payload content"
+
+#: ../../source/glossary.rst:188
+msgid "The substantial data portion of a :term:`native message payload`."
+msgstr ":term:`native message payload` の実質的なデータ部分。"
+
+#: ../../source/glossary.rst:190
+msgid ""
+"Refers to the JSON string of entity data, excluding keys and extra "
+"structure, from the raw JSON string held by the payload. Retrieved via "
+"the payload class's ``content_str`` property."
+msgstr ""
+"payload が保持する生JSON文字列から、キーや余分な構造を除いた実体データのJSON文字列を指す。"
+"payload クラスの ``content_str`` プロパティで取得できる。"
+
+#: ../../source/glossary.rst:193
+msgid ""
+"Depending on implementation, it may return raw JSON as-is (bitFlyer, "
+"BINANCE) or process it (bitbank, GMO Coin)."
+msgstr ""
+"実装により、生JSONをそのまま返す場合（bitFlyer、BINANCE）と、"
+"加工して返す場合（bitbank、GMO Coin）がある。"
+
+#: ../../source/glossary.rst:195
+msgid "**bitbank Ticker example:**"
+msgstr "**bitbank Tickerの例:**"
+
+#: ../../source/glossary.rst:197
+msgid "Full Native Message:"
+msgstr "Native Message全体:"
+
+#: ../../source/glossary.rst:212
+msgid "Native Message Payload (raw JSON string of data portion):"
+msgstr "Native Message Payload (data部分の生JSON文字列):"
+
+#: ../../source/glossary.rst:224
+msgid "Payload Content (entity data returned by ``content_str``):"
+msgstr "Payload Content (``content_str`` が返す実体データ):"
+
+#: ../../source/glossary.rst:236
+msgid "**bitFlyer Ticker example (no processing):**"
+msgstr "**bitFlyer Tickerの例 (加工なし):**"
+
+#: ../../source/glossary.rst:238
+msgid "For bitFlyer, Native Message Payload and Payload Content are identical:"
+msgstr "bitFlyerの場合、Native Message Payload と Payload Content は同一:"
+
+#: ../../source/glossary.rst:249
+msgid "product code"
+msgstr "product code"
+
+#: ../../source/glossary.rst:251
+msgid ""
+"A code identifying a specific currency pair tradable on bitFlyer. "
+"Typically composed of uppercase letters and underscores."
+msgstr ""
+"bitFlyerで取引可能な特定のcurrency pairを識別するコード。"
+"通常は大文字のアルファベットとアンダースコアで構成されます。"
+
+#: ../../source/glossary.rst:254
+msgid "quote currency"
+msgstr "quote currency"
+
+#: ../../source/glossary.rst:256
+msgid ""
+"The currency representing the price of the :term:`base currency`. The "
+"price per unit of base currency is displayed in quote currency."
+msgstr ""
+":term:`base currency` の価格を表す通貨。base currency 1単位あたりの価格が、"
+"quote currencyで表示されます。"
+
+#: ../../source/glossary.rst:257
+msgid "relative endpoint path"
+msgstr "relative endpoint path"
+
+#: ../../source/glossary.rst:259
+msgid ""
+"The portion of an :term:`API endpoint` excluding :term:`base URL` and "
+"root path. Composed of :term:`relative stub path` + :term:`relative "
+"resource path`."
+msgstr ""
+":term:`API endpoint` から :term:`base URL` と root path を除いた部分。 "
+":term:`relative stub path` + :term:`relative resource path` で構成されます。"
+
+#: ../../source/glossary.rst:262
+msgid "Example: `v1/user/assets`"
+msgstr "例: `v1/user/assets`"
+
+#: ../../source/glossary.rst:264
+msgid ""
+"A :term:`relative endpoint path` prefixed with a forward slash is called "
+":term:`endpoint path`."
+msgstr ""
+"relative endpoint path の先頭にスラッシュを付けたものを :term:`endpoint path` と呼びます。"
+
+#: ../../source/glossary.rst:265
+msgid "relative resource identifier path"
+msgstr "relative resource identifier path"
+
+#: ../../source/glossary.rst:267
+msgid ""
+"A string uniquely identifying a :term:`Resource`. Typically represents "
+"the type or attributes of a specific :term:`Resource`."
+msgstr ""
+":term:`Resource` を一意に識別するための文字列。"
+"通常は、特定の :term:`Resource` の種類や属性を表す。"
+
+#: ../../source/glossary.rst:269
+msgid ""
+"Example: ``btc_jpy`` in bitbank's "
+"`https://public.bitbank.cc/btc_jpy/ticker`"
+msgstr ""
+"例: bitbankの `https://public.bitbank.cc/btc_jpy/ticker` における ``btc_jpy``"
+
+#: ../../source/glossary.rst:271
+msgid ""
+"A :term:`relative resource identifier path` prefixed with a forward slash"
+" is called :term:`resource identifier path`."
+msgstr ""
+"relative resource identifier path の先頭にスラッシュを付けたものを "
+":term:`resource identifier path` と呼びます。"
+
+#: ../../source/glossary.rst:272
+msgid "relative resource path"
+msgstr "relative resource path"
+
+#: ../../source/glossary.rst:274
+msgid ""
+"A path for accessing a :term:`Resource`. Relative resource path is only "
+"responsible for the path portion. In other words, it does not include "
+"query strings."
+msgstr ""
+":term:`Resource` にアクセスするためのパス。relative resource pathはパス部分のみの責任を持ちます。"
+"言い換えると、クエリストリングは含みません。"
+
+#: ../../source/glossary.rst:276
+msgid ""
+"relative resource path = :term:`relative resource identifier path` + "
+":term:`action name`. Some relative resource paths do not have an "
+":term:`action name`."
+msgstr ""
+"relative resource path = :term:`relative resource identifier path` + "
+":term:`action name` で構成されます。 :term:`action name` を持たない "
+"relative resource path もあります。"
+
+#: ../../source/glossary.rst:278
+msgid "Examples:"
+msgstr "例:"
+
+#: ../../source/glossary.rst:280
+msgid ""
+"bitbank - `btc_jpy/ticker` (full URL: "
+"https://public.bitbank.cc/btc_jpy/ticker)"
+msgstr ""
+"bitbank - `btc_jpy/ticker` (完全URL: "
+"https://public.bitbank.cc/btc_jpy/ticker)"
+
+#: ../../source/glossary.rst:282
+msgid ""
+":term:`relative resource identifier path`: ``btc_jpy`` (:term:`currency "
+"pair`)"
+msgstr ""
+":term:`relative resource identifier path`: ``btc_jpy`` (:term:`currency pair`)"
+
+#: ../../source/glossary.rst:283
+msgid "Action name: ``ticker``"
+msgstr "アクション名: ``ticker``"
+
+#: ../../source/glossary.rst:284
+msgid ""
+"bitFlyer - `ticker` (full URL: "
+"https://api.bitflyer.jp/v1/ticker?product_code=btc_jpy) - `me/getbalance`"
+" (full URL: https://api.bitflyer.jp/v1/me/getbalance)"
+msgstr ""
+"bitFlyer - `ticker` (完全URL: "
+"https://api.bitflyer.jp/v1/ticker?product_code=btc_jpy) - `me/getbalance` "
+"(完全URL: https://api.bitflyer.jp/v1/me/getbalance)"
+
+#: ../../source/glossary.rst:287
+msgid ""
+":term:`relative resource identifier path`: ``me`` (:term:`Resource` "
+"identifier)"
+msgstr ""
+":term:`relative resource identifier path`: ``me`` (:term:`Resource` の識別子)"
+
+#: ../../source/glossary.rst:288
+msgid "Action name: ``getbalance``"
+msgstr "アクション名: ``getbalance``"
+
+#: ../../source/glossary.rst:290
+msgid ""
+"A :term:`relative resource path` prefixed with a forward slash is called "
+":term:`resource path`."
+msgstr ""
+"relative resource path の先頭にスラッシュを付けたものを :term:`resource path` と呼びます。"
+
+#: ../../source/glossary.rst:291
+msgid "relative stub path"
+msgstr "relative stub path"
+
+#: ../../source/glossary.rst:293
+msgid ""
+"A path portion typically representing a version number. For example, if "
+"the :term:`base endpoint` URL is `https://api.bitbank.cc/v1`, the "
+"relative stub path is `v1`. Some :term:`API endpoint` do not have a stub "
+"path."
+msgstr ""
+"多くはバージョン番号を表したパス部分。例えば :term:`base endpoint` のURLが "
+"`https://api.bitbank.cc/v1` の場合、relative stub pathは `v1` になります。"
+"stub pathが存在しない :term:`API endpoint` もあります。"
+
+#: ../../source/glossary.rst:295
+msgid "Example: `v1`"
+msgstr "例: `v1`"
+
+#: ../../source/glossary.rst:297
+msgid ""
+"A :term:`relative stub path` prefixed with a forward slash is called "
+":term:`stub path`."
+msgstr ""
+"relative stub path の先頭にスラッシュを付けたものを :term:`stub path` と呼びます。"
+
+#: ../../source/glossary.rst:298
+msgid "request model"
+msgstr "request model"
+
+#: ../../source/glossary.rst:300
+msgid ""
+"A model for representing requests to an :term:`API endpoint`. Defines "
+"request parameters and structure."
+msgstr ""
+":term:`API endpoint` への リクエストを表現するためのモデル。"
+"リクエストのパラメータや構造を定義します。"
+
+#: ../../source/glossary.rst:302
+msgid ""
+"Classes defined in "
+"`src/crypto_api_client/<exchange_name>/native_requests/*.py`."
+msgstr ""
+"`src/crypto_api_client/取引所名/native_requests/*.py` に定義されているクラス。"
+
+#: ../../source/glossary.rst:303
+msgid "Resource"
+msgstr "Resource"
+
+#: ../../source/glossary.rst:305
+msgid ""
+"Persistent data/objects. Has state. Distinguish between Event and "
+":term:`Resource`."
+msgstr ""
+"永続的なデータ・対象。状態を持つ。Eventと :term:`Resource` を区別してください。"
+
+#: ../../source/glossary.rst:306
+msgid "resource identifier path"
+msgstr "resource identifier path"
+
+#: ../../source/glossary.rst:308
+msgid "A :term:`relative resource identifier path` prefixed with a forward slash."
+msgstr ":term:`relative resource identifier path` の先頭にスラッシュを付けたもの。"
+
+#: ../../source/glossary.rst:309
+msgid "resource path"
+msgstr "resource path"
+
+#: ../../source/glossary.rst:311
+msgid "A :term:`relative resource path` prefixed with a forward slash."
+msgstr ":term:`relative resource path` の先頭にスラッシュを付けたもの。"
+
+#: ../../source/glossary.rst:312
+msgid "response validator"
+msgstr "response validator"
+
+#: ../../source/glossary.rst:314
+msgid ""
+"Responsible for validating :term:`http response data` returned by an "
+":term:`API endpoint` and raising exceptions when errors occur."
+msgstr ""
+":term:`API endpoint` が返した :term:`http response data` を検証し、"
+"エラーが発生している場合は例外を送出する役割を持つ。"
+
+#: ../../source/glossary.rst:317
+msgid ":class:`~crypto_api_client._base.response_validator_protocol.ResponseValidatorProtocol`"
+msgstr ":class:`~crypto_api_client._base.response_validator_protocol.ResponseValidatorProtocol`"
+
+#: ../../source/glossary.rst:318
+msgid ":func:`~crypto_api_client.factories.create_response_validator`"
+msgstr ":func:`~crypto_api_client.factories.create_response_validator`"
+
+#: ../../source/glossary.rst:319
+msgid ":class:`~crypto_api_client.callbacks.ResponseValidationCallback`"
+msgstr ":class:`~crypto_api_client.callbacks.ResponseValidationCallback`"
+
+#: ../../source/glossary.rst:320
+msgid "stub path"
+msgstr "stub path"
+
+#: ../../source/glossary.rst:322
+msgid "A :term:`relative stub path` prefixed with a forward slash."
+msgstr ":term:`relative stub path` の先頭にスラッシュを付けたもの。"
+
+#: ../../source/glossary.rst:324
+msgid "Example: `/v1`"
+msgstr "例: `/v1`"

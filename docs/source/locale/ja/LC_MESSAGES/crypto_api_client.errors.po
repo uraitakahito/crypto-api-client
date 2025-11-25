@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.errors.rst:2
+msgid "crypto\\_api\\_client.errors package"
+msgstr ""
+
+#: ../../source/crypto_api_client.errors.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.errors.rst:8
+msgid "crypto\\_api\\_client.errors.exceptions module"
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.CryptoApiClientError:1 of
+msgid "Bases: :py:class:`Exception`"
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.CryptoApiClientError:1 of
+msgid "Base class for all exceptions raised by the Crypto API Client."
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.ExchangeApiError:1
+#: crypto_api_client.errors.exceptions.RateLimitApproachingError:1
+#: crypto_api_client.errors.exceptions.RetryLimitExceededError:1 of
+msgid ""
+"Bases: "
+":py:class:`~crypto_api_client.errors.exceptions.CryptoApiClientError`"
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.ExchangeApiError:1 of
+msgid "Exception raised when exchange API returns an error."
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.ExchangeApiError:3 of
+msgid ""
+"This exception is raised when the :term:`API endpoint` determines there "
+"is an error, not when the library itself determines there is an error."
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.RateLimitApproachingError:1 of
+msgid "Warning indicating that rate limit violation is approaching."
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.RateLimitApproachingError:3 of
+msgid "Used as a warning before the exchange determines a rate limit violation."
+msgstr ""
+
+#: crypto_api_client.errors.exceptions.RetryLimitExceededError:1 of
+msgid ""
+"Error raised when maximum retry count configured in retry_strategy is "
+"exceeded."
+msgstr ""
+
+#: ../../source/crypto_api_client.errors.rst:16
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.errors:1 of
+msgid "Error handling module"
+msgstr ""
+
+#: crypto_api_client.errors:3 of
+msgid "This module provides project-specific exception classes."
+msgstr ""
+
+#: crypto_api_client.errors:5 of
+msgid ""
+"ResponseValidator generation functionality has been moved to the "
+":mod:`crypto_api_client.factories` module."
+msgstr ""
+
+#: crypto_api_client.errors:7 of
+msgid "Usage example::"
+msgstr ""
+

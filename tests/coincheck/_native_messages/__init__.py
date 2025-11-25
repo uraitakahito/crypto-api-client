@@ -1,0 +1,1 @@
+"""Coincheck native messages tests"""

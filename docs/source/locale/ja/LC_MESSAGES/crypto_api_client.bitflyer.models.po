@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:2
+msgid "crypto\\_api\\_client.bitflyer.models package"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:8
+msgid "crypto\\_api\\_client.bitflyer.models.board\\_event module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:16
+msgid "crypto\\_api\\_client.bitflyer.models.board\\_snapshot\\_event module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:24
+msgid "crypto\\_api\\_client.bitflyer.models.child\\_order\\_event module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:32
+msgid "crypto\\_api\\_client.bitflyer.models.child\\_order\\_state module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:40
+msgid "crypto\\_api\\_client.bitflyer.models.child\\_order\\_type module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:48
+msgid "crypto\\_api\\_client.bitflyer.models.currency module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:56
+msgid "crypto\\_api\\_client.bitflyer.models.event\\_type module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:64
+msgid "crypto\\_api\\_client.bitflyer.models.execution\\_event module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:72
+msgid "crypto\\_api\\_client.bitflyer.models.health\\_status module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:80
+msgid "crypto\\_api\\_client.bitflyer.models.market\\_type module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:88
+msgid "crypto\\_api\\_client.bitflyer.models.order\\_event module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:96
+msgid "crypto\\_api\\_client.bitflyer.models.product\\_code module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:104
+msgid "crypto\\_api\\_client.bitflyer.models.side module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:112
+msgid "crypto\\_api\\_client.bitflyer.models.ticker\\_event module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:120
+msgid "crypto\\_api\\_client.bitflyer.models.time\\_in\\_force module"
+msgstr ""
+
+#: ../../source/crypto_api_client.bitflyer.models.rst:128
+msgid "Module contents"
+msgstr ""
+

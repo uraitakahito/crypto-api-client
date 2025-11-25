@@ -1,0 +1,65 @@
+[project]
+name = "crypto-api-client"
+version = "0.6.83"
+description = "A client for interacting with crypto APIs."
+readme = "README.md"
+authors = [
+    { name = "Takahito Urai", email = "uraitakahito@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "httpx[http2]==0.28.1",
+    "pydantic==2.12.4",
+    "redis==7.1.0",
+    "yarl==1.22.0",
+]
+
+[project.urls]
+Repository = "https://github.com/uraitakahito/crypto-api-client.git"
+
+[project.optional-dependencies]
+examples = [
+    "psutil==7.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.setuptools.package-data]
+"crypto-api-client" = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+
+[dependency-groups]
+dev = [
+    "autodoc-pydantic==2.2.0",
+    "dotenv==0.9.9",
+    "fakeredis==2.32.1",
+    "lizard==1.19.0",
+    "mypy==1.18.2",
+    "pyright==1.1.407",
+    "pytest==9.0.1",
+    "pytest-asyncio==1.3.0",
+    "pytest-cov==7.0.0",
+    "pytest-mock==3.15.1",
+    "pyyaml==6.0.3",
+    "rich==14.2.0",
+    "ruff==0.14.6",
+    "sphinx==8.2.3",
+    "sphinx-intl>=2.3.0",
+    "sphinx-rtd-theme==3.0.2",
+    "sphinxcontrib-mermaid==1.2.2",
+    "typer==0.20.0",
+    "types-pyyaml==6.0.12.20250915",
+    "types-requests==2.32.4.20250913",
+]
+
+#
+# To follow the Single Responsibility Principle, Ruff settings should be written in ruff.toml
+#

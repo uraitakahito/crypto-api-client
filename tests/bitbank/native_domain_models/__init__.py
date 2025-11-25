@@ -1,0 +1,1 @@
+"""bitbank model tests"""

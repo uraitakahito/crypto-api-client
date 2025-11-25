@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.binance.native_requests.rst:2
+msgid "crypto\\_api\\_client.binance.native\\_requests package"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst:8
+msgid "crypto\\_api\\_client.binance.native\\_requests.depth\\_request module"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest:1
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:1
+#: crypto_api_client.binance.native_requests.ticker_request.TickerRequest:1 of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest:1 of
+msgid ":term:`native request` implementation for getting Depth."
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest:3 of
+msgid "Corresponds to BINANCE `/api/v3/depth` endpoint."
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest:7 of
+msgid ""
+"API Weight (rate limit) varies by limit parameter: - limit [1,100]: "
+"Weight 5 - limit [101,500]: Weight 25 - limit [501,1000]: Weight 50 - "
+"limit [1001,5000]: Weight 250"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest:15 of
+msgid ""
+"`Market Data endpoints <https://developers.binance.com/docs/binance-spot-"
+"api-docs/testnet/rest-api/market-data-endpoints>`__"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest:17
+#: crypto_api_client.binance.native_requests.ticker_request.TickerRequest:5 of
+msgid "Target symbol (e.g., \"BTCUSDT\")"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest:19 of
+msgid "Depth to retrieve (default: 100, max: 5000)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_requests.DepthRequest.limit
+#: crypto_api_client.binance.native_requests.ExchangeInfoRequest.permissions
+#: crypto_api_client.binance.native_requests.ExchangeInfoRequest.symbols
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest.limit
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.permissions
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.symbols
+#: of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_requests.DepthRequest.limit:1
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest.limit:1
+#: of
+msgid ""
+":py:obj:`validate_limit "
+"<crypto_api_client.binance.native_requests.depth_request.DepthRequest.validate_limit>`"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest.validate_limit:1
+#: of
+msgid "Validate limit value"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest.validate_limit:3
+#: of
+msgid "limit value"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest.validate_limit:5
+#: of
+msgid "Validated limit value"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.depth_request.DepthRequest.to_query_params:1
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.to_query_params:1
+#: crypto_api_client.binance.native_requests.ticker_request.TickerRequest.to_query_params:1
+#: of
+msgid "Return dictionary of str type for :term:`endpoint request`."
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst:16
+msgid ""
+"crypto\\_api\\_client.binance.native\\_requests.exchange\\_info\\_request"
+" module"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:1
+#: of
+msgid ":term:`native request` implementation for getting Exchange Information"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:3
+#: of
+msgid ""
+"Corresponds to BINANCE `/api/v3/exchangeInfo` endpoint. All parameters "
+"are optional. Get all symbol information without specification."
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:6
+#: of
+msgid "Specify single symbol (e.g., \"BTCUSDT\")"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:8
+#: of
+msgid "Specify multiple symbols (e.g., [\"BTCUSDT\", \"ETHUSDT\"])"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:10
+#: of
+msgid "Filter by permission (\"SPOT\", \"MARGIN\", \"LEVERAGED\", etc.)"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:12
+#: of
+msgid "Whether to include permissionSets field"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:14
+#: of
+msgid "Filter by status (\"TRADING\", \"HALT\", \"BREAK\")"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:18
+#: of
+msgid "`symbol`, `symbols`, `permissions` are mutually exclusive."
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest:21
+#: of
+msgid ""
+"`Exchange Information <https://github.com/binance/binance-spot-api-"
+"docs/blob/master/rest-api.md#exchange-information>`_"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_requests.ExchangeInfoRequest.permissions:1
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.permissions:1
+#: of
+msgid ""
+":py:obj:`validate_permissions_mutual_exclusivity "
+"<crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.validate_permissions_mutual_exclusivity>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.binance.native_requests.ExchangeInfoRequest.symbols:1
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.symbols:1
+#: of
+msgid ""
+":py:obj:`validate_symbols_mutual_exclusivity "
+"<crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.validate_symbols_mutual_exclusivity>`"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.exchange_info_request.ExchangeInfoRequest.to_query_params:4
+#: of
+msgid "`symbols` array is converted to JSON array string"
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst:24
+msgid "crypto\\_api\\_client.binance.native\\_requests.ticker\\_request module"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.ticker_request.TickerRequest:1 of
+msgid ":term:`native request` implementation for getting 24-hour ticker."
+msgstr ""
+
+#: crypto_api_client.binance.native_requests.ticker_request.TickerRequest:3 of
+msgid "Corresponds to BINANCE `/api/v3/ticker/24hr` endpoint."
+msgstr ""
+
+#: ../../source/crypto_api_client.binance.native_requests.rst:32
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.binance.native_requests:1 of
+msgid "BINANCE native requests."
+msgstr ""
+

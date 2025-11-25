@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:2
+msgid "crypto\\_api\\_client.coincheck.native\\_domain\\_models package"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:8
+msgid ""
+"crypto\\_api\\_client.coincheck.native\\_domain\\_models.currency\\_balance"
+" module"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance:1 of
+msgid ""
+":term:`native domain model` representing Coincheck currency-specific "
+"balance information"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance:1
+#: crypto_api_client.coincheck.native_domain_models.order.Order:1
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:1
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBookEntry:1
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:1 of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance:1
+#: of
+msgid ":term:`native domain model` representing currency-specific balance."
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance:3
+#: of
+msgid "Holds balance information for one currency."
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance:5
+#: of
+msgid "Models JSON received from :term:`API endpoint` split by currency."
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance:7
+#: of
+msgid "Original API response:"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance:29
+#: of
+msgid "Split by currency:"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance:51
+#: of
+msgid "`Balance <https://coincheck.com/documents/exchange/api#account-balance>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.available:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.available:1
+#: of
+msgid "Available balance"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.currency:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.currency:1
+#: of
+msgid "Currency code (btc, jpy, eth, etc.)"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.debt:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.debt:1
+#: of
+msgid "Borrowed balance"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.lend_in_use:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.lend_in_use:1
+#: of
+msgid "Balance currently lent"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.lending:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.lending:1
+#: of
+msgid "Balance available for lending"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.lent:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.lent:1
+#: of
+msgid "Balance already lent"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.reserved:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.reserved:1
+#: of
+msgid "Balance in use for orders"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.CurrencyBalance.tsumitate:1
+#: crypto_api_client.coincheck.native_domain_models.currency_balance.CurrencyBalance.tsumitate:1
+#: of
+msgid "Accumulated balance"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:16
+msgid "crypto\\_api\\_client.coincheck.native\\_domain\\_models.order module"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order.Order:1 of
+msgid ""
+":term:`native domain model` representing Coincheck own unsettled order "
+"information"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order.Order:4 of
+msgid ""
+"`Coincheck Unsettled order list "
+"<https://coincheck.com/ja/documents/exchange/api#order-opens>`__"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:24
+msgid ""
+"crypto\\_api\\_client.coincheck.native\\_domain\\_models.order\\_book "
+"module"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:1 of
+msgid ":term:`native domain model` representing entire order book"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:3
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:3 of
+msgid "Models JSON received from :term:`API endpoint` in the following format:"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook:20 of
+msgid "`Order Book <https://coincheck.com/documents/exchange/api#order-book>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.OrderBook.asks
+#: crypto_api_client.coincheck.native_domain_models.OrderBook.bids
+#: crypto_api_client.coincheck.native_domain_models.Ticker.timestamp
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.asks
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.bids
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.timestamp of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.OrderBook.asks:1
+#: crypto_api_client.coincheck.native_domain_models.OrderBook.bids:1
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.asks:1
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.bids:1
+#: of
+msgid ""
+":py:obj:`parse_order_entries "
+"<crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.parse_order_entries>`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_book.OrderBook.parse_order_entries:1
+#: of
+msgid "Convert array-format order data to OrderBookEntry objects"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:32
+msgid ""
+"crypto\\_api\\_client.coincheck.native\\_domain\\_models.order\\_type "
+"module"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.order_type.OrderType:1 of
+msgid "Bases: :py:class:`str`, :py:class:`~enum.Enum`"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:40
+msgid "crypto\\_api\\_client.coincheck.native\\_domain\\_models.ticker module"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:1 of
+msgid ":term:`native domain model` representing Coincheck ticker."
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker:19 of
+msgid "`Ticker <https://coincheck.com/documents/exchange/api#ticker>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.coincheck.native_domain_models.Ticker.timestamp:1
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.timestamp:1
+#: of
+msgid ""
+":py:obj:`convert_unix_seconds_to_datetime "
+"<crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime>`"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:1
+#: of
+msgid "Convert Unix seconds to UTC aware datetime"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:3
+#: of
+msgid ""
+"Coincheck API returns Unix timestamp in seconds, so convert it to UTC "
+"aware datetime."
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:8
+#: of
+msgid ""
+"Coincheck returns Unix timestamp in **seconds**. Note that other "
+"exchanges (bitbank, BINANCE, etc.) use milliseconds."
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:11
+#: of
+msgid "Unix timestamp (seconds), Decimal, or datetime object"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models.ticker.Ticker.convert_unix_seconds_to_datetime:12
+#: of
+msgid "UTC aware datetime"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/crypto_api_client.coincheck.native_domain_models.rst:48
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.coincheck.native_domain_models:1 of
+msgid "Coincheck native domain models"
+msgstr ""
+

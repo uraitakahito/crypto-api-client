@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.core.rst:2
+msgid "crypto\\_api\\_client.core package"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:8
+msgid "crypto\\_api\\_client.core.api\\_client\\_factory module"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase:1 of
+msgid "Bases: :py:class:`~abc.ABC`, :py:class:`~typing.Generic`"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase:1 of
+msgid "Base class for API client factories"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase:3 of
+msgid ""
+"Each exchange inherits this class to implement its own factory. "
+"Completely encapsulates configuration and instance creation "
+"responsibilities, ensuring type safety."
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase:7 of
+msgid "Type Parameters:"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase:8 of
+msgid "TApiClient: Type of API client to create"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.create:1 of
+msgid "Create API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst
+msgid "Parameters"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.create:3 of
+msgid "API key"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.create:5 of
+msgid "API secret"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.create:7 of
+msgid "HTTP client"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.create:9 of
+msgid "Request callbacks"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.create:11 of
+msgid "Request configuration (timeout, retry, etc.)"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst
+msgid "Returns"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.create:13 of
+msgid "Created API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst
+msgid "Return type"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.get_default_config:1
+#: of
+msgid "Get default API configuration"
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.get_default_config:3
+#: of
+msgid ""
+"Returns exchange-specific endpoint configuration. This configuration does"
+" not change unless the exchange modifies its API specifications."
+msgstr ""
+
+#: crypto_api_client.core.api_client_factory.ApiClientFactoryBase.get_default_config:6
+#: of
+msgid "Dictionary of API configuration"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:16
+msgid "crypto\\_api\\_client.core.decimal\\_json\\_parser module"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser:1
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser:1 of
+msgid "JSON parser that preserves Decimal precision"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser:3 of
+msgid ""
+"This module converts JSON to Pydantic models while preserving numerical "
+"precision, which is critical for cryptocurrency exchange APIs."
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser:1
+#: crypto_api_client.core.session_config.SessionConfig:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser:3 of
+msgid ""
+"Converts JSON to Pydantic models while preserving numerical precision, "
+"which is critical for cryptocurrency exchange APIs."
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser:6 of
+msgid "Features:"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser:7 of
+msgid "Parses floating-point numbers as Decimal type (precision preservation)"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser:8 of
+msgid "Performance optimization through TypeAdapter caching"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser:9 of
+msgid "Type-safe conversion"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser.clear_cache:1
+#: of
+msgid "Clear adapter cache"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser.clear_cache:3
+#: of
+msgid "Use this during testing or when memory management is needed."
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser.parse:1 of
+msgid "Convert JSON string to model instance"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser.parse:3 of
+msgid "JSON string"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser.parse:5 of
+msgid "Target Pydantic model type"
+msgstr ""
+
+#: crypto_api_client.core.decimal_json_parser.DecimalJsonParser.parse:7 of
+msgid "Model instance"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:24
+msgid "crypto\\_api\\_client.core.exchange\\_session module"
+msgstr ""
+
+#: crypto_api_client.core.exchange_session.ExchangeSession:1 of
+msgid "Bases: :py:class:`~typing.Generic`"
+msgstr ""
+
+#: crypto_api_client.core.exchange_session.ExchangeSession:1 of
+msgid "Generic exchange session"
+msgstr ""
+
+#: crypto_api_client.core.exchange_session.ExchangeSession.api:1 of
+msgid "Get API client"
+msgstr ""
+
+#: crypto_api_client.core.exchange_session.ExchangeSession.api:3 of
+msgid "API client"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst
+msgid "Raises"
+msgstr ""
+
+#: crypto_api_client.core.exchange_session.ExchangeSession.api:4 of
+msgid "If session is already closed"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:32
+msgid "crypto\\_api\\_client.core.exchange\\_types module"
+msgstr ""
+
+#: crypto_api_client.core.exchange_types.Exchange:1 of
+msgid "Bases: :py:class:`~enum.Enum`"
+msgstr ""
+
+#: crypto_api_client.core.exchange_types.Exchange.display_name:1 of
+msgid "Get the official name of the exchange"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:40
+msgid "crypto\\_api\\_client.core.json\\_extractor module"
+msgstr ""
+
+#: crypto_api_client.core.json_extractor:1 of
+msgid "Generic utilities for JSON processing"
+msgstr ""
+
+#: crypto_api_client.core.json_extractor:3 of
+msgid ""
+"This module provides functionality for extracting specific parts from "
+"JSON strings. Primarily used in processing exchange API responses."
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:48
+msgid "crypto\\_api\\_client.core.session\\_config module"
+msgstr ""
+
+#: crypto_api_client.core.session_config.SessionConfig:1 of
+msgid "Manages HTTP client settings: connection pool, timeout, retry, proxy, etc."
+msgstr ""
+
+#: crypto_api_client.core.session_config.SessionConfig.to_request_config:1 of
+msgid "Get request configuration in dictionary format"
+msgstr ""
+
+#: crypto_api_client.core.session_config.SessionConfig.to_request_config:3 of
+msgid ""
+"Returns a dictionary in the format expected by RequestMixin's "
+"request_config parameter."
+msgstr ""
+
+#: crypto_api_client.core.session_config.SessionConfig.to_request_config:5 of
+msgid "Dictionary of request configuration (RequestMixin-compatible format)"
+msgstr ""
+
+#: ../../source/crypto_api_client.core.rst:56
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.core:1 of
+msgid "Core functionality and foundation modules"
+msgstr ""
+

@@ -1,0 +1,1 @@
+"""bitFlyer model test module"""

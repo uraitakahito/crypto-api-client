@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Takahito Urai
+# This file is distributed under the same license as the crypto-api-client
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: crypto-api-client \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-25 19:34+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/crypto_api_client.gmocoin.native_domain_models.rst:2
+msgid "crypto\\_api\\_client.gmocoin.native\\_domain\\_models package"
+msgstr ""
+
+#: ../../source/crypto_api_client.gmocoin.native_domain_models.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../source/crypto_api_client.gmocoin.native_domain_models.rst:8
+msgid "crypto\\_api\\_client.gmocoin.native\\_domain\\_models.orderbook module"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook:1
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBookEntry:1
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker:1 of
+msgid "Bases: :py:class:`~pydantic.main.BaseModel`"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook:1 of
+msgid ":term:`native domain model` representing entire order book"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook:3
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker:3 of
+msgid "Models JSON received from :term:`API endpoint` in the following format."
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook:25 of
+msgid ""
+"Due to GMO Coin specification, the response ``symbol`` field returns only"
+" the base currency code (e.g., \"BTC\", \"ETH\"). Note that this differs "
+"from the currency pair specified in the request (e.g., \"BTC_JPY\")."
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook:30 of
+msgid "`OrderBooks API <https://api.coin.z.com/docs/#orderbooks>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.gmocoin.native_domain_models.OrderBook.asks
+#: crypto_api_client.gmocoin.native_domain_models.OrderBook.bids
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.ask
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.bid
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.high
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.last
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.low
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.volume
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.asks
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.bids
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.ask
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.bid
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.high
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.last
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.low
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.volume of
+msgid "Validated by"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.gmocoin.native_domain_models.OrderBook.asks:1
+#: crypto_api_client.gmocoin.native_domain_models.OrderBook.bids:1
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.asks:1
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.bids:1 of
+msgid ""
+":py:obj:`parse_order_entries "
+"<crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.parse_order_entries>`"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.gmocoin.native_domain_models.OrderBook.symbol:1
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.symbol:1
+#: of
+msgid "Base currency code (e.g., BTC, ETH)"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.parse_order_entries:1
+#: of
+msgid "Convert dict-format order data to OrderBookEntry objects"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.orderbook.OrderBook.parse_order_entries:3
+#: of
+#, python-brace-format
+msgid ""
+"Converts data in {\"price\": \"...\", \"size\": \"...\"} format returned "
+"from API to OrderBookEntry objects."
+msgstr ""
+
+#: ../../source/crypto_api_client.gmocoin.native_domain_models.rst:16
+msgid "crypto\\_api\\_client.gmocoin.native\\_domain\\_models.ticker module"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker:1 of
+msgid ":term:`native domain model` representing GMO Coin ticker."
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker:20 of
+msgid "`Ticker <https://api.coin.z.com/docs/#ticker>`__"
+msgstr ""
+
+#: ../../../docstring
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.ask:1
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.bid:1
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.high:1
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.last:1
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.low:1
+#: crypto_api_client.gmocoin.native_domain_models.Ticker.volume:1
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.ask:1
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.bid:1
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.high:1
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.last:1
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.low:1
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.volume:1 of
+msgid ""
+":py:obj:`convert_str_to_decimal "
+"<crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.convert_str_to_decimal>`"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models.ticker.Ticker.convert_str_to_decimal:1
+#: of
+msgid "Convert string to Decimal"
+msgstr ""
+
+#: ../../source/crypto_api_client.gmocoin.native_domain_models.rst:24
+msgid "Module contents"
+msgstr ""
+
+#: crypto_api_client.gmocoin.native_domain_models:1 of
+msgid "GMO Coin domain models."
+msgstr ""
+
