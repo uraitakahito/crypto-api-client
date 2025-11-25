@@ -3,10 +3,23 @@ name = "crypto-api-client"
 version = "0.6.83"
 description = "A client for interacting with crypto APIs."
 readme = "README.md"
+license = "Unlicense"
 authors = [
     { name = "Takahito Urai", email = "uraitakahito@gmail.com" }
 ]
 requires-python = ">=3.13"
+keywords = ["cryptocurrency", "api", "client", "async", "bitflyer", "binance", "bitbank", "coincheck", "gmocoin", "upbit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: AsyncIO",
+    "Typing :: Typed",
+]
 dependencies = [
     "httpx[http2]==0.28.1",
     "pydantic==2.12.4",
@@ -15,7 +28,9 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/uraitakahito/crypto-api-client.git"
+Repository = "https://github.com/uraitakahito/crypto-api-client"
+Documentation = "https://github.com/uraitakahito/crypto-api-client#readme"
+Issues = "https://github.com/uraitakahito/crypto-api-client/issues"
 
 [project.optional-dependencies]
 examples = [
@@ -26,8 +41,15 @@ examples = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.setuptools.package-data]
-"crypto-api-client" = ["py.typed"]
+[tool.hatch.build.targets.wheel]
+packages = ["src/crypto_api_client"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/README.md",
+    "/LICENSE",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -39,6 +61,7 @@ python_functions = ["test_*"]
 [dependency-groups]
 dev = [
     "autodoc-pydantic==2.2.0",
+    "build>=1.0.0",
     "dotenv==0.9.9",
     "fakeredis==2.32.1",
     "lizard==1.19.0",
@@ -55,6 +78,7 @@ dev = [
     "sphinx-intl>=2.3.0",
     "sphinx-rtd-theme==3.0.2",
     "sphinxcontrib-mermaid==1.2.2",
+    "twine>=5.0.0",
     "typer==0.20.0",
     "types-pyyaml==6.0.12.20250915",
     "types-requests==2.32.4.20250913",
