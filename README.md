@@ -58,8 +58,8 @@ uv run sphinx-build -M html docs/source docs/build/ja -D language=ja
 ```
 
 The generated documentation will be available at:
-- English: [docs/build/html/index.html](docs/build/html/index.html)
-- Japanese: [docs/build/ja/html/index.html](docs/build/ja/html/index.html)
+- English: docs/build/html/index.html
+- Japanese: docs/build/ja/html/index.html
 
 For terminology used throughout this library, please refer to the [glossary](docs/source/glossary.rst).
 
