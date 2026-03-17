@@ -39,9 +39,7 @@ class TestRedisSharedUrlPatternRateLimiter:
     """Test class for RedisSharedUrlPatternRateLimiter"""
 
     @pytest.fixture
-    def limiter_factory(
-        self, redis_client: redis.Redis
-    ) -> callable:  # type: ignore
+    def limiter_factory(self, redis_client: redis.Redis) -> callable:  # type: ignore
         """Factory to create limiter in async environment
 
         Note: RedisSharedUrlPatternRateLimiter must be initialized with create() method.
@@ -63,7 +61,9 @@ class TestRedisSharedUrlPatternRateLimiter:
     @pytest.mark.asyncio
     @pytest.mark.unit
     async def test_rate_limit_check(
-        self, redis_client: redis.Redis, limiter_factory: callable  # type: ignore
+        self,
+        redis_client: redis.Redis,
+        limiter_factory: callable,  # type: ignore
     ) -> None:
         """Async test for rate limit check"""
         redis_client.get.return_value = b"199"  # Just before limit  # type: ignore
@@ -81,7 +81,9 @@ class TestRedisSharedUrlPatternRateLimiter:
     @pytest.mark.asyncio
     @pytest.mark.unit
     async def test_count_and_cache(
-        self, redis_client: redis.Redis, limiter_factory: callable  # type: ignore
+        self,
+        redis_client: redis.Redis,
+        limiter_factory: callable,  # type: ignore
     ) -> None:
         """Test count retrieval and caching functionality"""
         redis_client.get.return_value = b"42"  # type: ignore
@@ -107,7 +109,9 @@ class TestRedisSharedUrlPatternRateLimiter:
     @pytest.mark.asyncio
     @pytest.mark.unit
     async def test_pattern_matching(
-        self, redis_client: redis.Redis, limiter_factory: callable  # type: ignore
+        self,
+        redis_client: redis.Redis,
+        limiter_factory: callable,  # type: ignore
     ) -> None:
         """Test URL pattern matching functionality"""
         redis_client.ping = AsyncMock(return_value=True)
@@ -123,7 +127,9 @@ class TestRedisSharedUrlPatternRateLimiter:
     @pytest.mark.asyncio
     @pytest.mark.unit
     async def test_after_request_increments(
-        self, redis_client: redis.Redis, limiter_factory: callable  # type: ignore
+        self,
+        redis_client: redis.Redis,
+        limiter_factory: callable,  # type: ignore
     ) -> None:
         """Test that count is incremented in after_request"""
         # Mock pipeline
@@ -153,7 +159,9 @@ class TestRedisSharedUrlPatternRateLimiter:
     @pytest.mark.asyncio
     @pytest.mark.unit
     async def test_before_request_limit_exceeded(
-        self, redis_client: redis.Redis, limiter_factory: callable  # type: ignore
+        self,
+        redis_client: redis.Redis,
+        limiter_factory: callable,  # type: ignore
     ) -> None:
         """Test behavior when rate limit is exceeded"""
         redis_client.get.return_value = b"200"  # Equal to limit  # type: ignore
@@ -177,7 +185,9 @@ class TestRedisSharedUrlPatternRateLimiter:
     @pytest.mark.asyncio
     @pytest.mark.unit
     async def test_string_representation(
-        self, redis_client: redis.Redis, limiter_factory: callable  # type: ignore
+        self,
+        redis_client: redis.Redis,
+        limiter_factory: callable,  # type: ignore
     ) -> None:
         """Test string representation"""
         redis_client.get.return_value = b"50"  # type: ignore
@@ -202,7 +212,9 @@ class TestRedisSharedUrlPatternRateLimiter:
     @pytest.mark.asyncio
     @pytest.mark.unit
     async def test_label_generation(
-        self, redis_client: redis.Redis, limiter_factory: callable  # type: ignore
+        self,
+        redis_client: redis.Redis,
+        limiter_factory: callable,  # type: ignore
     ) -> None:
         """Test automatic label generation"""
         from crypto_api_client.callbacks.rate_limit_key_builder import (
@@ -310,9 +322,7 @@ class TestRedisConnectionFailureDetection:
 
         mock_redis = MagicMock(spec=redis.Redis)
         mock_redis.ping = AsyncMock(return_value=True)
-        mock_redis.get = AsyncMock(
-            side_effect=redis.ConnectionError("Connection lost")
-        )
+        mock_redis.get = AsyncMock(side_effect=redis.ConnectionError("Connection lost"))
 
         # Initialize with create() (health check executed)
         limiter = await RedisSharedUrlPatternRateLimiter.create(

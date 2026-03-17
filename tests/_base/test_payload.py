@@ -1,6 +1,5 @@
 """Tests for Payload base class"""
 
-
 from crypto_api_client._base import Payload
 
 

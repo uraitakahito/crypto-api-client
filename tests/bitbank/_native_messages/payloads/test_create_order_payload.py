@@ -7,7 +7,7 @@ from crypto_api_client.bitbank._native_messages.create_order_payload import (
 
 def test_content_str_extracts_data_object():
     """Verify content_str correctly extracts "data" object"""
-    json_str = '''
+    json_str = """
     "data": {
         "order_id": 12345678,
         "pair": "btc_jpy",
@@ -24,14 +24,14 @@ def test_content_str_extracts_data_object():
         "trigger_price": null,
         "post_only": false
     }
-    '''
+    """
 
     payload = CreateOrderPayload(json_str)
     content = payload.content_str
 
     # Verify content_str returns expected JSON string
     assert '"order_id"' in content
-    assert '12345678' in content
+    assert "12345678" in content
     assert '"pair"' in content
     assert '"btc_jpy"' in content
 
@@ -41,12 +41,12 @@ def test_content_str_extracts_data_object():
 
 def test_content_str_preserves_structure():
     """Verify content_str preserves JSON structure"""
-    json_str = '''
+    json_str = """
     "data": {
         "order_id": 12345678,
         "pair": "btc_jpy"
     }
-    '''
+    """
 
     payload = CreateOrderPayload(json_str)
     content = payload.content_str

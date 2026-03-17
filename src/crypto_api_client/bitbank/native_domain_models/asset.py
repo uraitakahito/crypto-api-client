@@ -37,7 +37,9 @@ class Asset(BaseModel):
 
     asset: str
     amount_precision: int = Field(description="Number of decimal places for quantity")
-    collateral_ratio: Decimal | None = Field(default=None, description="Collateral ratio")
+    collateral_ratio: Decimal | None = Field(
+        default=None, description="Collateral ratio"
+    )
     onhand_amount: Decimal
     locked_amount: Decimal = Field(description="Locked quantity (in orders, etc.)")
     withdrawing_amount: Decimal | None = Field(

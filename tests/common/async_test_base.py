@@ -39,9 +39,7 @@ class BaseAsyncTestCase(Generic[T]):
         :rtype: T
         :raises NotImplementedError: If not implemented in subclass
         """
-        raise NotImplementedError(
-            "Subclass must implement async_client fixture"
-        )
+        raise NotImplementedError("Subclass must implement async_client fixture")
 
     def create_mock_response(
         self, data: Any, status_code: int = 200, headers: dict[str, str] | None = None

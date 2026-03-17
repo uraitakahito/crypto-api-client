@@ -31,12 +31,17 @@ class WithdrawalFee(BaseModel):
         default=None, description="Fee for amounts below threshold (for fiat currency)"
     )
     over: Decimal | None = Field(
-        default=None, description="Fee for amounts at or above threshold (for fiat currency)"
+        default=None,
+        description="Fee for amounts at or above threshold (for fiat currency)",
     )
 
     # Fields for cryptocurrency (optional)
-    min: Decimal | None = Field(default=None, description="Minimum fee (for cryptocurrency)")
-    max: Decimal | None = Field(default=None, description="Maximum fee (for cryptocurrency)")
+    min: Decimal | None = Field(
+        default=None, description="Minimum fee (for cryptocurrency)"
+    )
+    max: Decimal | None = Field(
+        default=None, description="Maximum fee (for cryptocurrency)"
+    )
 
     model_config = {"frozen": True}
 

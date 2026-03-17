@@ -102,7 +102,9 @@ class TestExchangeApiClientEndpointPathGeneration:
             )
 
             # endpoint_path generation logic actually used in ExchangeApiClient
-            endpoint_path = URL("/") / config["relative_stub_path"].path / resource_path.path
+            endpoint_path = (
+                URL("/") / config["relative_stub_path"].path / resource_path.path
+            )
 
             # endpoint_path must always start with '/'
             assert endpoint_path.path.startswith("/"), (
@@ -162,7 +164,9 @@ class TestExchangeApiClientEndpointPathGeneration:
         wrong_endpoint_path = config["relative_stub_path"].joinpath(resource_path.path)
 
         # [Correct implementation] Explicitly adding '/'
-        correct_endpoint_path = URL("/") / config["relative_stub_path"].path / resource_path.path
+        correct_endpoint_path = (
+            URL("/") / config["relative_stub_path"].path / resource_path.path
+        )
 
         # Incorrect implementation doesn't start with '/'
         assert not wrong_endpoint_path.path.startswith("/"), (
@@ -254,18 +258,16 @@ class TestPrivateApiMethodsEndpointPath:
 
         mocker.patch(
             "crypto_api_client.bitflyer.exchange_api_client.build_message",
-            side_effect=mock_build_message
+            side_effect=mock_build_message,
         )
 
         # Mock HTTP request to avoid actual communication
         mock_response = mocker.Mock()
         mock_response.status_code = 200
-        mock_response.text = '[]'
+        mock_response.text = "[]"
         mock_response.headers = {}
         mocker.patch.object(
-            api_client._http_client,
-            "request",
-            return_value=mock_response
+            api_client._http_client, "request", return_value=mock_response
         )
 
         # Call getbalance()

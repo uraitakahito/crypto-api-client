@@ -58,7 +58,9 @@ class SendChildOrderRequest(BaseModel):
         if self.child_order_type == ChildOrderType.LIMIT and self.price is None:
             raise ValueError("price is required for LIMIT orders")
         if self.child_order_type == ChildOrderType.MARKET and self.price is not None:
-            raise ValueError(f"price cannot be specified for MARKET orders: {self.price}")
+            raise ValueError(
+                f"price cannot be specified for MARKET orders: {self.price}"
+            )
 
         return self
 

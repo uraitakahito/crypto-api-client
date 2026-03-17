@@ -65,7 +65,9 @@ class ExchangeApiClient(ApiClient):
         endpoint_request = EndpointRequestBuilder.get(
             base_url=self._api_config["base_url"],
             relative_stub_path=self._api_config["relative_stub_path"],
-            relative_resource_path=self._api_config["relative_orderbook_identifier_path"],
+            relative_resource_path=self._api_config[
+                "relative_orderbook_identifier_path"
+            ],
             params=params,
         )
 

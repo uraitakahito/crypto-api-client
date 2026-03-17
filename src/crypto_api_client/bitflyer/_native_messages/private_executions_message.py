@@ -76,6 +76,4 @@ class PrivateExecutionsMessage(
 
     def to_domain_model(self) -> list[PrivateExecution]:
         """Generate :term:`native domain model` from :term:`payload content`"""
-        return DecimalJsonParser.parse(
-            self.payload.content_str, list[PrivateExecution]
-        )
+        return DecimalJsonParser.parse(self.payload.content_str, list[PrivateExecution])

@@ -15,6 +15,7 @@ class _SupportsKeysAndGetItem(Protocol, Generic[_KT, _VT_co]):
     Type of objects that support keys() and __getitem__() methods.
     dict and Mapping are examples.
     """
+
     def keys(self) -> Iterable[_KT]: ...
     def __getitem__(self, __key: _KT) -> _VT_co: ...
 
@@ -221,7 +222,7 @@ class SecretHeaders(MutableMapping[str, str]):
         self,
         __m: _SupportsKeysAndGetItem[str, str] | Iterable[tuple[str, str]] = (),
         /,
-        **kwargs: str
+        **kwargs: str,
     ) -> None:
         """Update headers (MutableMapping compliant)
 

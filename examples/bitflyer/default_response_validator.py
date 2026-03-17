@@ -72,7 +72,9 @@ def main(
 async def async_main(demo: str, log_level: str) -> None:
     setup_logging(log_level)
 
-    console.print("[bold magenta]Default Response Validator Usage Example[/bold magenta]")
+    console.print(
+        "[bold magenta]Default Response Validator Usage Example[/bold magenta]"
+    )
     console.print("=" * 60)
 
     if demo == "exception":
@@ -83,7 +85,9 @@ async def async_main(demo: str, log_level: str) -> None:
 
 async def demonstrate_exception_display() -> None:
     console.print("\n[bold cyan]Public API + default response validator[/bold cyan]")
-    console.print("   Generate exception with non-existent currency pair and verify ExchangeApiError\n")
+    console.print(
+        "   Generate exception with non-existent currency pair and verify ExchangeApiError\n"
+    )
 
     validator = create_response_validator(Exchange.BITFLYER)
 
@@ -109,7 +113,9 @@ async def demonstrate_exception_display() -> None:
 
 async def demonstrate_callbacks() -> None:
     console.print("\n[bold cyan]Private API + default response validator[/bold cyan]")
-    console.print("   Intentionally fail authentication on API that requires authentication and verify validator behavior\n")
+    console.print(
+        "   Intentionally fail authentication on API that requires authentication and verify validator behavior\n"
+    )
 
     validator = create_response_validator(Exchange.BITFLYER)
 

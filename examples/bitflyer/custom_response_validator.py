@@ -224,7 +224,9 @@ def main(
 async def async_main(test_type: str, log_level: str, use_private_api: bool) -> None:
     setup_logging(log_level)
 
-    console.print("[bold magenta]Custom Response Validator Implementation Example[/bold magenta]")
+    console.print(
+        "[bold magenta]Custom Response Validator Implementation Example[/bold magenta]"
+    )
     console.print("=" * 60)
 
     test_mapping = {

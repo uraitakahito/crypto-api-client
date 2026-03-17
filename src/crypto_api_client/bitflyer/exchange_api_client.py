@@ -189,7 +189,9 @@ class ExchangeApiClient(ApiClient):
         endpoint_request = EndpointRequestBuilder.get(
             base_url=self._api_config["base_url"],
             relative_stub_path=self._api_config["relative_stub_path"],
-            relative_resource_path=self._api_config["relative_getboardstate_identifier_path"],
+            relative_resource_path=self._api_config[
+                "relative_getboardstate_identifier_path"
+            ],
             params=params,
         )
 
@@ -219,7 +221,9 @@ class ExchangeApiClient(ApiClient):
         endpoint_request = EndpointRequestBuilder.get(
             base_url=self._api_config["base_url"],
             relative_stub_path=self._api_config["relative_stub_path"],
-            relative_resource_path=self._api_config["relative_gethealth_identifier_path"],
+            relative_resource_path=self._api_config[
+                "relative_gethealth_identifier_path"
+            ],
             params=params,
         )
 
@@ -261,7 +265,9 @@ class ExchangeApiClient(ApiClient):
         endpoint_request = EndpointRequestBuilder.get(
             base_url=self._api_config["base_url"],
             relative_stub_path=self._api_config["relative_stub_path"],
-            relative_resource_path=self._api_config["relative_executions_identifier_path"],
+            relative_resource_path=self._api_config[
+                "relative_executions_identifier_path"
+            ],
             params=params,
         )
 
@@ -307,9 +313,9 @@ class ExchangeApiClient(ApiClient):
             - This API requires authentication
             - On success, bitFlyer API returns an empty response body
         """
-        relative_resource_path = self._api_config["relative_resource_identifier_path"].joinpath(
-            self._api_config["cancelchildorder_action_name"].path
-        )
+        relative_resource_path = self._api_config[
+            "relative_resource_identifier_path"
+        ].joinpath(self._api_config["cancelchildorder_action_name"].path)
 
         params = request_type.to_query_params()
 
@@ -345,9 +351,9 @@ class ExchangeApiClient(ApiClient):
             `Get Account Asset Balance <https://lightning.bitflyer.com/docs?lang=en#get-account-asset-balance>`__
         """
 
-        relative_resource_path = self._api_config["relative_resource_identifier_path"].joinpath(
-            self._api_config["getbalance_action_name"].path
-        )
+        relative_resource_path = self._api_config[
+            "relative_resource_identifier_path"
+        ].joinpath(self._api_config["getbalance_action_name"].path)
 
         endpoint_path = self.stub_path / relative_resource_path.path
 
@@ -388,9 +394,9 @@ class ExchangeApiClient(ApiClient):
         """
 
         params = request_type.to_query_params() if request_type else None
-        relative_resource_path = self._api_config["relative_resource_identifier_path"].joinpath(
-            self._api_config["getchildorders_action_name"].path
-        )
+        relative_resource_path = self._api_config[
+            "relative_resource_identifier_path"
+        ].joinpath(self._api_config["getchildorders_action_name"].path)
 
         endpoint_path = self.stub_path / relative_resource_path.path
 
@@ -430,9 +436,9 @@ class ExchangeApiClient(ApiClient):
             This API requires authentication.
         """
 
-        relative_resource_path = self._api_config["relative_resource_identifier_path"].joinpath(
-            self._api_config["sendchildorder_action_name"].path
-        )
+        relative_resource_path = self._api_config[
+            "relative_resource_identifier_path"
+        ].joinpath(self._api_config["sendchildorder_action_name"].path)
 
         params = request_type.to_query_params()
 
@@ -478,9 +484,9 @@ class ExchangeApiClient(ApiClient):
             This API requires authentication.
         """
 
-        relative_resource_path = self._api_config["relative_resource_identifier_path"].joinpath(
-            self._api_config["gettradingcommission_action_name"].path
-        )
+        relative_resource_path = self._api_config[
+            "relative_resource_identifier_path"
+        ].joinpath(self._api_config["gettradingcommission_action_name"].path)
 
         params = request.to_query_params()
 
@@ -524,9 +530,9 @@ class ExchangeApiClient(ApiClient):
             This API requires authentication.
         """
 
-        relative_resource_path = self._api_config["relative_resource_identifier_path"].joinpath(
-            self._api_config["getexecutions_action_name"].path
-        )
+        relative_resource_path = self._api_config[
+            "relative_resource_identifier_path"
+        ].joinpath(self._api_config["getexecutions_action_name"].path)
 
         params = request.to_query_params()
 

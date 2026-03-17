@@ -63,9 +63,15 @@ class CurrencyBalance(BaseModel):
 
     currency: str = Field(description="Currency code (btc, jpy, eth, etc.)")
     available: Decimal = Field(description="Available balance")
-    reserved: Decimal = Field(default=Decimal(0), description="Balance in use for orders")
-    lending: Decimal = Field(default=Decimal(0), description="Balance available for lending")
-    lend_in_use: Decimal = Field(default=Decimal(0), description="Balance currently lent")
+    reserved: Decimal = Field(
+        default=Decimal(0), description="Balance in use for orders"
+    )
+    lending: Decimal = Field(
+        default=Decimal(0), description="Balance available for lending"
+    )
+    lend_in_use: Decimal = Field(
+        default=Decimal(0), description="Balance currently lent"
+    )
     lent: Decimal = Field(default=Decimal(0), description="Balance already lent")
     debt: Decimal = Field(default=Decimal(0), description="Borrowed balance")
     tsumitate: Decimal = Field(default=Decimal(0), description="Accumulated balance")

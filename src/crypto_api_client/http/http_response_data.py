@@ -41,7 +41,9 @@ class HttpResponseData(BaseModel):
     #
     response_body_bytes: bytes | None = None
     reason: str | None = None
-    elapsed: timedelta | None = Field(default=None, description="Request processing time")
+    elapsed: timedelta | None = Field(
+        default=None, description="Request processing time"
+    )
     cookies: dict[str, str] = Field(default_factory=dict)
     encoding: str | None = None
     request_method: str = Field(default="")

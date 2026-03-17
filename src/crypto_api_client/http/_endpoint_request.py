@@ -33,9 +33,7 @@ class EndpointRequest(BaseModel):
     headers: SecretHeaders = Field(
         default_factory=SecretHeaders, description="HTTP headers"
     )
-    body: Dict[str, Any] | None = Field(
-        None, description="Request body (sent as JSON)"
-    )
+    body: Dict[str, Any] | None = Field(None, description="Request body (sent as JSON)")
 
     @computed_field
     @property

@@ -36,9 +36,9 @@ from crypto_api_client.bitflyer import (
 
 # Unified configuration for development environment
 app = typer.Typer(
-    pretty_exceptions_enable=True,      # Enable Rich traceback
+    pretty_exceptions_enable=True,  # Enable Rich traceback
     pretty_exceptions_show_locals=True,  # Show local variables
-    pretty_exceptions_short=False        # Show full traceback
+    pretty_exceptions_short=False,  # Show full traceback
 )
 console = Console()
 
@@ -146,8 +146,9 @@ async def async_main(
     sell_count = sum(1 for ex in all_executions if ex.side == Side.SELL)
     no_side_count = sum(1 for ex in all_executions if ex.side is None)
     console.print(
-        f"  [bold]Total:[/bold] {len(all_executions)} ([green]Buy: {buy_count}[/green] / [red]Sell: {sell_count}[/red]" +
-        (f" / [dim]No side: {no_side_count}[/dim]" if no_side_count > 0 else "") + ")"
+        f"  [bold]Total:[/bold] {len(all_executions)} ([green]Buy: {buy_count}[/green] / [red]Sell: {sell_count}[/red]"
+        + (f" / [dim]No side: {no_side_count}[/dim]" if no_side_count > 0 else "")
+        + ")"
     )
     oldest_display = all_executions[-1].with_timezone(zone).exec_date
     newest_display = all_executions[0].with_timezone(zone).exec_date

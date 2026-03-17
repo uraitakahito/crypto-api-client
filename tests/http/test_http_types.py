@@ -35,7 +35,9 @@ class TestHttpResponseDataPydantic:
         )
 
         assert response_data.http_status_code == 200
-        assert isinstance(response_data.headers, dict)  # Breaking change: changed to dict type
+        assert isinstance(
+            response_data.headers, dict
+        )  # Breaking change: changed to dict type
         assert response_data.response_body_text == '{"result": "ok"}'
         assert response_data.url == "https://api.example.com/v1/test"
 

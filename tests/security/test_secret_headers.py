@@ -116,8 +116,12 @@ class TestSecretHeaders:
 
         masked = headers.get_masked_dict()
         assert masked["API-KEY"] == "**********"  # 3 characters or less: fully masked
-        assert masked["ACCESS-KEY"] == "**********"  # 3 characters or less: fully masked
-        assert masked["X-API-KEY"] == "abc********"  # 4 characters or more: first 3 characters
+        assert (
+            masked["ACCESS-KEY"] == "**********"
+        )  # 3 characters or less: fully masked
+        assert (
+            masked["X-API-KEY"] == "abc********"
+        )  # 4 characters or more: first 3 characters
 
     def test_mutable_mapping_operations(self):
         """Verify MutableMapping protocol operations"""

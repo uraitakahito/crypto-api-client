@@ -70,7 +70,9 @@ class TestExchangeApiClientEndpointPathGeneration:
         resource_path = resource_identifier_path.joinpath(action_name.path)
 
         # endpoint_path generation logic actually used in ExchangeApiClient
-        endpoint_path = URL("/") / config["private_relative_stub_path"].path / resource_path.path
+        endpoint_path = (
+            URL("/") / config["private_relative_stub_path"].path / resource_path.path
+        )
 
         # endpoint_path starts with '/'
         assert endpoint_path.path.startswith("/"), (
@@ -87,7 +89,11 @@ class TestExchangeApiClientEndpointPathGeneration:
         # All Private API endpoints
         private_api_actions = [
             ("assets", "relative_user_resource_identifier_path", "assets_action_name"),
-            ("create_order", "relative_user_spot_resource_identifier_path", "order_action_name"),
+            (
+                "create_order",
+                "relative_user_spot_resource_identifier_path",
+                "order_action_name",
+            ),
         ]
 
         for api_name, resource_key, action_key in private_api_actions:
@@ -96,7 +102,11 @@ class TestExchangeApiClientEndpointPathGeneration:
             resource_path = resource_identifier_path.joinpath(action_name.path)
 
             # endpoint_path generation logic actually used in ExchangeApiClient
-            endpoint_path = URL("/") / config["private_relative_stub_path"].path / resource_path.path
+            endpoint_path = (
+                URL("/")
+                / config["private_relative_stub_path"].path
+                / resource_path.path
+            )
 
             # endpoint_path must always start with '/'
             assert endpoint_path.path.startswith("/"), (
@@ -157,10 +167,14 @@ class TestExchangeApiClientEndpointPathGeneration:
         resource_path = resource_identifier_path.joinpath(action_name.path)
 
         # [Incorrect implementation] Use private_stub_path as-is (doesn't start with '/')
-        wrong_endpoint_path = config["private_relative_stub_path"].joinpath(resource_path.path)
+        wrong_endpoint_path = config["private_relative_stub_path"].joinpath(
+            resource_path.path
+        )
 
         # [Correct implementation] Explicitly add '/'
-        correct_endpoint_path = URL("/") / config["private_relative_stub_path"].path / resource_path.path
+        correct_endpoint_path = (
+            URL("/") / config["private_relative_stub_path"].path / resource_path.path
+        )
 
         # Incorrect implementation doesn't start with '/'
         assert not wrong_endpoint_path.path.startswith("/"), (
@@ -210,7 +224,7 @@ class TestPrivateApiMethodsEndpointPath:
 
         mocker.patch(
             "crypto_api_client.bitbank.exchange_api_client.build_message",
-            side_effect=mock_build_message
+            side_effect=mock_build_message,
         )
 
         # Mock HTTP request to avoid actual communication
@@ -219,9 +233,7 @@ class TestPrivateApiMethodsEndpointPath:
         mock_response.text = '{"success":1,"data":{"assets":[]}}'
         mock_response.headers = {}
         mocker.patch.object(
-            api_client._http_client,
-            "request",
-            return_value=mock_response
+            api_client._http_client, "request", return_value=mock_response
         )
 
         # Call assets()

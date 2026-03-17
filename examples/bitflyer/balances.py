@@ -69,7 +69,9 @@ async def fetch_and_display_balances(
         return
 
     table = Table(
-        title=f"{Exchange.BITFLYER.display_name} Balance Information", show_header=True, header_style="bold cyan"
+        title=f"{Exchange.BITFLYER.display_name} Balance Information",
+        show_header=True,
+        header_style="bold cyan",
     )
     table.add_column("Currency", style="cyan", width=8)
     table.add_column("Total", justify="right", style="green")

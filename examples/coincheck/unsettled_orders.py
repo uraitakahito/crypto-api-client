@@ -79,7 +79,9 @@ def display_orders(orders: list[Order], tz: ZoneInfo) -> None:
     )
 
     table = Table(
-        title="Coincheck Unsettled Order List", show_header=True, header_style="bold cyan"
+        title="Coincheck Unsettled Order List",
+        show_header=True,
+        header_style="bold cyan",
     )
     table.add_column("ID", style="dim", width=10)
     table.add_column("Pair", style="cyan", width=10)

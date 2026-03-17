@@ -21,11 +21,15 @@ during log output and error occurrences.
 """
 
 import logging
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import typer
+from common.helpers import setup_logging
 from pydantic import SecretStr
 from rich.console import Console
-from rich.logging import RichHandler
 from rich.panel import Panel
 
 from crypto_api_client.security.secret_headers import SecretHeaders
@@ -33,15 +37,6 @@ from crypto_api_client.security.secret_headers import SecretHeaders
 # Rich console configuration
 console = Console()
 app = typer.Typer(help="SecretHeaders security features demo")
-
-
-def setup_logging(log_level: str = "INFO") -> None:
-    """Configure logging"""
-    logging.basicConfig(
-        level=log_level,
-        format="%(message)s",
-        handlers=[RichHandler(console=console, rich_tracebacks=True)],
-    )
 
 
 def demo_secret_str() -> None:
@@ -58,7 +53,9 @@ def demo_secret_str() -> None:
 
     # Get actual value (only when necessary)
     actual_value = api_key.get_secret_value()
-    console.print(f"Actual value (normally not used): [dim]{actual_value[:10]}...[/dim]")
+    console.print(
+        f"Actual value (normally not used): [dim]{actual_value[:10]}...[/dim]"
+    )
 
     # When included in dictionary
     config = {

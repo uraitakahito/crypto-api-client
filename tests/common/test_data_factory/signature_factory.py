@@ -124,7 +124,11 @@ class BitFlyerSignatureBuilder(BaseTestDataBuilder):
         self, relative_resource_path: str | URL
     ) -> "BitFlyerSignatureBuilder":
         """Set relative resource path."""
-        path = URL(relative_resource_path) if isinstance(relative_resource_path, str) else relative_resource_path
+        path = (
+            URL(relative_resource_path)
+            if isinstance(relative_resource_path, str)
+            else relative_resource_path
+        )
         return self._set_field("relative_resource_path", path)
 
     def with_params(self, params: dict[str, str] | None) -> "BitFlyerSignatureBuilder":
@@ -169,9 +173,15 @@ class BitbankSignatureBuilder(BaseTestDataBuilder):
         path = URL(stub_path) if isinstance(stub_path, str) else stub_path
         return self._set_field("stub_path", path)
 
-    def with_relative_resource_path(self, relative_resource_path: str | URL) -> "BitbankSignatureBuilder":
+    def with_relative_resource_path(
+        self, relative_resource_path: str | URL
+    ) -> "BitbankSignatureBuilder":
         """Set relative resource path."""
-        path = URL(relative_resource_path) if isinstance(relative_resource_path, str) else relative_resource_path
+        path = (
+            URL(relative_resource_path)
+            if isinstance(relative_resource_path, str)
+            else relative_resource_path
+        )
         return self._set_field("relative_resource_path", path)
 
     def with_params(self, params: dict[str, str]) -> "BitbankSignatureBuilder":

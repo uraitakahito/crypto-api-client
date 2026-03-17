@@ -32,9 +32,9 @@ from crypto_api_client.gmocoin.native_domain_models import Ticker
 
 # Unified settings for development environment
 app = typer.Typer(
-    pretty_exceptions_enable=True,      # Enable Rich traceback
+    pretty_exceptions_enable=True,  # Enable Rich traceback
     pretty_exceptions_show_locals=True,  # Show local variables
-    pretty_exceptions_short=False        # Show full traceback
+    pretty_exceptions_short=False,  # Show full traceback
 )
 
 

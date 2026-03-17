@@ -211,7 +211,9 @@ async def test_ticker_requests(
         try:
             ticker_request = TickerRequest(product_code=product_code)
             ticker = await session.api.ticker(ticker_request)
-            typer.echo(f"   ✅ Attempt {i + 1}: Success - BTC price: {ticker.best_bid:,.0f} yen")
+            typer.echo(
+                f"   ✅ Attempt {i + 1}: Success - BTC price: {ticker.best_bid:,.0f} yen"
+            )
         except RateLimitApproachingError as e:
             typer.echo(f"   ❌ Attempt {i + 1}: Rate limit - {e}")
 

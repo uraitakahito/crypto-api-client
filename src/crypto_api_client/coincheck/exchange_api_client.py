@@ -125,7 +125,9 @@ class ExchangeApiClient(ApiClient):
         endpoint_request = EndpointRequestBuilder.get(
             base_url=self._api_config["base_url"],
             relative_stub_path=self._api_config["relative_stub_path"],
-            relative_resource_path=self._api_config["relative_order_book_identifier_path"],
+            relative_resource_path=self._api_config[
+                "relative_order_book_identifier_path"
+            ],
             params=request.to_query_params(),
         )
 
@@ -191,7 +193,9 @@ class ExchangeApiClient(ApiClient):
         .. seealso::
             `Coincheck Unsettled order list <https://coincheck.com/ja/documents/exchange/api#order-opens>`__
         """
-        relative_resource_path = self._api_config["relative_unsettled_orders_identifier_path"]
+        relative_resource_path = self._api_config[
+            "relative_unsettled_orders_identifier_path"
+        ]
         endpoint_path = self.stub_path / relative_resource_path.path
         api_endpoint = self._api_config["base_url"].with_path(endpoint_path.path)
 

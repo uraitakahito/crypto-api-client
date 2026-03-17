@@ -32,7 +32,10 @@ class TestHealthStatusTypeConstructor:
         ("input_value", "error_message"),
         [
             ("INVALID", "'INVALID' is not a valid HealthStatusType"),
-            ("normal", "'normal' is not a valid HealthStatusType"),  # lowercase is invalid
+            (
+                "normal",
+                "'normal' is not a valid HealthStatusType",
+            ),  # lowercase is invalid
             ("", "'' is not a valid HealthStatusType"),
         ],
     )

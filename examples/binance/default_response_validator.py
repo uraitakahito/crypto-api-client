@@ -85,7 +85,9 @@ async def async_main(demo: str, log_level: str) -> None:
 
 async def demonstrate_exception_display() -> None:
     console.print("\n[bold cyan]Public API + default response validator[/bold cyan]")
-    console.print("   Generate exception with non-existent symbol and verify ExchangeApiError\n")
+    console.print(
+        "   Generate exception with non-existent symbol and verify ExchangeApiError\n"
+    )
 
     validator = create_response_validator(Exchange.BINANCE)
 

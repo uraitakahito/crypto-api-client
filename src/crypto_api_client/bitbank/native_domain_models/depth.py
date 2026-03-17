@@ -128,8 +128,12 @@ class Depth(BaseModel):
     bids_over: Decimal | None = Field(
         default=None, description="Out-of-range buy order quantity (upper side)"
     )
-    ask_market: Decimal | None = Field(default=None, description="Total quantity of market sell orders")
-    bid_market: Decimal | None = Field(default=None, description="Total quantity of market buy orders")
+    ask_market: Decimal | None = Field(
+        default=None, description="Total quantity of market sell orders"
+    )
+    bid_market: Decimal | None = Field(
+        default=None, description="Total quantity of market buy orders"
+    )
     timestamp: datetime
     sequenceId: str = Field(description="Sequence identifier")
 
