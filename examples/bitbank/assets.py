@@ -76,7 +76,9 @@ async def fetch_and_display_assets(
         return
 
     table = Table(
-        title=f"{Exchange.BITBANK.display_name} Balance Information", show_header=True, header_style="bold cyan"
+        title=f"{Exchange.BITBANK.display_name} Balance Information",
+        show_header=True,
+        header_style="bold cyan",
     )
     table.add_column("Currency", style="cyan", width=8)
     table.add_column("Total Amount", justify="right", style="green")

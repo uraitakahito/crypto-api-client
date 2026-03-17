@@ -27,20 +27,15 @@ class GmoCoinMessage[TPayload, TDomainModel](
         # Extract status field
         status_match = re.search(r'"status"\s*:\s*(\d+)', json_str)
         if status_match is None:
-            raise ValueError(
-                f"metadata ('status' field) not found: {json_str}"
-            )
+            raise ValueError(f"metadata ('status' field) not found: {json_str}")
 
         # Extract responsetime field
         responsetime_match = re.search(r'"responsetime"\s*:\s*"([^"]+)"', json_str)
         if responsetime_match is None:
-            raise ValueError(
-                f"metadata ('responsetime' field) not found: {json_str}"
-            )
+            raise ValueError(f"metadata ('responsetime' field) not found: {json_str}")
 
         return MessageMetadata(
-            status=int(status_match.group(1)),
-            responsetime=responsetime_match.group(1)
+            status=int(status_match.group(1)), responsetime=responsetime_match.group(1)
         )
 
     def _extract_payload_json(self, json_str: str) -> str:
@@ -110,7 +105,7 @@ class GmoCoinMessage[TPayload, TDomainModel](
             raise ValueError(f"'data' object end not found: {json_str}")
         else:
             raise ValueError(
-                f"'data' field value is not an array or object: {json_str[value_start:value_start+10]}"
+                f"'data' field value is not an array or object: {json_str[value_start : value_start + 10]}"
             )
 
     @abstractmethod

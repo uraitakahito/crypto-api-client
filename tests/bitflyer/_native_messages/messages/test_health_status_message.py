@@ -54,5 +54,7 @@ class TestHealthStatusMessage:
         json_str = '{"invalid": "data"}'
         message = HealthStatusMessage(json_str)
 
-        with pytest.raises(Exception):  # Specific exception type depends on implementation
+        with pytest.raises(
+            Exception
+        ):  # Specific exception type depends on implementation
             message.to_domain_model()

@@ -72,9 +72,9 @@ class TestJsonExtractor:
 
     def test_extract_array_simple(self):
         """Extract simple array."""
-        text = '[1, 2, 3]'
+        text = "[1, 2, 3]"
         result = _JsonExtractor.extract_array(text)
-        assert result == '[1, 2, 3]'
+        assert result == "[1, 2, 3]"
 
     def test_extract_array_from_field(self):
         """Extract array from field value."""
@@ -84,9 +84,9 @@ class TestJsonExtractor:
 
     def test_extract_array_nested(self):
         """Extract nested array."""
-        text = '[1, [2, [3, 4]], 5]'
+        text = "[1, [2, [3, 4]], 5]"
         result = _JsonExtractor.extract_array(text)
-        assert result == '[1, [2, [3, 4]], 5]'
+        assert result == "[1, [2, [3, 4]], 5]"
 
     def test_extract_array_with_objects(self):
         """Extract array containing objects."""
@@ -96,9 +96,9 @@ class TestJsonExtractor:
 
     def test_extract_array_empty(self):
         """Extract empty array."""
-        text = '[]'
+        text = "[]"
         result = _JsonExtractor.extract_array(text)
-        assert result == '[]'
+        assert result == "[]"
 
     def test_extract_array_with_start_pos(self):
         """Extract array with specified start position."""
@@ -106,7 +106,7 @@ class TestJsonExtractor:
         # Start search from "second" position
         start = text.find('"second"')
         result = _JsonExtractor.extract_array(text, start_pos=start)
-        assert result == '[3, 4]'
+        assert result == "[3, 4]"
 
     def test_extract_array_no_bracket(self):
         """Test when opening bracket is not found."""
@@ -116,14 +116,15 @@ class TestJsonExtractor:
 
     def test_extract_array_unclosed(self):
         """Test when closing bracket is not found."""
-        text = '[1, 2, 3'
+        text = "[1, 2, 3"
         with pytest.raises(ValueError, match="Closing bracket not found"):
             _JsonExtractor.extract_array(text)
 
     def test_extract_array_complex_bitbank_response(self):
         """Test with actual bitbank response format data."""
         import json
-        text = '''{
+
+        text = """{
             "success": 1,
             "data": {
                 "assets": [
@@ -131,13 +132,13 @@ class TestJsonExtractor:
                     {"asset": "btc", "amount": "0.5"}
                 ]
             }
-        }'''
+        }"""
         # Start search from "assets" field position
         start = text.find('"assets"')
         result = _JsonExtractor.extract_array(text, start_pos=start)
-        expected = '''[
+        expected = """[
                     {"asset": "jpy", "amount": "100000"},
                     {"asset": "btc", "amount": "0.5"}
-                ]'''
+                ]"""
         # Compare ignoring whitespace
         assert json.loads(result) == json.loads(expected)

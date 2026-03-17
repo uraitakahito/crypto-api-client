@@ -53,7 +53,9 @@ def demo_secret_str() -> None:
 
     # Get actual value (only when necessary)
     actual_value = api_key.get_secret_value()
-    console.print(f"Actual value (normally not used): [dim]{actual_value[:10]}...[/dim]")
+    console.print(
+        f"Actual value (normally not used): [dim]{actual_value[:10]}...[/dim]"
+    )
 
     # When included in dictionary
     config = {

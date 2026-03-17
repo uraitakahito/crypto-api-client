@@ -124,7 +124,9 @@ class TestHttpResponseData:
         assert data_dict["http_status_code"] == HttpStatusCode.OK
         assert data_dict["response_body_text"] == "response"
         assert data_dict["url"] == "https://api.example.com"
-        assert isinstance(data_dict["headers"], dict)  # Breaking change: changed to dict type
+        assert isinstance(
+            data_dict["headers"], dict
+        )  # Breaking change: changed to dict type
 
     def test_json_export_with_exclude_none(self) -> None:
         """Verify JSON export with None excluded."""

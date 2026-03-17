@@ -150,7 +150,9 @@ class TestEndpointPathFormat:
         # Path starting with '/' follows timestamp and method
         assert msg.startswith("1640000000000GET/v1/")
 
-    def test_endpoint_path_without_leading_slash_produces_incorrect_signature(self) -> None:
+    def test_endpoint_path_without_leading_slash_produces_incorrect_signature(
+        self,
+    ) -> None:
         """endpoint_path not starting with '/' produces incorrect signature
 
         This test detects the issue that occurred when '/' was removed from
@@ -204,7 +206,9 @@ class TestEndpointPathFormat:
             )
 
             # Signature message starting with '/' is generated for all endpoints
-            assert msg.startswith(f"{timestamp}GET/v1/"), f"Failed for endpoint: {endpoint}"
+            assert msg.startswith(f"{timestamp}GET/v1/"), (
+                f"Failed for endpoint: {endpoint}"
+            )
 
 
 class TestBuildMessageEdgeCases:

@@ -95,7 +95,6 @@ class TestTickerMessage:
         assert isinstance(result, list)
         assert len(result) == 0
 
-
     def test_non_list_data_raises_error(self) -> None:
         """Test that non-list data raises ValueError."""
         # When data is a single object (API specification violation)

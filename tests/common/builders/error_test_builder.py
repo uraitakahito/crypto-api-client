@@ -224,7 +224,9 @@ class ErrorTestBuilder(BaseApiTestBuilder[Any]):
             ValueError: If response validator class not set
         """
         if not self._response_validator_class:
-            raise ValueError("Response validator class not set. Use with_response_validator().")
+            raise ValueError(
+                "Response validator class not set. Use with_response_validator()."
+            )
 
         validator = self._response_validator_class()
 

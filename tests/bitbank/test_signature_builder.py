@@ -37,7 +37,9 @@ class TestBuildMessage:
             time_window_millisecond="5000",
         )
 
-        expected = '16400000000005000/v1/user/spot/trade_history{"pair":"btc_jpy","count":"1"}'
+        expected = (
+            '16400000000005000/v1/user/spot/trade_history{"pair":"btc_jpy","count":"1"}'
+        )
         assert msg == expected
 
     def test_post_with_request_body(self) -> None:
@@ -172,7 +174,9 @@ class TestEndpointPathFormat:
         # Path starting with '/' follows timestamp and time window
         assert msg.startswith("16400000000005000/v1/")
 
-    def test_endpoint_path_without_leading_slash_produces_incorrect_signature(self) -> None:
+    def test_endpoint_path_without_leading_slash_produces_incorrect_signature(
+        self,
+    ) -> None:
         """Endpoint_path not starting with '/' produces incorrect signature
 
         This test detects the problem that occurred when '/' was removed
@@ -222,4 +226,6 @@ class TestEndpointPathFormat:
             )
 
             # Signature message starting with '/' is generated for all endpoints
-            assert msg.startswith(f"{request_time}{time_window}/v1/"), f"Failed for endpoint: {endpoint}"
+            assert msg.startswith(f"{request_time}{time_window}/v1/"), (
+                f"Failed for endpoint: {endpoint}"
+            )

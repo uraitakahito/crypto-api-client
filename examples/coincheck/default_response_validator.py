@@ -87,7 +87,9 @@ async def async_main(demo: str, log_level: str) -> None:
 
 async def demonstrate_exception_display() -> None:
     console.print("\n[bold cyan]Private API + default response validator[/bold cyan]")
-    console.print("   Fetch balance with invalid API key and catch ExchangeApiError for display\n")
+    console.print(
+        "   Fetch balance with invalid API key and catch ExchangeApiError for display\n"
+    )
 
     validator = create_response_validator(Exchange.COINCHECK)
 
@@ -116,7 +118,9 @@ async def demonstrate_exception_display() -> None:
 
 async def demonstrate_callbacks() -> None:
     console.print("\n[bold cyan]Private API + default response validator[/bold cyan]")
-    console.print("   Intentionally fail authentication on API that requires authentication and verify validator behavior\n")
+    console.print(
+        "   Intentionally fail authentication on API that requires authentication and verify validator behavior\n"
+    )
 
     validator = create_response_validator(Exchange.COINCHECK)
 

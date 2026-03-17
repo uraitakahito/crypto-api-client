@@ -203,9 +203,7 @@ async def async_main(
 
             typer.echo("\n✅ Order sent successfully!")
             typer.echo(f"📝 Order acceptance ID: {result}")
-            typer.echo(
-                "\n💡 Hint: To check order status, use getchildorders.py"
-            )
+            typer.echo("\n💡 Hint: To check order status, use getchildorders.py")
 
     except Exception as e:
         typer.echo(f"\n❌ An error occurred: {e}")

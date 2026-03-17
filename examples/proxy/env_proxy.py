@@ -50,7 +50,9 @@ app = typer.Typer(
 def main(
     trust_env: Annotated[
         bool,
-        typer.Option("--trust-env", help="Load proxy settings from environment variables"),
+        typer.Option(
+            "--trust-env", help="Load proxy settings from environment variables"
+        ),
     ] = False,
 ) -> None:
     asyncio.run(async_main(trust_env=trust_env))

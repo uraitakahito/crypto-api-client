@@ -3,7 +3,6 @@
 Holds JSON strings and provides processing as needed.
 """
 
-
 from __future__ import annotations
 
 

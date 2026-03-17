@@ -31,7 +31,9 @@ class TestEndpointRequestBuilder:
     ) -> None:
         """Test basic GET request construction."""
         request = EndpointRequestBuilder.get(
-            base_url=base_url, relative_stub_path=relative_stub_path, relative_resource_path=relative_resource_path
+            base_url=base_url,
+            relative_stub_path=relative_stub_path,
+            relative_resource_path=relative_resource_path,
         )
 
         assert request.method == HttpMethod.GET
@@ -66,7 +68,9 @@ class TestEndpointRequestBuilder:
     ) -> None:
         """Test GET request construction without stub path."""
         request = EndpointRequestBuilder.get(
-            base_url=base_url, relative_stub_path=None, relative_resource_path=relative_resource_path
+            base_url=base_url,
+            relative_stub_path=None,
+            relative_resource_path=relative_resource_path,
         )
 
         assert request.stub_path is None
@@ -94,7 +98,9 @@ class TestEndpointRequestBuilder:
     ) -> None:
         """Test POST request construction without body."""
         request = EndpointRequestBuilder.post(
-            base_url=base_url, relative_stub_path=relative_stub_path, relative_resource_path=relative_resource_path
+            base_url=base_url,
+            relative_stub_path=relative_stub_path,
+            relative_resource_path=relative_resource_path,
         )
 
         assert request.body is None

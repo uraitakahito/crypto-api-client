@@ -45,4 +45,6 @@ class TestJsonPrecisionLoss:
         expected = "999999999999999999.123456789"
         actual = str(result["total"])  # type: ignore
 
-        assert actual == expected, f"Large number precision loss: {expected} -> {actual}"
+        assert actual == expected, (
+            f"Large number precision loss: {expected} -> {actual}"
+        )

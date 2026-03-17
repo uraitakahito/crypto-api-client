@@ -28,9 +28,7 @@ class BitbankMessage[TPayload, TDomainModel](
         """
         success_match = re.search(r'"success"\s*:\s*(\d+)', json_str)
         if success_match is None:
-            raise ValueError(
-                f"metadata ('success' field) not found: {json_str}"
-            )
+            raise ValueError(f"metadata ('success' field) not found: {json_str}")
         return MessageMetadata(success=int(success_match.group(1)))
 
     def _extract_payload_json(self, json_str: str) -> str:

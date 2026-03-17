@@ -84,9 +84,7 @@ async def async_main(pair: str, child_order_id: str, log_level: str) -> None:
             typer.echo("\n✅ Cancel request has been sent")
             typer.echo(result)
 
-            typer.echo(
-                "\n💡 Hint: To check order status, use the following command:"
-            )
+            typer.echo("\n💡 Hint: To check order status, use the following command:")
             # Extract base and quote from pair for the hint
             # The pair already contains the unified information
             # We need to get the original currencies from the registry

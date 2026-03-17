@@ -42,9 +42,9 @@ from crypto_api_client.bitflyer import (
 
 # Unified settings for development environment
 app = typer.Typer(
-    pretty_exceptions_enable=True,      # Enable Rich traceback
+    pretty_exceptions_enable=True,  # Enable Rich traceback
     pretty_exceptions_show_locals=True,  # Show local variables
-    pretty_exceptions_short=False        # Show full traceback
+    pretty_exceptions_short=False,  # Show full traceback
 )
 console = Console()
 
@@ -154,8 +154,9 @@ async def async_main(
     sell_count = sum(1 for ex in all_executions if ex.side == Side.SELL)
     no_side_count = sum(1 for ex in all_executions if ex.side is None)
     console.print(
-        f"  [bold]Total:[/bold] {len(all_executions)} ([green]Buy: {buy_count}[/green] / [red]Sell: {sell_count}[/red]" +
-        (f" / [dim]No side: {no_side_count}[/dim]" if no_side_count > 0 else "") + ")"
+        f"  [bold]Total:[/bold] {len(all_executions)} ([green]Buy: {buy_count}[/green] / [red]Sell: {sell_count}[/red]"
+        + (f" / [dim]No side: {no_side_count}[/dim]" if no_side_count > 0 else "")
+        + ")"
     )
 
     if all_executions:
@@ -167,9 +168,7 @@ async def async_main(
         )
 
         total_buy_size = sum(ex.size for ex in all_executions if ex.side == Side.BUY)
-        total_sell_size = sum(
-            ex.size for ex in all_executions if ex.side == Side.SELL
-        )
+        total_sell_size = sum(ex.size for ex in all_executions if ex.side == Side.SELL)
         total_commission = sum(ex.commission for ex in all_executions)
         console.print(
             f"  [bold]Volume:[/bold] [green]Buy: {total_buy_size:.8f}[/green] / [red]Sell: {total_sell_size:.8f}[/red]"
