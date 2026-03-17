@@ -154,17 +154,3 @@ export BITFLYER_API_KEY="your_api_key"
 export BITFLYER_API_SECRET="your_api_secret"
 uv run python examples/bitflyer/balances.py
 ```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit pull requests or open issues for:
-
-- Adding support for additional exchange endpoints
-- Bug fixes and improvements
-- Documentation enhancements
-- New examples
-
-## License
-
-[Unlicense](./LICENSE)
-
