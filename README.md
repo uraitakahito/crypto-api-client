@@ -136,6 +136,16 @@ asyncio.run(main())
 
 ## Development
 
+### Getting the Development Dockerfile
+
+```console
+% curl -L -O https://raw.githubusercontent.com/uraitakahito/hello_python_uv/refs/tags/1.1.0/Dockerfile
+% curl -L -O https://raw.githubusercontent.com/uraitakahito/hello_python_uv/refs/tags/1.1.0/docker-entrypoint.sh
+% chmod 755 docker-entrypoint.sh
+```
+
+Detailed instructions for setting up the development environment are documented as comments within the downloaded Dockerfile.
+
 ### Running Tests
 
 ```bash
