@@ -1,6 +1,6 @@
 [project]
 name = "crypto-api-client"
-version = "0.6.83"
+version = "0.6.84"
 description = "A client for interacting with crypto APIs."
 readme = "README.md"
 license = "Unlicense"
