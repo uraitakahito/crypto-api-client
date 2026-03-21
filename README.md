@@ -139,8 +139,8 @@ asyncio.run(main())
 ### Getting the Development Dockerfile
 
 ```console
-% curl -L -O https://raw.githubusercontent.com/uraitakahito/hello_python_uv/refs/tags/1.2.0/Dockerfile.dev
-% curl -L -O https://raw.githubusercontent.com/uraitakahito/hello_python_uv/refs/tags/1.2.0/docker-entrypoint.sh
+% curl -L -O https://raw.githubusercontent.com/uraitakahito/hello_python_uv/refs/tags/1.2.1/Dockerfile.dev
+% curl -L -O https://raw.githubusercontent.com/uraitakahito/hello_python_uv/refs/tags/1.2.1/docker-entrypoint.sh
 % chmod 755 docker-entrypoint.sh
 ```
 
