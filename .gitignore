@@ -184,7 +184,7 @@ docs/source/modules.rst
 ._*
 .!*
 
-Dockerfile
+Dockerfile.dev
 docker-entrypoint.sh
 
 # Database files
