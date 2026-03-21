@@ -43,6 +43,24 @@ class GmoCoinResponseValidator(AbstractRequestCallback):
             ]
         }
 
+    Example of a maintenance response:
+
+    .. code-block:: json
+
+        {
+            "status": 5,
+            "messages": [
+                {
+                    "message_code": "ERR-5201",
+                    "message_string": "MAINTENANCE. Please wait for a while"
+                }
+            ]
+        }
+
+    .. note::
+
+        Error/maintenance responses do **not** contain ``data`` or ``responsetime`` fields.
+
     .. seealso::
         - :class:`~crypto_api_client.callbacks.AbstractRequestCallback`
         - :func:`~crypto_api_client.factories.create_response_validator`
@@ -51,7 +69,7 @@ class GmoCoinResponseValidator(AbstractRequestCallback):
     _EXCHANGE: Final[Exchange] = Exchange.GMOCOIN
     _SUCCESS_STATUS_VALUE: Final[int] = 0
     _ERROR_MESSAGE_TEMPLATE: Final[str] = (
-        "{exchange_name} API error (HTTP status {http_status_code}, API status {api_status_code}): {error_message}"
+        "{exchange_name} API error (HTTP status {http_status_code}, API status {api_status_code}): {error_messages}"
     )
 
     async def before_request(

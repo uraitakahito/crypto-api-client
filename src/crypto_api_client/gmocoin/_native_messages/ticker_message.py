@@ -30,7 +30,7 @@ class TickerMessage(GmoCoinMessage[TickerPayload, list[Ticker]]):
                         "high": "15836477",
                         "last": "15350001",
                         "low": "15271389",
-                        "symbol": "BTC_JPY",
+                        "symbol": "BTC",
                         "timestamp": "2025-01-30T12:34:56.789Z",
                         "volume": "273.5234"
                     }

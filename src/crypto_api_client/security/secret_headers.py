@@ -114,8 +114,8 @@ class SecretHeaders(MutableMapping[str, str]):
             except (AttributeError, TypeError):
                 return False
         elif isinstance(other, httpx.Headers):
-            other_lower: dict[str, str] = {k.lower(): v for k, v in other.items()}
-            return self._data == other_lower
+            httpx_lower: dict[str, str] = {k.lower(): v for k, v in other.items()}
+            return self._data == httpx_lower
         return NotImplemented
 
     def __getitem__(self, key: str) -> str:

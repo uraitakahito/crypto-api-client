@@ -18,6 +18,7 @@ Usage:
 from .base import BaseTestDataBuilder, TestDataConfig
 from .bitbank_factory import BitbankDataFactory
 from .bitflyer_factory import BitFlyerDataFactory
+from .gmocoin_factory import GmocoinDataFactory
 from .validation_factory import ValidationDataConfig, ValidationDataFactory
 
 __all__ = [
@@ -27,6 +28,7 @@ __all__ = [
     # Exchange-specific Factories
     "BitFlyerDataFactory",
     "BitbankDataFactory",
+    "GmocoinDataFactory",
     # Validation Factory
     "ValidationDataFactory",
     "ValidationDataConfig",
