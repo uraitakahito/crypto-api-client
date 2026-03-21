@@ -132,7 +132,7 @@ asyncio.run(main())
 
 ## Development
 
-For debugging, Dockerfile setup, and testing, see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
+For debugging, Dockerfile setup, and testing, see [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ### Running Examples
 

@@ -2,7 +2,7 @@
 
 ## Debugging with Visual Studio Code
 
-Sample debug configurations are defined in [launch.json.sample](../.vscode/launch.json.sample). Run them from the `Run and Debug` panel.
+Sample debug configurations are defined in [launch.json.sample](.vscode/launch.json.sample). Run them from the `Run and Debug` panel.
 
 ## Getting the Development Dockerfile
 
